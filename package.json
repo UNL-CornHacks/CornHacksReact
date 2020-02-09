@@ -1,6 +1,6 @@
 {
-  "name": "githubpagetest",
-  "homepage": "https://cornhacks.com/",
+  "name": "cornhacksreact",
+  "homepage": "https://cornhacks.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
