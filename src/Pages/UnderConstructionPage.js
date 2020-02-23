@@ -16,7 +16,7 @@ const UnderConstructionPage = () => (
         <span style={{ color: Colors.GREEN }}>2021</span>
       </h1>
       <p style={paragraph}>
-        This site is currently under rennovation.
+        This site is currently under construction.
         <br />
         If you have any questions, please email us at
         <br />
