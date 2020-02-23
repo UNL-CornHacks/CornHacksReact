@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import UnderConstructionPage from "Pages/UnderConstructionPage";
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Redirect
