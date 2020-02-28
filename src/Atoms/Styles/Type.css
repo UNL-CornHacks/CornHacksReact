@@ -1,0 +1,51 @@
+.ch-type {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2em;
+  opacity: 1;
+}
+
+h2 {
+  font-size: 1.25em;
+  opacity: 0.98;
+}
+
+h3 {
+  font-size: 1em;
+  opacity: 0.96;
+}
+
+h4 {
+  font-size: 0.75em;
+  opacity: 0.94;
+}
+
+h5 {
+  font-size: 0.6em;
+  opacity: 0.92;
+}
+
+h6 {
+  font-size: 0.5em;
+  opacity: 0.9;
+}
+
+p {
+  font-size: 0.45em;
+  opacity: 0.85;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italics {
+  font-weight: 700;
+}
+
+.underline {
+  text-decoration: underline;
+}

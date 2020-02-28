@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 
 import UnderConstructionPage from "Pages/UnderConstructionPage";
 import SandboxPage from "Pages/SandboxPage";
+import DesignSystemPage from "Pages/DesignSystemPage";
 
 import {
   HashRouter as Router,
@@ -21,6 +22,9 @@ const RouteHandler = () => (
       </Route>
       <Route path="/sandbox/">
         <SandboxPage />
+      </Route>
+      <Route path="/design-system/">
+        <DesignSystemPage />
       </Route>
       <Redirect to="/under-construction" />
     </Switch>
