@@ -2,6 +2,9 @@ import Airtable from "airtable";
 import React, { useState, useEffect } from "react";
 import Colors from "Constants/Colors";
 
+import Card from "Organisms/Card";
+import Type from "Atoms/Type";
+
 const SandboxPage = () => {
   const [sponsorData, setSponsorData] = useState({
     platinum: [],
@@ -16,7 +19,8 @@ const SandboxPage = () => {
     }).base(process.env.REACT_APP_AIRTABLE_BASE);
     base("Companies")
       .select({
-        filterByFormula: "IF({Sponsor Level} = BLANK(), FALSE(), TRUE())",
+        filterByFormula:
+          "IF(OR({Sponsor Level} = BLANK(), {Sponsor Logo} = BLANK()) , FALSE(), TRUE())",
         view: "All companies: by employees"
       })
       .firstPage(function(err, records) {
@@ -46,46 +50,50 @@ const SandboxPage = () => {
     return (
       <div style={pageStyling}>
         <div style={pageContentStyling}>
-          <p style={paragraph}>
-            <b>Platinum Sponsors:</b>
-            <br />
-            {sponsorData.platinum.map(sponsor => (
-              <>
-                <li>{sponsor.fields["Company"]}</li>
-                <br />
-              </>
-            ))}
-            <br />
-            <b>Gold Sponsors:</b>
-            <br />
-            {sponsorData.gold.map(sponsor => (
-              <>
-                <li>{sponsor.fields["Company"]}</li>
-                <br />
-              </>
-            ))}
-            <br />
-            <b>Silver Sponsors:</b>
-            <br />
-            {sponsorData.silver.map(sponsor => (
-              <>
-                <li>{sponsor.fields["Company"]}</li>
-                <br />
-              </>
-            ))}
-            <br />
-            <b>Bronze Sponsors:</b>
-            <br />
-            <ul>
-              {sponsorData.bronze.map(sponsor => (
-                <>
-                  <li>{sponsor.fields["Company"]}</li>
-                  <br />
-                </>
-              ))}
-            </ul>
-            <br />
-          </p>
+          <Type size="h4" bold>
+            Platinum Sponsors:
+          </Type>
+          {sponsorData.platinum.map(sponsor => (
+            <Card
+              image={sponsor.fields["Sponsor Logo"][0].url}
+              link={sponsor.fields["Sponsor Website"]}
+            >
+              <Type size="h6">{sponsor.fields["Company"]}</Type>
+            </Card>
+          ))}
+          <Type size="h4" bold>
+            Gold Sponsors:
+          </Type>
+          {sponsorData.gold.map(sponsor => (
+            <Card
+              image={sponsor.fields["Sponsor Logo"][0].url}
+              link={sponsor.fields["Sponsor Website"]}
+            >
+              <Type size="h6">{sponsor.fields["Company"]}</Type>
+            </Card>
+          ))}
+          <Type size="h4" bold>
+            Silver Sponsors:
+          </Type>
+          {sponsorData.silver.map(sponsor => (
+            <Card
+              image={sponsor.fields["Sponsor Logo"][0].url}
+              link={sponsor.fields["Sponsor Website"]}
+            >
+              <Type size="h6">{sponsor.fields["Company"]}</Type>
+            </Card>
+          ))}
+          <Type size="h4" bold>
+            Bronze Sponsors:
+          </Type>
+          {sponsorData.bronze.map(sponsor => (
+            <Card
+              image={sponsor.fields["Sponsor Logo"][0].url}
+              link={sponsor.fields["Sponsor Website"]}
+            >
+              <Type size="h6">{sponsor.fields["Company"]}</Type>
+            </Card>
+          ))}
         </div>
       </div>
     );
@@ -93,7 +101,9 @@ const SandboxPage = () => {
     return (
       <div style={pageStyling}>
         <div style={pageContentStyling}>
-          <p style={paragraph}>Loading...</p>
+          <Type size="h2" bold>
+            Loading...
+          </Type>
         </div>
       </div>
     );
@@ -120,11 +130,6 @@ const pageContentStyling = {
   height: "100%",
   textAlign: "center",
   flexDirection: "column"
-};
-
-const paragraph = {
-  color: Colors.WHITE,
-  fontSize: "25px"
 };
 
 export default SandboxPage;

@@ -1,7 +1,8 @@
 .ch-card-image {
   left: 0;
   top: 0;
-  width: 100%;
+  width: 100px;
+  height: 100px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,5 +11,11 @@
 }
 
 .ch-card {
-  width: 100%;
+  flex: 1 1 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  display: flex;
+  overflow: hidden;
+  height: auto;
+  height: 150px;
 }
