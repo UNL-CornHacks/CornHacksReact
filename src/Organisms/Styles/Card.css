@@ -1,0 +1,14 @@
+.ch-card-image {
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  justify-content: end;
+}
+
+.ch-card {
+  width: 100%;
+}

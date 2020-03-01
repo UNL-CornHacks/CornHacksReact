@@ -6,12 +6,12 @@ const DesignSystemPage = () => (
   <div style={pageStyling}>
     <div style={pageContentStyling}>
       <Type size="h1">h1</Type>
-      <Type size="h1">h1 bold</Type>
       <Type size="h2">Test h2</Type>
       <Type size="h3">Test h3</Type>
       <Type size="h4">Test h4</Type>
       <Type size="h5">Test h5</Type>
       <Type size="h6">Test h6</Type>
+      <Type size="p">Test p</Type>
     </div>
   </div>
 );
