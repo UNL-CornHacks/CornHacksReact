@@ -1,0 +1,8 @@
+.ch-card-image {
+    overflow: hidden;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    box-sizing: border-box;
+    justify-content: end;
+}

@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+import "semantic-ui-css/semantic.min.css";
+
 import UnderConstructionPage from "Pages/UnderConstructionPage";
 import SandboxPage from "Pages/SandboxPage";
 import DesignSystemPage from "Pages/DesignSystemPage";
