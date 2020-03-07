@@ -1,0 +1,5 @@
+.arrow-positioning {
+    position: absolute;
+    top: calc(100vh - 70px);
+    left: 6em;
+}

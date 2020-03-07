@@ -1,0 +1,29 @@
+.continue-arrow-container {
+    width: 100px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.continue-arrow {
+    width: 50px;
+    height: 50px;
+    -webkit-animation: arrow-bob 2s ease-in-out infinite alternate;
+    animation: arrow-bob 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes arrow-bob {
+    from {
+        margin-top: 0px;
+    }
+    to {
+        margin-top: 20px;
+    }
+}
+@keyframes arrow-bob {
+    from {
+        margin-top: 0px;
+    }
+    to {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,14 @@
+.scroll-trigger {
+    display: block;
+    transition: opacity 0.6s ease-out, margin-top 0.6s ease-out;
+}
+
+.trigger-off {
+    opacity: 1;
+    margin-top: 0;
+}
+
+.trigger-on {
+    opacity: 0;
+    margin-top: 100px;
+}
