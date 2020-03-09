@@ -1,31 +1,39 @@
 import React from "react";
-import { Card, Image } from "semantic-ui-react";
+import Type from "Atoms/Type";
 import "./Styles/SponsorCard.css";
 
 const SponsorCard = ({ image, link, title, color, imageHeight }) => {
+    const learnMore = link ? (
+        <Type size="h6" className="ch-card-learn-more">
+            Learn More >
+        </Type>
+    ) : (
+        false
+    );
     const cardBody = (
         <>
-            <Image
+            <Type size="h5" align="center" className="ch-card-title">
+                {title}
+            </Type>
+            <div
                 className="ch-card-image"
                 style={{
                     backgroundImage: `url(${image})`,
                     height: imageHeight
                 }}
-                wrapped
-                ui={false}
             />
-            <Card.Content>
-                <Card.Header>{title}</Card.Header>
-            </Card.Content>
+            {learnMore}
         </>
     );
 
     return link ? (
-        <Card as="a" href={link} color={color}>
+        <a className="ch-sponsor-card" as="a" href={link} color={color}>
             {cardBody}
-        </Card>
+        </a>
     ) : (
-        <Card color={color}>{cardBody}</Card>
+        <div className="ch-sponsor-card" color={color}>
+            {cardBody}
+        </div>
     );
 };
 

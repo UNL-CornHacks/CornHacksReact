@@ -14,7 +14,7 @@ const HomeHero = () => {
         <GradientHero colors={[Colors.YELLOW, Colors.GREEN, Colors.BLUE]}>
             <img src={cornhacksWhite} alt="Cornhacks logo" />
             <Type bold size="h1">
-                CORNHACKS 2020
+                CORNHACKS 2021
             </Type>
             <ContinueArrow
                 className="arrow-positioning"

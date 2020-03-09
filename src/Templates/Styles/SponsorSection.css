@@ -1,1 +1,60 @@
+.ch-sponsor-cards {
+    display: grid;
+    flex: 1 1 0;
+    justify-content: space-between;
+    grid-gap: 20px;
+    grid-template-columns: 100%;
+}
 
+.ch-card-grid-2 {
+    grid-template-columns: repeat(2, calc(50% - 20px));
+}
+
+.ch-card-grid-3 {
+    grid-template-columns: repeat(3, calc(33% - 20px));
+}
+
+.ch-card-grid-4 {
+    grid-template-columns: repeat(4, calc(25% - 20px));
+}
+
+.ch-card-grid-5 {
+    grid-template-columns: repeat(5, calc(20% - 20px));
+}
+
+.ch-card-grid-6 {
+    grid-template-columns: repeat(6, calc(16% - 20px));
+}
+
+@media (max-width: 1000px) {
+    .ch-card-grid-4,
+    .ch-card-grid-5,
+    .ch-card-grid-6 {
+        grid-template-columns: repeat(3, calc(33% - 20px));
+    }
+}
+
+@media (max-width: 900px) {
+    .ch-card-grid-2,
+    .ch-card-grid-3,
+    .ch-card-grid-4,
+    .ch-card-grid-5,
+    .ch-card-grid-6 {
+        grid-template-columns: repeat(2, calc(50% - 20px));
+    }
+}
+
+@media (max-width: 600px) {
+    .ch-card-grid-2,
+    .ch-card-grid-3,
+    .ch-card-grid-4 {
+        grid-template-columns: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .ch-card-grid-5,
+    .ch-card-grid-6 {
+        grid-template-columns: 100%;
+    }
+}

@@ -9,7 +9,8 @@ const Type = ({
     underline,
     color,
     children,
-    className
+    className,
+    align
 }) => {
     let typeClasses = "ch-type";
     if (className) {
@@ -28,31 +29,46 @@ const Type = ({
     switch (size) {
         case "h1":
             return (
-                <h1 className={typeClasses} style={{ color: color }}>
+                <h1
+                    className={typeClasses}
+                    style={{ color: color, textAlign: align }}
+                >
                     {children}
                 </h1>
             );
         case "h2":
             return (
-                <h2 className={typeClasses} style={{ color: color }}>
+                <h2
+                    className={typeClasses}
+                    style={{ color: color, textAlign: align }}
+                >
                     {children}
                 </h2>
             );
         case "h3":
             return (
-                <h3 className={typeClasses} style={{ color: color }}>
+                <h3
+                    className={typeClasses}
+                    style={{ color: color, textAlign: align }}
+                >
                     {children}
                 </h3>
             );
         case "h4":
             return (
-                <h4 className={typeClasses} style={{ color: color }}>
+                <h4
+                    className={typeClasses}
+                    style={{ color: color, textAlign: align }}
+                >
                     {children}
                 </h4>
             );
         case "h5":
             return (
-                <h5 className={typeClasses} style={{ color: color }}>
+                <h5
+                    className={typeClasses}
+                    style={{ color: color, textAlign: align }}
+                >
                     {children}
                 </h5>
             );
@@ -76,14 +92,16 @@ Type.propTypes = {
     bold: PropTypes.bool,
     italics: PropTypes.bool,
     underline: PropTypes.bool,
-    color: PropTypes.string
+    color: PropTypes.string,
+    align: PropTypes.string
 };
 
 Type.defaultProps = {
     bold: false,
     italics: false,
     underline: false,
-    color: "#FFFFFF"
+    color: "#FFFFFF",
+    align: "left"
 };
 
 export default Type;

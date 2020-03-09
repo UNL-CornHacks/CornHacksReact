@@ -45,31 +45,34 @@ const SandboxPage = () => {
                 });
             });
     }, []);
-    console.log(sponsorData);
     if (sponsorData) {
         return (
             <div style={pageStyling}>
                 <div style={pageContentStyling}>
                     <SponsorSection
                         title="Platinum Sponsors"
+                        titleColor={Colors.DARK_BLUE}
                         sponsorData={sponsorData.platinum}
                         color="blue"
                         sectionHeight="200px"
                     />
                     <SponsorSection
                         title="Gold Sponsors"
+                        titleColor={Colors.DARK_BLUE}
                         sponsorData={sponsorData.gold}
                         color="yellow"
                         sectionHeight="150px"
                     />
                     <SponsorSection
                         title="Silver Sponsors"
+                        titleColor={Colors.DARK_BLUE}
                         sponsorData={sponsorData.silver}
                         color="grey"
                         sectionHeight="100px"
                     />
                     <SponsorSection
                         title="Bronze Sponsors"
+                        titleColor={Colors.DARK_BLUE}
                         sponsorData={sponsorData.bronze}
                         color="brown"
                         sectionHeight="50px"
