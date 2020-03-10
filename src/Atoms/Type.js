@@ -12,10 +12,7 @@ const Type = ({
     className,
     align
 }) => {
-    let typeClasses = "ch-type";
-    if (className) {
-        typeClasses += " " + className;
-    }
+    let typeClasses = className ? `${className} ch-type` : "ch-type";
     if (bold) {
         typeClasses += " bold";
     }
@@ -80,7 +77,10 @@ const Type = ({
             );
         default:
             return (
-                <p className={typeClasses} style={{ color: color }}>
+                <p
+                    className={typeClasses}
+                    style={{ color: color, textAlign: align }}
+                >
                     {children}
                 </p>
             );

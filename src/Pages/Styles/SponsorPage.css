@@ -1,0 +1,18 @@
+.sponsor-hero-text {
+    width: 100%;
+    margin: 1em 4em;
+}
+
+.ch-button-link {
+    text-decoration: none;
+    position: absolute;
+}
+
+.ch-button {
+    margin: 0;
+    position: relative;
+    width: 160px;
+    border: 2px white solid;
+    border-radius: 1em;
+    padding: 10px;
+}

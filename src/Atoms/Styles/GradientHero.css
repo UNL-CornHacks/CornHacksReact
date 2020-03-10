@@ -2,9 +2,7 @@
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
     -webkit-animation: gradientBG 10s ease infinite;
     animation: gradientBG 10s ease infinite;
     margin: 0;

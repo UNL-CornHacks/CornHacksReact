@@ -11,9 +11,12 @@ import Type from "Atoms/Type";
 
 const HomeHero = () => {
     return (
-        <GradientHero colors={[Colors.YELLOW, Colors.GREEN, Colors.BLUE]}>
+        <GradientHero
+            colors={[Colors.YELLOW, Colors.GREEN, Colors.BLUE]}
+            justifyContent="center"
+        >
             <img src={cornhacksWhite} alt="Cornhacks logo" />
-            <Type bold size="h1">
+            <Type bold size="h1" align="center" className="center-gradient">
                 CORNHACKS 2021
             </Type>
             <ContinueArrow

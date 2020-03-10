@@ -13,6 +13,7 @@ import {
 } from "react-router-dom";
 
 import "./index.css";
+import SponsorPage from "Pages/SponsorPage";
 
 const RouteHandler = () => (
     <Router>
@@ -25,6 +26,9 @@ const RouteHandler = () => (
             </Route>
             <Route path="/home/">
                 <HomePage />
+            </Route>
+            <Route path="/sponsor/">
+                <SponsorPage />
             </Route>
             <Redirect to="/under-construction" />
         </Switch>

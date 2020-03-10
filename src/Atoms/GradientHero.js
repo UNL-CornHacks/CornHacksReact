@@ -2,7 +2,12 @@ import React from "react";
 
 import "./Styles/GradientHero.css";
 
-const GradientHero = ({ colors, className, children }) => {
+const GradientHero = ({
+    colors,
+    className,
+    children,
+    justifyContent = "left"
+}) => {
     let gradientString = "";
     for (const gradientColor of colors) {
         if (gradientString) {
@@ -17,7 +22,8 @@ const GradientHero = ({ colors, className, children }) => {
             }
             style={{
                 backgroundImage: `linear-gradient(135deg, ${gradientString})`,
-                backgroundSize: `${colors.length}00% ${colors.length}00%`
+                backgroundSize: `${colors.length}00% ${colors.length}00%`,
+                justifyContent
             }}
         >
             {children}
