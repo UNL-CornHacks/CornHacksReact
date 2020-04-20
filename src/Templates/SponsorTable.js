@@ -26,31 +26,75 @@ const SponsorTable = () => {
                 <tbody>
                     <tr>
                         <TableCell header>Cost</TableCell>
-                        <TableCell>$8000</TableCell>
-                        <TableCell>$4000</TableCell>
-                        <TableCell>$2000</TableCell>
-                        <TableCell>$1000</TableCell>
+                        <TableCell yes>$8000</TableCell>
+                        <TableCell yes>$4000</TableCell>
+                        <TableCell yes>$2000</TableCell>
+                        <TableCell yes>$1000</TableCell>
                     </tr>
                     <tr>
                         <TableCell header>Logo Size</TableCell>
-                        <TableCell>XL Logo</TableCell>
-                        <TableCell>L Logo</TableCell>
-                        <TableCell>M Logo</TableCell>
-                        <TableCell>S Logo</TableCell>
+                        <TableCell yes>XL Logo</TableCell>
+                        <TableCell yes>L Logo</TableCell>
+                        <TableCell yes>M Logo</TableCell>
+                        <TableCell yes>S Logo</TableCell>
                     </tr>
                     <tr>
-                        <TableCell header>Booth?</TableCell>
-                        <TableCell>Yes</TableCell>
-                        <TableCell>Yes</TableCell>
-                        <TableCell>No</TableCell>
-                        <TableCell>No</TableCell>
+                        <TableCell header>Logo on Website?</TableCell>
+                        <TableCell yes>Yes</TableCell>
+                        <TableCell yes>Yes</TableCell>
+                        <TableCell yes>Yes</TableCell>
+                        <TableCell yes>Yes</TableCell>
                     </tr>
                     <tr>
                         <TableCell header>Tech Talk</TableCell>
-                        <TableCell>60 mins</TableCell>
-                        <TableCell>30 mins</TableCell>
-                        <TableCell>15 mins</TableCell>
-                        <TableCell>None</TableCell>
+                        <TableCell yes>60 mins</TableCell>
+                        <TableCell yes>30 mins</TableCell>
+                        <TableCell yes>15 mins</TableCell>
+                        <TableCell no>None</TableCell>
+                    </tr>
+                    <tr>
+                        <TableCell header>Logo on Shirt?</TableCell>
+                        <TableCell yes>Yes</TableCell>
+                        <TableCell yes>Yes</TableCell>
+                        <TableCell yes>Yes</TableCell>
+                        <TableCell no>No</TableCell>
+                    </tr>
+                    <tr>
+                        <TableCell header>Booth?</TableCell>
+                        <TableCell yes>Yes</TableCell>
+                        <TableCell yes>Yes</TableCell>
+                        <TableCell no>No</TableCell>
+                        <TableCell no>No</TableCell>
+                    </tr>
+                    <tr>
+                        <TableCell header>Swag in a Bag?</TableCell>
+                        <TableCell yes>Yes</TableCell>
+                        <TableCell yes>Yes</TableCell>
+                        <TableCell no>No</TableCell>
+                        <TableCell no>No</TableCell>
+                    </tr>
+                    <tr>
+                        <TableCell header>
+                            Slack Channel in CornHacks Slack?
+                        </TableCell>
+                        <TableCell yes>Yes</TableCell>
+                        <TableCell yes>Yes</TableCell>
+                        <TableCell no>No</TableCell>
+                        <TableCell no>No</TableCell>
+                    </tr>
+                    <tr>
+                        <TableCell header>"Sponsored by" in Emails?</TableCell>
+                        <TableCell yes>Yes</TableCell>
+                        <TableCell yes>Yes</TableCell>
+                        <TableCell no>No</TableCell>
+                        <TableCell no>No</TableCell>
+                    </tr>
+                    <tr>
+                        <TableCell header>Prizing Track?</TableCell>
+                        <TableCell yes>Yes</TableCell>
+                        <TableCell no>No</TableCell>
+                        <TableCell no>No</TableCell>
+                        <TableCell no>No</TableCell>
                     </tr>
                 </tbody>
             </table>

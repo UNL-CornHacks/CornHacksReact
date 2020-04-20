@@ -6,3 +6,12 @@
     height: 100%;
     flex-direction: column;
 }
+
+.ch-platinum-normal {
+    background-color: #26b24b;
+    border-spacing: 0px;
+}
+
+.ch-platinum-text {
+    color: #fff;
+}

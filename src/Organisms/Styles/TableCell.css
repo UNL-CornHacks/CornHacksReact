@@ -1,6 +1,18 @@
+table {
+    border-spacing: 0px;
+}
+
+.ch-table-no-styling {
+    background-color: #db423f;
+}
+
+.ch-table-yes-styling {
+    background-color: #26b24b;
+}
+
 .ch-table-cell {
     width: 10em;
-    height: 6em;
+    height: 4em;
 }
 
 .ch-table-header {

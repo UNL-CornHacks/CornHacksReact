@@ -6,6 +6,7 @@ import AirtableCompanies from "Calls/AirtableCompanies";
 import SponsorSection from "Templates/SponsorSection";
 import GradientHero from "Atoms/GradientHero";
 import SponsorTable from "Templates/SponsorTable";
+import ContinueArrow from "Atoms/ContinueArrow";
 
 import "./Styles/SponsorPage.css";
 import SponsorFAQ from "Templates/SponsorFAQ";
@@ -32,10 +33,28 @@ const SponsorPage = () => {
                         </Type>
                     </a>
                 </div>
+                <ContinueArrow
+                    className="right-arrow-positioning"
+                    backgroundColor={Colors.DARK_BLUE}
+                    scrollTo={window.innerHeight}
+                />
             </GradientHero>
+            <ContentSection backgroundColor={Colors.DARK_BLUE}>
+                <Type size="h3" align="center" bold>
+                    January 16th, 2021 @
+                </Type>
+                <a
+                    style={{ color: Colors.WHITE }}
+                    href="https://goo.gl/maps/o72MMWk4cHtgoFHF6"
+                >
+                    <Type size="h3" align="center" bold>
+                        The Johnny Carson Center for Emerging Media Arts
+                    </Type>
+                </a>
+            </ContentSection>
             <SponsorTable />
             <SponsorFAQ />
-            <ContentSection backgroundColor="#ffffff">
+            <ContentSection backgroundColor={Colors.WHITE}>
                 <SponsorSection
                     title="Platinum Sponsors"
                     titleColor={Colors.DARK_BLUE}
