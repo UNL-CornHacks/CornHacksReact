@@ -3,27 +3,27 @@ import React, { useState, useEffect } from "react";
 import Colors from "Constants/Colors";
 
 import Type from "Atoms/Type";
-import SponsorSection from "Templates/SponsorSection";
+import SponsorSection from "Pages/Sponsor/Templates/SponsorSection";
 
 const SandboxPage = () => {
     const [sponsorData, setSponsorData] = useState({
         platinum: [],
         gold: [],
         silver: [],
-        bronze: []
+        bronze: [],
     });
 
     useEffect(() => {
         const base = new Airtable({
-            apiKey: process.env.REACT_APP_AIRTABLE_API_KEY
+            apiKey: process.env.REACT_APP_AIRTABLE_API_KEY,
         }).base(process.env.REACT_APP_AIRTABLE_BASE);
         base("Companies")
             .select({
                 filterByFormula:
                     "IF(OR({Sponsor Level} = BLANK(), {Sponsor Logo} = BLANK()) , FALSE(), TRUE())",
-                view: "All companies: by employees"
+                view: "All companies: by employees",
             })
-            .firstPage(function(err, records) {
+            .firstPage(function (err, records) {
                 if (err) {
                     console.error(err);
                     return;
@@ -31,17 +31,18 @@ const SandboxPage = () => {
                 console.log(records);
                 setSponsorData({
                     platinum: records.filter(
-                        record => record.fields["Sponsor Level"] === "Platinum"
+                        (record) =>
+                            record.fields["Sponsor Level"] === "Platinum"
                     ),
                     gold: records.filter(
-                        record => record.fields["Sponsor Level"] === "Gold"
+                        (record) => record.fields["Sponsor Level"] === "Gold"
                     ),
                     silver: records.filter(
-                        record => record.fields["Sponsor Level"] === "Silver"
+                        (record) => record.fields["Sponsor Level"] === "Silver"
                     ),
                     bronze: records.filter(
-                        record => record.fields["Sponsor Level"] === "Bronze"
-                    )
+                        (record) => record.fields["Sponsor Level"] === "Bronze"
+                    ),
                 });
             });
     }, []);
@@ -102,7 +103,7 @@ const pageStyling = {
     height: "100%",
     background: `radial-gradient(${Colors.BLUE}, ${Colors.DARK_BLUE})`,
     position: "fixed",
-    display: "flex"
+    display: "flex",
 };
 
 const pageContentStyling = {
@@ -113,7 +114,7 @@ const pageContentStyling = {
     height: "100%",
     textAlign: "center",
     flexDirection: "column",
-    overflowY: "scroll"
+    overflowY: "scroll",
 };
 
 export default SandboxPage;

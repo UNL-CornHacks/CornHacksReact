@@ -5,7 +5,7 @@ import Colors from "Constants/Colors";
 
 import TableCell from "Organisms/TableCell";
 
-import "./Styles/SponsorTable.css";
+import "../Styles/SponsorTable.css";
 
 const SponsorTable = () => {
     return (

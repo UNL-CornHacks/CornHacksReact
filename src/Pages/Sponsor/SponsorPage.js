@@ -3,13 +3,13 @@ import Colors from "Constants/Colors";
 import Type from "Atoms/Type";
 import ContentSection from "Atoms/ContentSection";
 import AirtableCompanies from "Calls/AirtableCompanies";
-import SponsorSection from "Templates/SponsorSection";
+import SponsorSection from "Pages/Sponsor/Templates/SponsorSection";
 import GradientHero from "Atoms/GradientHero";
-import SponsorTable from "Templates/SponsorTable";
+import SponsorTable from "Pages/Sponsor/Templates/SponsorTable";
 import ContinueArrow from "Atoms/ContinueArrow";
 
 import "./Styles/SponsorPage.css";
-import SponsorFAQ from "Templates/SponsorFAQ";
+import SponsorFAQ from "Pages/Sponsor/Templates/SponsorFAQ";
 
 const SponsorPage = () => {
     const [sponsors, getSponsors] = useState({});

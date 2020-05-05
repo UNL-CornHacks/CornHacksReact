@@ -1,5 +1,5 @@
 import React from "react";
-import "./Styles/SponsorSection.css";
+import "../Styles/SponsorSection.css";
 import SponsorCard from "Organisms/SponsorCard";
 import Type from "Atoms/Type";
 
@@ -8,9 +8,9 @@ const SponsorSection = ({
     titleColor,
     sponsorData,
     sectionHeight,
-    grid
+    grid,
 }) => {
-    const sponsorCards = sponsorData.map(sponsor => (
+    const sponsorCards = sponsorData.map((sponsor) => (
         <SponsorCard
             key={sponsor.id}
             image={sponsor.fields["Sponsor Logo"][0].url}

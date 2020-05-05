@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import HomeHero from "Templates/HomeHero";
+import HomeHero from "Pages/Home/Templates/HomeHero";
 import Colors from "Constants/Colors";
 import Type from "Atoms/Type";
 import ContentSection from "Atoms/ContentSection";
 import AirtableCompanies from "Calls/AirtableCompanies";
-import SponsorSection from "Templates/SponsorSection";
+import SponsorSection from "Pages/Sponsor/Templates/SponsorSection";
 
 const HomePage = () => {
     const [sponsors, getSponsors] = useState({});

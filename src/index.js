@@ -1,19 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import UnderConstructionPage from "Pages/UnderConstructionPage";
-import SandboxPage from "Pages/SandboxPage";
-import HomePage from "Pages/HomePage";
+import UnderConstructionPage from "Pages/UnderConstruction/UnderConstructionPage";
+import SandboxPage from "Pages/Sandbox/SandboxPage";
+import HomePage from "Pages/Home/HomePage";
 
 import {
     HashRouter as Router,
     Switch,
     Route,
-    Redirect
+    Redirect,
 } from "react-router-dom";
 
 import "./index.css";
-import SponsorPage from "Pages/SponsorPage";
+import SponsorPage from "Pages/Sponsor/SponsorPage";
 
 const RouteHandler = () => (
     <Router>

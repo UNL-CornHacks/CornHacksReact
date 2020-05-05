@@ -2,7 +2,7 @@ import React from "react";
 import GradientHero from "Atoms/GradientHero";
 import Colors from "Constants/Colors";
 
-import "./Styles/HomeHero.css";
+import "../Styles/HomeHero.css";
 
 import ContinueArrow from "Atoms/ContinueArrow";
 
