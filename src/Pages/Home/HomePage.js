@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import HomeHero from "Pages/Home/Templates/HomeHero";
 import Colors from "Constants/Colors";
+import ImportantDates from "Constants/ImportantDates";
 import Type from "Atoms/Type";
 import ContentSection from "Atoms/ContentSection";
 import AirtableCompanies from "Calls/AirtableCompanies";
 import SponsorSection from "Pages/Sponsor/Templates/SponsorSection";
+import Countdown from "Molecules/Countdown";
 
 const HomePage = () => {
     const [sponsors, getSponsors] = useState({});
@@ -13,13 +15,10 @@ const HomePage = () => {
             <AirtableCompanies setSponsorData={getSponsors} />
             <HomeHero />
             <ContentSection backgroundColor={Colors.DARK_BLUE}>
-                <Type size="h2" bold>
-                    Test123
-                </Type>
-                <Type size="p">
-                    Hey I just wanted to see how easy it was to make something
-                    like this thanks
-                </Type>
+                <Countdown
+                    date={ImportantDates.START_DATE}
+                    afterText="until Cornhacks"
+                />
             </ContentSection>
             <ContentSection backgroundColor={"#ddd"}>
                 <Type size="h2" color={Colors.DARK_BLUE} bold>

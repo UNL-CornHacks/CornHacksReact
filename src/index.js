@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import UnderConstructionPage from "Pages/UnderConstruction/UnderConstructionPage";
-import SandboxPage from "Pages/Sandbox/SandboxPage";
 import HomePage from "Pages/Home/HomePage";
 
 import {
@@ -20,9 +19,6 @@ const RouteHandler = () => (
         <Switch>
             <Route path="/under-construction">
                 <UnderConstructionPage />
-            </Route>
-            <Route path="/sandbox/">
-                <SandboxPage />
             </Route>
             <Route path="/home/">
                 <HomePage />
