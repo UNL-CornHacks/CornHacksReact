@@ -7,6 +7,9 @@ import ContentSection from "Atoms/ContentSection";
 import AirtableCompanies from "Calls/AirtableCompanies";
 import SponsorSection from "Pages/Sponsor/Templates/SponsorSection";
 import Countdown from "Molecules/Countdown";
+import Form from "Organisms/Form";
+import FormInput from "Molecules/FormInput";
+import Airtable from "airtable";
 
 const HomePage = () => {
     const [sponsors, getSponsors] = useState({});
@@ -62,6 +65,26 @@ const HomePage = () => {
                     sectionHeight="100px"
                     grid={6}
                 />
+            </ContentSection>
+            <ContentSection backgroundColor={Colors.WHITE}>
+                <Form
+                    pushForm={(data) => {
+                        const base = new Airtable({
+                            apiKey: process.env.REACT_APP_AIRTABLE_API_KEY,
+                        }).base(process.env.REACT_APP_AIRTABLE_TEST_BASE);
+                        base("Sponsors").create(data, (err, record) => {
+                            console.log(err, record);
+                        });
+                    }}
+                >
+                    <FormInput labelColor={Colors.DARK_BLUE}>Field 1</FormInput>
+                    <FormInput labelColor={Colors.DARK_BLUE} required>
+                        Field 2
+                    </FormInput>
+                    <FormInput labelColor={Colors.DARK_BLUE} required>
+                        Field 3
+                    </FormInput>
+                </Form>
             </ContentSection>
         </div>
     );
