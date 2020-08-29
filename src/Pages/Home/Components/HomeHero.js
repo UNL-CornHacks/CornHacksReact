@@ -4,26 +4,31 @@ import Colors from "Constants/Colors";
 
 import "../Styles/HomeHero.css";
 
-import ContinueArrow from "GlobalComponents/ContinueArrow";
-
-import cornhacksWhite from "Graphics/cornhacks-white.svg";
 import Type from "GlobalComponents/Type";
+import Button from "GlobalComponents/Button";
 
 const HomeHero = () => {
     return (
         <GradientHero
             colors={[Colors.YELLOW, Colors.GREEN, Colors.BLUE]}
-            justifyContent="center"
+            height="70vh"
+            header
+            boxShadow
         >
-            <img src={cornhacksWhite} alt="Cornhacks logo" />
-            <Type bold size="h1" align="center" className="center-gradient">
+            <Type className="ch-home-hero-text" size="h1" bold align="center">
                 CORNHACKS 2021
             </Type>
-            <ContinueArrow
-                className="arrow-positioning"
-                backgroundColor={Colors.DARK_BLUE}
-                scrollTo={window.innerHeight}
-            />
+            <Type size="h4" align="center">
+                Nebraska's Student-Led Hackathon
+            </Type>
+            <div className="ch-button-container-center">
+                <Button internal to="/register/">
+                    Register
+                </Button>
+                <Button internal to="/sponsor/">
+                    Learn More
+                </Button>
+            </div>
         </GradientHero>
     );
 };

@@ -10,7 +10,7 @@ const Type = ({
     color,
     children,
     className,
-    align
+    align,
 }) => {
     let typeClasses = className ? `${className} ch-type` : "ch-type";
     if (bold) {
@@ -61,11 +61,12 @@ const Type = ({
                 </h4>
             );
         case "h5":
+            // Allow override for button so hover styling works
+            const h5style = typeClasses.includes("ch-button")
+                ? { textAlign: align }
+                : { color: color, textAlign: align };
             return (
-                <h5
-                    className={typeClasses}
-                    style={{ color: color, textAlign: align }}
-                >
+                <h5 className={typeClasses} style={h5style}>
                     {children}
                 </h5>
             );
@@ -93,7 +94,7 @@ Type.propTypes = {
     italics: PropTypes.bool,
     underline: PropTypes.bool,
     color: PropTypes.string,
-    align: PropTypes.string
+    align: PropTypes.string,
 };
 
 Type.defaultProps = {
@@ -101,7 +102,7 @@ Type.defaultProps = {
     italics: false,
     underline: false,
     color: "#FFFFFF",
-    align: "left"
+    align: "left",
 };
 
 export default Type;

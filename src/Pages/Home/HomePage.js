@@ -3,13 +3,11 @@ import HomeHero from "Pages/Home/Components/HomeHero";
 import Colors from "Constants/Colors";
 import ImportantDates from "Constants/ImportantDates";
 import Type from "GlobalComponents/Type";
-import ContentSection from "GlobalComponents/ContentSection";
+import TextSection from "GlobalComponents/TextSection";
+import ImageSection from "GlobalComponents/ImageSection";
 import AirtableCompanies from "Calls/AirtableCompanies";
 import SponsorSection from "Pages/Sponsor/Components/SponsorSection";
 import Countdown from "GlobalComponents/Countdown";
-import Form from "GlobalComponents/Form";
-import FormInput from "GlobalComponents/FormInput";
-import Airtable from "airtable";
 
 const HomePage = () => {
     const [sponsors, getSponsors] = useState({});
@@ -17,22 +15,47 @@ const HomePage = () => {
         <div>
             <AirtableCompanies setSponsorData={getSponsors} />
             <HomeHero />
-            <ContentSection backgroundColor={Colors.DARK_BLUE}>
+            <ImageSection
+                image={"Corndell.png"}
+                backgroundColor={Colors.DARK_BLUE}
+            >
+                <Type size="h3" color={Colors.WHITE} bold>
+                    Learn New Skills
+                </Type>
+                {/* <Type size="h5" color={Colors.WHITE}>
+                    talk about the skills you learn
+                </Type> */}
+            </ImageSection>
+            <ImageSection
+                image={"Chairs.png"}
+                backgroundColor={Colors.DARK_BLUE}
+                right
+            >
+                <Type size="h3" color={Colors.WHITE} bold>
+                    Build Incredible Things
+                </Type>
+                <Type size="h5" color={Colors.WHITE}>
+                    destroy build destroy
+                </Type>
+            </ImageSection>
+            <ImageSection
+                image={"Corndell.png"}
+                backgroundColor={Colors.DARK_BLUE}
+            >
+                <Type size="h3" color={Colors.WHITE} bold>
+                    Get Cool Prizes
+                </Type>
+                <Type size="h5" color={Colors.WHITE}>
+                    talk about the prizes you win
+                </Type>
+            </ImageSection>
+            <TextSection backgroundColor={Colors.DARK_BLUE}>
                 <Countdown
                     date={ImportantDates.START_DATE}
                     afterText="until Cornhacks"
                 />
-            </ContentSection>
-            <ContentSection backgroundColor={"#ddd"}>
-                <Type size="h2" color={Colors.DARK_BLUE} bold>
-                    Test123
-                </Type>
-                <Type size="p" color={Colors.DARK_BLUE}>
-                    Hey I just wanted to see how easy it was to make something
-                    like this thanks
-                </Type>
-            </ContentSection>
-            <ContentSection backgroundColor="#ffffff">
+            </TextSection>
+            <TextSection backgroundColor="#ffffff">
                 <SponsorSection
                     title="Platinum Sponsors"
                     titleColor={Colors.DARK_BLUE}
@@ -65,27 +88,7 @@ const HomePage = () => {
                     sectionHeight="100px"
                     grid={6}
                 />
-            </ContentSection>
-            <ContentSection backgroundColor={Colors.WHITE}>
-                <Form
-                    pushForm={(data) => {
-                        const base = new Airtable({
-                            apiKey: process.env.REACT_APP_AIRTABLE_API_KEY,
-                        }).base(process.env.REACT_APP_AIRTABLE_TEST_BASE);
-                        base("Sponsors").create(data, (err, record) => {
-                            console.log(err, record);
-                        });
-                    }}
-                >
-                    <FormInput labelColor={Colors.DARK_BLUE}>Field 1</FormInput>
-                    <FormInput labelColor={Colors.DARK_BLUE} required>
-                        Field 2
-                    </FormInput>
-                    <FormInput labelColor={Colors.DARK_BLUE} required>
-                        Field 3
-                    </FormInput>
-                </Form>
-            </ContentSection>
+            </TextSection>
         </div>
     );
 };

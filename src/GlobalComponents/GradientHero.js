@@ -1,4 +1,6 @@
 import React from "react";
+import cornhacksWhite from "Graphics/cornhacks-white.svg";
+import Type from "GlobalComponents/Type";
 
 import "./Styles/GradientHero.css";
 
@@ -7,6 +9,9 @@ const GradientHero = ({
     className,
     children,
     justifyContent = "left",
+    height = `100vh`,
+    header,
+    boxShadow,
 }) => {
     let gradientString = "";
     for (const gradientColor of colors) {
@@ -15,6 +20,18 @@ const GradientHero = ({
         }
         gradientString += gradientColor;
     }
+    const headerHTML = (
+        <div className="ch-header-gradient-hero">
+            <img
+                className="ch-logo-gradient-hero"
+                src={cornhacksWhite}
+                alt="Cornhacks logo"
+            />
+            <Type bold size="h4" align="left" className="ch-header-text">
+                CORNHACKS 2021
+            </Type>
+        </div>
+    );
     return (
         <div
             className={
@@ -24,9 +41,19 @@ const GradientHero = ({
                 backgroundImage: `linear-gradient(135deg, ${gradientString})`,
                 backgroundSize: `${colors.length}00% ${colors.length}00%`,
                 justifyContent,
+                height,
             }}
         >
-            {children}
+            {header && headerHTML}
+            <div
+                className={
+                    boxShadow
+                        ? "gradient-hero-body gradient-hero-box-shadow"
+                        : "gradient-hero-body"
+                }
+            >
+                {children}
+            </div>
         </div>
     );
 };

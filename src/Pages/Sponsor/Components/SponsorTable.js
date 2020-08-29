@@ -1,6 +1,6 @@
 import React from "react";
 import Type from "GlobalComponents/Type";
-import ContentSection from "GlobalComponents/ContentSection";
+import TextSection from "GlobalComponents/TextSection";
 import TableCell from "GlobalComponents/TableCell";
 
 import Colors from "Constants/Colors";
@@ -9,7 +9,7 @@ import "../Styles/SponsorTable.css";
 
 const SponsorTable = () => {
     return (
-        <ContentSection backgroundColor={"#eee"}>
+        <TextSection backgroundColor={"#eee"}>
             <Type size="h2" color={Colors.DARK_BLUE} bold>
                 Sponsorship Tiers
             </Type>
@@ -98,7 +98,7 @@ const SponsorTable = () => {
                     </tr>
                 </tbody>
             </table>
-        </ContentSection>
+        </TextSection>
     );
 };
 

@@ -1,5 +1,22 @@
 .content-section {
     width: 100%;
-    padding: 2em 6em;
     box-sizing: border-box;
+}
+
+.text-section {
+    padding: 2em 6em;
+}
+
+.image-section {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-overlay {
+    padding: 2em 6em;
+    margin: 2em;
 }

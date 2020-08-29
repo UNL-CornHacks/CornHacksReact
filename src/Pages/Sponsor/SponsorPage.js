@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import Colors from "Constants/Colors";
 import Type from "GlobalComponents/Type";
-import ContentSection from "GlobalComponents/ContentSection";
+import TextSection from "GlobalComponents/TextSection";
 import AirtableCompanies from "Calls/AirtableCompanies";
 import SponsorSection from "Pages/Sponsor/Components/SponsorSection";
 import GradientHero from "GlobalComponents/GradientHero";
 import SponsorTable from "Pages/Sponsor/Components/SponsorTable";
 import ContinueArrow from "GlobalComponents/ContinueArrow";
+import Button from "GlobalComponents/Button";
 
 import "./Styles/SponsorPage.css";
 import SponsorFAQ from "Pages/Sponsor/Components/SponsorFAQ";
@@ -16,22 +17,20 @@ const SponsorPage = () => {
     return (
         <div>
             <AirtableCompanies setSponsorData={getSponsors} />
-            <GradientHero colors={[Colors.BLUE, Colors.GREEN, Colors.YELLOW]}>
-                <div className="sponsor-hero-text">
-                    <Type size="h1" bold>
-                        Welcome to your future.
-                    </Type>
-                    <Type size="h4">
-                        Establish connections with the best talent in Nebraska.
-                    </Type>
-                    <a
-                        className="ch-button-link"
-                        href="mailto:info@cornhacks.com"
-                    >
-                        <Type size="h5" className="ch-button" align="center">
-                            Reach Out Now
-                        </Type>
-                    </a>
+            <GradientHero
+                colors={[Colors.BLUE, Colors.GREEN, Colors.YELLOW]}
+                header
+            >
+                <Type size="h1" bold>
+                    Welcome to your future.
+                </Type>
+                <Type size="h4">
+                    Establish connections with the best talent in Nebraska.
+                </Type>
+                <div className="ch-button-container-left">
+                    <Button to="mailto:info@cornhacks.com">
+                        Reach Out Now
+                    </Button>
                 </div>
                 <ContinueArrow
                     className="right-arrow-positioning"
@@ -39,7 +38,7 @@ const SponsorPage = () => {
                     scrollTo={window.innerHeight}
                 />
             </GradientHero>
-            <ContentSection backgroundColor={Colors.DARK_BLUE}>
+            <TextSection backgroundColor={Colors.DARK_BLUE}>
                 <Type size="h3" align="center" bold>
                     January 16th and 17th, 2021 @
                 </Type>
@@ -51,10 +50,10 @@ const SponsorPage = () => {
                         The Johnny Carson Center for Emerging Media Arts
                     </Type>
                 </a>
-            </ContentSection>
+            </TextSection>
             <SponsorTable />
             <SponsorFAQ />
-            <ContentSection backgroundColor={Colors.WHITE}>
+            <TextSection backgroundColor={Colors.WHITE}>
                 <SponsorSection
                     title="Platinum Sponsors"
                     titleColor={Colors.DARK_BLUE}
@@ -87,7 +86,7 @@ const SponsorPage = () => {
                     sectionHeight="100px"
                     grid={6}
                 />
-            </ContentSection>
+            </TextSection>
         </div>
     );
 };

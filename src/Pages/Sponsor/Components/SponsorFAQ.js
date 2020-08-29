@@ -1,11 +1,11 @@
 import React from "react";
 import Question from "GlobalComponents/Question";
 import Type from "GlobalComponents/Type";
-import ContentSection from "GlobalComponents/ContentSection";
+import TextSection from "GlobalComponents/TextSection";
 import Colors from "Constants/Colors";
 
 const SponsorFAQ = () => (
-    <ContentSection backgroundColor={Colors.DARK_BLUE}>
+    <TextSection backgroundColor={Colors.DARK_BLUE}>
         <Type size="h2" bold>
             Frequently Asked Questions
         </Type>
@@ -73,7 +73,7 @@ const SponsorFAQ = () => (
             We will have a general swag table where we will put any swag /
             recruiting materials you would like students to take at the event.
         </Question>
-    </ContentSection>
+    </TextSection>
 );
 
 export default SponsorFAQ;

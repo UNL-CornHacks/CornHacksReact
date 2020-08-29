@@ -1,12 +1,11 @@
 .gradient-hero {
     width: 100%;
-    height: 100vh;
     display: flex;
-    align-items: center;
     -webkit-animation: gradientBG 10s ease infinite;
     animation: gradientBG 10s ease infinite;
     margin: 0;
     padding: 0;
+    flex-direction: column;
 }
 
 @-webkit-keyframes gradientBG {
@@ -30,4 +29,40 @@
     100% {
         background-position: 0% 50%;
     }
+}
+
+.ch-logo-gradient-hero {
+    width: 3em;
+    height: 3em;
+    padding: 1em;
+}
+
+.ch-header-gradient-hero {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.ch-header-text {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.gradient-hero-body {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2em 2em;
+}
+
+.gradient-hero-box-shadow {
+    -webkit-box-shadow: 0px 3px 8px 0px #333;
+    -moz-box-shadow: 0px 3px 8px 0px #333;
+    box-shadow: 0px 3px 8px 0px #333;
 }
