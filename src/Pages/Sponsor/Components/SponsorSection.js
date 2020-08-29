@@ -1,7 +1,7 @@
 import React from "react";
 import "../Styles/SponsorSection.css";
-import SponsorCard from "Organisms/SponsorCard";
-import Type from "Atoms/Type";
+import SponsorCard from "GlobalComponents/SponsorCard";
+import Type from "GlobalComponents/Type";
 
 const SponsorSection = ({
     title,

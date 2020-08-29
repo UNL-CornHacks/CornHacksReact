@@ -1,11 +1,11 @@
 import React from "react";
-import Type from "Atoms/Type";
+import Type from "GlobalComponents/Type";
 import "./Styles/SponsorCard.css";
 
 const SponsorCard = ({ image, link, title, color, imageHeight }) => {
     const learnMore = link ? (
         <Type size="h6" className="ch-card-learn-more">
-            Learn More >
+            {"Learn More >"}
         </Type>
     ) : (
         false
@@ -19,7 +19,7 @@ const SponsorCard = ({ image, link, title, color, imageHeight }) => {
                 className="ch-card-image"
                 style={{
                     backgroundImage: `url(${image})`,
-                    height: imageHeight
+                    height: imageHeight,
                 }}
             />
             {learnMore}

@@ -1,7 +1,7 @@
 import React from "react";
-import Question from "Molecules/Question";
-import Type from "Atoms/Type";
-import ContentSection from "Atoms/ContentSection";
+import Question from "GlobalComponents/Question";
+import Type from "GlobalComponents/Type";
+import ContentSection from "GlobalComponents/ContentSection";
 import Colors from "Constants/Colors";
 
 const SponsorFAQ = () => (

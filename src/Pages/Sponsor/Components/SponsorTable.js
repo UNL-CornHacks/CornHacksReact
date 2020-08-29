@@ -1,9 +1,9 @@
 import React from "react";
-import Type from "Atoms/Type";
-import ContentSection from "Atoms/ContentSection";
-import Colors from "Constants/Colors";
+import Type from "GlobalComponents/Type";
+import ContentSection from "GlobalComponents/ContentSection";
+import TableCell from "GlobalComponents/TableCell";
 
-import TableCell from "Organisms/TableCell";
+import Colors from "Constants/Colors";
 
 import "../Styles/SponsorTable.css";
 

@@ -2,7 +2,7 @@ import React from "react";
 
 //import "./Styles/FormInput.css";
 
-import Type from "Atoms/Type";
+import Type from "GlobalComponents/Type";
 
 const FormInput = ({
     formId,

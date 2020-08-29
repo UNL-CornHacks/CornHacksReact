@@ -1,5 +1,5 @@
 import React from "react";
-import Type from "Atoms/Type";
+import Type from "GlobalComponents/Type";
 
 import "./Styles/Question.css";
 

@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Styles/ContinueArrow.css";
 
-import downArrow from "down-arrow.svg";
+import downArrow from "Graphics/down-arrow.svg";
 
 const ContinueArrow = ({ backgroundColor, className, scrollTo }) => {
     const arrowClickHandler = () => {
@@ -16,7 +16,7 @@ const ContinueArrow = ({ backgroundColor, className, scrollTo }) => {
                     : "continue-arrow-container"
             }
             style={{
-                backgroundColor
+                backgroundColor,
             }}
             onClick={arrowClickHandler}
         >

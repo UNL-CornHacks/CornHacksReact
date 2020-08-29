@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import HomeHero from "Pages/Home/Templates/HomeHero";
+import HomeHero from "Pages/Home/Components/HomeHero";
 import Colors from "Constants/Colors";
 import ImportantDates from "Constants/ImportantDates";
-import Type from "Atoms/Type";
-import ContentSection from "Atoms/ContentSection";
+import Type from "GlobalComponents/Type";
+import ContentSection from "GlobalComponents/ContentSection";
 import AirtableCompanies from "Calls/AirtableCompanies";
-import SponsorSection from "Pages/Sponsor/Templates/SponsorSection";
-import Countdown from "Molecules/Countdown";
-import Form from "Organisms/Form";
-import FormInput from "Molecules/FormInput";
+import SponsorSection from "Pages/Sponsor/Components/SponsorSection";
+import Countdown from "GlobalComponents/Countdown";
+import Form from "GlobalComponents/Form";
+import FormInput from "GlobalComponents/FormInput";
 import Airtable from "airtable";
 
 const HomePage = () => {

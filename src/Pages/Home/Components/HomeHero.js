@@ -1,13 +1,13 @@
 import React from "react";
-import GradientHero from "Atoms/GradientHero";
+import GradientHero from "GlobalComponents/GradientHero";
 import Colors from "Constants/Colors";
 
 import "../Styles/HomeHero.css";
 
-import ContinueArrow from "Atoms/ContinueArrow";
+import ContinueArrow from "GlobalComponents/ContinueArrow";
 
-import cornhacksWhite from "cornhacks-white.svg";
-import Type from "Atoms/Type";
+import cornhacksWhite from "Graphics/cornhacks-white.svg";
+import Type from "GlobalComponents/Type";
 
 const HomeHero = () => {
     return (

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Type from "Atoms/Type";
+import Type from "GlobalComponents/Type";
 
 const Countdown = ({ date, afterText }) => {
     const timerInterval = setInterval(() => {

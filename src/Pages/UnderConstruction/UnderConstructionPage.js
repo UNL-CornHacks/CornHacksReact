@@ -1,7 +1,7 @@
 import React from "react";
 import Colors from "Constants/Colors";
-import cornhacks from "cornhacks.svg";
-import Type from "Atoms/Type";
+import cornhacks from "Graphics/cornhacks.svg";
+import Type from "GlobalComponents/Type";
 
 import RotationEffect from "Effects/RotationEffect";
 

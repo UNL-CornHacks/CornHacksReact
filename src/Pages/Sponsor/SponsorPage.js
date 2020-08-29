@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import Colors from "Constants/Colors";
-import Type from "Atoms/Type";
-import ContentSection from "Atoms/ContentSection";
+import Type from "GlobalComponents/Type";
+import ContentSection from "GlobalComponents/ContentSection";
 import AirtableCompanies from "Calls/AirtableCompanies";
-import SponsorSection from "Pages/Sponsor/Templates/SponsorSection";
-import GradientHero from "Atoms/GradientHero";
-import SponsorTable from "Pages/Sponsor/Templates/SponsorTable";
-import ContinueArrow from "Atoms/ContinueArrow";
+import SponsorSection from "Pages/Sponsor/Components/SponsorSection";
+import GradientHero from "GlobalComponents/GradientHero";
+import SponsorTable from "Pages/Sponsor/Components/SponsorTable";
+import ContinueArrow from "GlobalComponents/ContinueArrow";
 
 import "./Styles/SponsorPage.css";
-import SponsorFAQ from "Pages/Sponsor/Templates/SponsorFAQ";
+import SponsorFAQ from "Pages/Sponsor/Components/SponsorFAQ";
 
 const SponsorPage = () => {
     const [sponsors, getSponsors] = useState({});
