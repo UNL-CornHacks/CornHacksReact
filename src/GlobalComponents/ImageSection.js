@@ -10,6 +10,7 @@ const ImageSection = ({
     className,
     children,
     right,
+    maxWidth = "100%",
 }) => {
     return (
         <div
@@ -27,6 +28,7 @@ const ImageSection = ({
                 className="image-overlay"
                 style={{
                     backgroundColor,
+                    maxWidth,
                 }}
             >
                 {children}
