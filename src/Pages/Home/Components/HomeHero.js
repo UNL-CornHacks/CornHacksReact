@@ -19,7 +19,7 @@ const HomeHero = () => {
                 CORNHACKS 2021
             </Type>
             <Type size="h4" align="center">
-                Nebraska's Student-Led Hackathon
+                The University of Nebraska's Student-Led Hackathon
             </Type>
             <div className="ch-button-container-center">
                 <Button internal to="/register/">
