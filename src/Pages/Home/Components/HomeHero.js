@@ -22,10 +22,10 @@ const HomeHero = () => {
                 The University of Nebraska's Student-Led Hackathon
             </Type>
             <div className="ch-button-container-center">
-                <Button internal to="/register/">
-                    Register
-                </Button>
                 <Button internal to="/sponsor/">
+                    Sponsor
+                </Button>
+                <Button anchor to="#learn-more">
                     Learn More
                 </Button>
             </div>

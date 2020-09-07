@@ -30,7 +30,7 @@ const RouteHandler = () => (
             <Route path="/register/">
                 <RegisterPage />
             </Route>
-            <Redirect to="/under-construction" />
+            <Redirect to="/home" />
         </Switch>
     </Router>
 );
