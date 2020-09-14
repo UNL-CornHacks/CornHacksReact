@@ -73,6 +73,11 @@ const SponsorFAQ = () => (
             We will have a general swag table where we will put any swag /
             recruiting materials you would like students to take at the event.
         </Question>
+        <Question question={'What is "Powered by YOU"?'} id="powered-by-you">
+            "Powered by you" means that you'll be sponsoring one of the fun
+            events that will be put on during the hackathon. This will help
+            bring name recognition to your company or organization!
+        </Question>
     </TextSection>
 );
 

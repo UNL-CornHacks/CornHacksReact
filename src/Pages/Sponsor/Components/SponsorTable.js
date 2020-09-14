@@ -4,6 +4,7 @@ import TextSection from "GlobalComponents/TextSection";
 import TableCell from "GlobalComponents/TableCell";
 
 import Colors from "Constants/Colors";
+import { HashLink } from "react-router-hash-link";
 
 import "../Styles/SponsorTable.css";
 
@@ -46,6 +47,13 @@ const SponsorTable = () => {
                         <TableCell yes>Yes</TableCell>
                     </tr>
                     <tr>
+                        <TableCell header>Recruiting Info?</TableCell>
+                        <TableCell yes>Yes</TableCell>
+                        <TableCell yes>Yes</TableCell>
+                        <TableCell yes>Yes</TableCell>
+                        <TableCell yes>Yes</TableCell>
+                    </tr>
+                    <tr>
                         <TableCell header>Tech Talk</TableCell>
                         <TableCell yes>60 mins</TableCell>
                         <TableCell yes>30 mins</TableCell>
@@ -60,7 +68,16 @@ const SponsorTable = () => {
                         <TableCell no>No</TableCell>
                     </tr>
                     <tr>
-                        <TableCell header>Booth?</TableCell>
+                        <TableCell header>
+                            Dedicated Recruitment Page on our Site?
+                        </TableCell>
+                        <TableCell yes>Yes</TableCell>
+                        <TableCell yes>Yes</TableCell>
+                        <TableCell no>No</TableCell>
+                        <TableCell no>No</TableCell>
+                    </tr>
+                    <tr>
+                        <TableCell header>Discord Channel?</TableCell>
                         <TableCell yes>Yes</TableCell>
                         <TableCell yes>Yes</TableCell>
                         <TableCell no>No</TableCell>
@@ -68,15 +85,6 @@ const SponsorTable = () => {
                     </tr>
                     <tr>
                         <TableCell header>Swag in a Bag?</TableCell>
-                        <TableCell yes>Yes</TableCell>
-                        <TableCell yes>Yes</TableCell>
-                        <TableCell no>No</TableCell>
-                        <TableCell no>No</TableCell>
-                    </tr>
-                    <tr>
-                        <TableCell header>
-                            Slack Channel in CornHacks Slack?
-                        </TableCell>
                         <TableCell yes>Yes</TableCell>
                         <TableCell yes>Yes</TableCell>
                         <TableCell no>No</TableCell>
@@ -91,6 +99,28 @@ const SponsorTable = () => {
                     </tr>
                     <tr>
                         <TableCell header>Prizing Track?</TableCell>
+                        <TableCell yes>Yes</TableCell>
+                        <TableCell no>No</TableCell>
+                        <TableCell no>No</TableCell>
+                        <TableCell no>No</TableCell>
+                    </tr>
+                    <tr>
+                        <TableCell header>Keynote?</TableCell>
+                        <TableCell yes>7 minutes</TableCell>
+                        <TableCell no>No</TableCell>
+                        <TableCell no>No</TableCell>
+                        <TableCell no>No</TableCell>
+                    </tr>
+                    <tr>
+                        <TableCell header>
+                            <HashLink
+                                style={{ color: Colors.WHITE }}
+                                to="#powered-by-you"
+                            >
+                                Powered by YOU
+                            </HashLink>
+                            ?
+                        </TableCell>
                         <TableCell yes>Yes</TableCell>
                         <TableCell no>No</TableCell>
                         <TableCell no>No</TableCell>

@@ -28,6 +28,9 @@ const HomeHero = () => {
                 <Button anchor to="#learn-more">
                     Learn More
                 </Button>
+                <Button internal to="/organize/">
+                    Help Organize
+                </Button>
             </div>
         </GradientHero>
     );

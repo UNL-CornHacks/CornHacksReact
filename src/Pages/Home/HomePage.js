@@ -112,18 +112,19 @@ const HomePage = () => {
                         the event begins: please fill out{" "}
                         <a
                             style={{ color: Colors.WHITE }}
-                            href="#/under-construction"
+                            href="https://drive.google.com/file/d/1oeRN-Rim_e4SsKEeEv_7yCnaC52OODFI/view?usp=sharing"
                         >
                             this photo release waiver
                         </a>{" "}
                         and{" "}
                         <a
                             style={{ color: Colors.WHITE }}
-                            href="#/under-construction"
+                            href="https://forms.gle/xxKjrRq9xmanZ1dq9"
                         >
                             this CornHacks participant survey
-                        </a>
-                        .
+                        </a>{" "}
+                        (you will be able to upload your photo release waiver
+                        when you fill out the registration survey).
                     </Question>
                 </ImageSection>
             </div>
