@@ -51,17 +51,18 @@ const HomePage = () => {
                         of experience. We would love for you to come and
                         experience a hackathon for yourself!
                     </Question>
-                    <Question question="Where and when will cornhacks take place?">
-                        Our original plan was to have the event on January 16th
-                        and 17th, 2021 @{" "}
-                        <a
-                            style={{ color: Colors.WHITE }}
-                            href="https://goo.gl/maps/o72MMWk4cHtgoFHF6"
-                        >
-                            The Johnny Carson Center for Emerging Media Arts
-                        </a>
-                        . However, we are currently re-evaluating our options
-                        due to the COVID-19 pandemic.
+                    <Question question="Where and when will CornHacks take place?">
+                        We are taking CornHacks 2021 virtual! CornHacks will
+                        start on Saturday, January 30, 2021, and will continue
+                        through Sunday, January 31, 2021 — with an optional info
+                        session on the evening of Friday, January 29.
+                        <br />
+                        <br />
+                        The event will be hosted over Discord; it will feature
+                        virtual events, workshops, and keynotes. And rest
+                        assured: you will definitely still receive an abundance
+                        of swag. CornHacks registration will open in late
+                        October. Feel free to check back here for any updates!
                     </Question>
                     <Question question="What is the cost to attend CornHacks?">
                         Nothing. $0.00. Free. There is no cost to attend
