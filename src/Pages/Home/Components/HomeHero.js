@@ -7,7 +7,7 @@ import "../Styles/HomeHero.css";
 import Type from "GlobalComponents/Type";
 import Button from "GlobalComponents/Button";
 
-const HomeHero = () => {
+const HomeHero = ({ showOverlay }) => {
     return (
         <GradientHero
             colors={[Colors.YELLOW, Colors.GREEN, Colors.BLUE]}
@@ -30,6 +30,9 @@ const HomeHero = () => {
                 </Button>
                 <Button internal to="/organize/">
                     Help Organize
+                </Button>
+                <Button toClick to={showOverlay}>
+                    Notify Me
                 </Button>
             </div>
         </GradientHero>

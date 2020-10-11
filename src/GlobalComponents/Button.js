@@ -6,7 +6,7 @@ import { HashLink } from "react-router-hash-link";
 
 import "./Styles/Button.css";
 
-const Button = ({ children, className, to, internal, anchor }) => {
+const Button = ({ children, className, to, internal, anchor, toClick }) => {
     const buttonLink = (content) =>
         internal ? (
             <Link className="ch-button-link" to={to}>
@@ -16,6 +16,10 @@ const Button = ({ children, className, to, internal, anchor }) => {
             <HashLink className="ch-button-link" to={to}>
                 {content}
             </HashLink>
+        ) : toClick ? (
+            <div className="ch-button-link" onClick={to}>
+                {content}
+            </div>
         ) : (
             <a className="ch-button-link" href={to}>
                 {content}

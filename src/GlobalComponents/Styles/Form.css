@@ -1,0 +1,25 @@
+.ch-form-submit-button {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    background-color: rgb(27, 155, 27);
+    border: none;
+    box-sizing: border-box;
+    width: 80px;
+    height: 36px;
+    padding: 10px;
+    margin: 10px 0px;
+    cursor: pointer;
+    float: right;
+}
+
+.ch-form-submit-button:hover {
+    background-color: rgb(21, 110, 21);
+}
+
+.ch-form :not(.ch-form-submit-button) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}

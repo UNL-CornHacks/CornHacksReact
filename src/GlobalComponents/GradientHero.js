@@ -1,6 +1,7 @@
 import React from "react";
 import cornhacksWhite from "Graphics/cornhacks-white.svg";
 import Type from "GlobalComponents/Type";
+import { Link } from "react-router-dom";
 
 import "./Styles/GradientHero.css";
 
@@ -22,14 +23,16 @@ const GradientHero = ({
     }
     const headerHTML = (
         <div className="ch-header-gradient-hero">
-            <img
-                className="ch-logo-gradient-hero"
-                src={cornhacksWhite}
-                alt="Cornhacks logo"
-            />
-            <Type bold size="h4" align="left" className="ch-header-text">
-                CORNHACKS 2021
-            </Type>
+            <Link to="/home" className="ch-header-content-container">
+                <img
+                    className="ch-logo-gradient-hero"
+                    src={cornhacksWhite}
+                    alt="Cornhacks logo"
+                />
+                <Type bold size="h4" align="left" className="ch-header-text">
+                    CORNHACKS 2021
+                </Type>
+            </Link>
         </div>
     );
     return (

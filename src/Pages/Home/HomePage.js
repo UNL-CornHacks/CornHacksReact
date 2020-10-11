@@ -9,13 +9,18 @@ import AirtableCompanies from "Calls/AirtableCompanies";
 import SponsorSection from "Pages/Sponsor/Components/SponsorSection";
 import Countdown from "GlobalComponents/Countdown";
 import Question from "GlobalComponents/Question";
+import Overlay from "GlobalComponents/Overlay";
+import Form from "GlobalComponents/Form";
+import FormInput from "GlobalComponents/FormInput";
+import Airtable from "airtable";
 
 const HomePage = () => {
     const [sponsors, getSponsors] = useState({});
+    const [overlayState, setOverlayState] = useState(false);
     return (
         <div>
             <AirtableCompanies setSponsorData={getSponsors} />
-            <HomeHero />
+            <HomeHero showOverlay={() => setOverlayState(true)} />
             <ImageSection
                 image={"Corndell.png"}
                 backgroundColor={Colors.DARK_BLUE}
@@ -169,6 +174,52 @@ const HomePage = () => {
                     grid={6}
                 />
             </TextSection>
+            <Overlay
+                showOverlay={overlayState}
+                setOverlayState={setOverlayState}
+            >
+                <Type size="h2" bold align="center">
+                    Notify me when registration opens!
+                </Type>
+                <Form
+                    pushForm={(data) => {
+                        const base = new Airtable({
+                            apiKey: process.env.REACT_APP_AIRTABLE_API_KEY,
+                        }).base(process.env.REACT_APP_AIRTABLE_NOTIFY_BASE);
+                        base("EarlyNotifications").create(
+                            data,
+                            (err, record) => {
+                                console.log(err, record);
+                            }
+                        );
+                        setOverlayState(false);
+                    }}
+                >
+                    <FormInput
+                        labelColor={Colors.WHITE}
+                        placeholder={"First Name"}
+                        formId={"First Name"}
+                        required
+                    />
+                    <FormInput
+                        labelColor={Colors.WHITE}
+                        placeholder={"Last Name"}
+                        formId={"Last Name"}
+                        required
+                    />
+                    <FormInput
+                        labelColor={Colors.WHITE}
+                        placeholder={"Email"}
+                        formId={"Email"}
+                        required
+                    />
+                    <FormInput
+                        labelColor={Colors.WHITE}
+                        placeholder={"University"}
+                        formId={"University"}
+                    />
+                </Form>
+            </Overlay>
         </div>
     );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 
-//import "./Styles/FormInput.css";
+import "./Styles/FormInput.css";
 
 import Type from "GlobalComponents/Type";
 
@@ -20,7 +20,9 @@ const FormInput = ({
             </Type>
             <input
                 id={formId}
-                className={className ? `${className} form-input` : "form-input"}
+                className={
+                    className ? `${className} ch-form-input` : "ch-form-input"
+                }
                 required={required}
                 placeholder={placeholder}
             />

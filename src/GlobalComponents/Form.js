@@ -1,17 +1,19 @@
 import React from "react";
 
-//import "./Styles/Form.css";
+import "./Styles/Form.css";
 
 const Form = ({ children, className, pushForm }) => {
     const onFormSubmit = (e) => {
         e.preventDefault();
         const formData = {};
+
         for (const formInput of children) {
             const formInputId =
                 formInput.props.formId || formInput.props.children;
             formData[formInputId] = document.getElementById(formInputId).value;
             document.getElementById(formInputId).value = "";
         }
+        console.log(formData);
         pushForm(formData);
     };
 
@@ -22,7 +24,7 @@ const Form = ({ children, className, pushForm }) => {
                 onSubmit={onFormSubmit}
             >
                 {children}
-                <input type="submit" />
+                <input className="ch-form-submit-button" type="submit" />
             </form>
         </>
     );

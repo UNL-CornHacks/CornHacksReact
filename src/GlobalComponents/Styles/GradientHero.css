@@ -66,3 +66,9 @@
     -moz-box-shadow: 0px 3px 8px 0px #333;
     box-shadow: 0px 3px 8px 0px #333;
 }
+
+.ch-header-content-container {
+    display: flex;
+    text-decoration: none;
+    flex-direction: row;
+}

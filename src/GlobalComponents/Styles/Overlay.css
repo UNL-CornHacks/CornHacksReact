@@ -1,0 +1,36 @@
+.ch-overlay {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.ch-overlay-content {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    padding: 2em;
+    min-width: 300px;
+}
+
+.ch-overlay-x {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.ch-overlay-x path {
+    fill: #ddd;
+}
+
+.ch-overlay-x:hover path {
+    fill: #fff;
+}
