@@ -31,8 +31,8 @@ const HomeHero = ({ showOverlay }) => {
                 <Button internal to="/organize/">
                     Help Organize
                 </Button>
-                <Button toClick to={showOverlay}>
-                    Notify Me
+                <Button to="https://docs.google.com/forms/d/e/1FAIpQLSczXHLDTVcLJN_2zis8xUScd6fQOkIjBS1M40S2SVyNDC-YsQ/viewform?usp=sf_link">
+                    Register
                 </Button>
             </div>
         </GradientHero>

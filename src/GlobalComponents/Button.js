@@ -5,8 +5,9 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 import "./Styles/Button.css";
+import Colors from "Constants/Colors";
 
-const Button = ({ children, className, to, internal, anchor, toClick }) => {
+const Button = ({ children, className, to, internal, anchor, toClick, inverted }) => {
     const buttonLink = (content) =>
         internal ? (
             <Link className="ch-button-link" to={to}>
@@ -29,8 +30,9 @@ const Button = ({ children, className, to, internal, anchor, toClick }) => {
     return buttonLink(
         <Type
             size="h5"
-            className={className ? `${className} ch-button` : "ch-button"}
+            className={className ? `${className} ch-button${inverted ? '-inverted' : ''}` : `ch-button${inverted ? '-inverted' : ''}`}
             align="center"
+            color={inverted ? Colors.DARK_BLUE : Colors.WHITE}
         >
             {children}
         </Type>

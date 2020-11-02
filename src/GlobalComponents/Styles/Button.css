@@ -13,7 +13,23 @@
     cursor: pointer;
 }
 
+.ch-button-inverted {
+    margin: 0;
+    width: 280px;
+    border: 2px white solid;
+    background-color: white;
+    color: #081123;
+    border-radius: 0.75em;
+    padding: 10px;
+    cursor: pointer;
+}
+
 .ch-button:hover {
     background-color: white;
     color: #081123;
+}
+
+.ch-button-inverted:hover {
+    background-color: #081123;
+    color: white;
 }

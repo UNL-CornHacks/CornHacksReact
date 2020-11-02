@@ -13,6 +13,7 @@ import Overlay from "GlobalComponents/Overlay";
 import Form from "GlobalComponents/Form";
 import FormInput from "GlobalComponents/FormInput";
 import Airtable from "airtable";
+import Button from "GlobalComponents/Button";
 
 const HomePage = () => {
     const [sponsors, getSponsors] = useState({});
@@ -21,6 +22,16 @@ const HomePage = () => {
         <div>
             <AirtableCompanies setSponsorData={getSponsors} />
             <HomeHero showOverlay={() => setOverlayState(true)} />
+            <TextSection backgroundColor={Colors.DARK_BLUE}>
+                <Type size="h2" bold align="center">
+                    Registration is now open!
+                </Type>
+                <div className="ch-button-container-center">
+                <Button inverted to="https://docs.google.com/forms/d/e/1FAIpQLSczXHLDTVcLJN_2zis8xUScd6fQOkIjBS1M40S2SVyNDC-YsQ/viewform?usp=sf_link">
+                    Sign up for CornHacks 2021
+                </Button>
+                </div>
+            </TextSection>
             <ImageSection
                 image={"Corndell.png"}
                 backgroundColor={Colors.DARK_BLUE}
