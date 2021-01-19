@@ -38,7 +38,7 @@ celebrating triumphs. That’s what you’ll find here at Kiewit. So if you are 
             </Type>
             <div className="ch-button-container-center">
                 <Button inverted to="https://kiewitcareers.kiewit.com/go/Kiewit_IT-Technology/8156500/">
-                    Apply for IT Technology openings
+                    Apply for Job Openings
                 </Button>
             </div>
             <Type size="h5">

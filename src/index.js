@@ -16,6 +16,7 @@ import SponsorPage from "Pages/Sponsor/SponsorPage";
 import RegisterPage from "Pages/Register/RegisterPage";
 import OrganizerPage from "Pages/Organizer/OrganizerPage";
 import KiewitPage from "Pages/Kiewit/KiewitPage";
+import SchedulePage from "Pages/Schedule/SchedulePage";
 
 const RouteHandler = () => (
     <Router>
@@ -37,6 +38,9 @@ const RouteHandler = () => (
             </Route>
             <Route path="/kiewit/">
                 <KiewitPage />
+            </Route>
+            <Route path="/schedule/">
+                <SchedulePage />
             </Route>
             <Redirect to="/home" />
         </Switch>
