@@ -27,7 +27,7 @@ const HomePage = () => {
                     Schedule is now available!
                 </Type>
                 <div className="ch-button-container-center">
-                <Button inverted internal to="">
+                <Button inverted internal to="/schedule/">
                     View 2021 Schedule
                 </Button>
                 <Button inverted to="https://docs.google.com/forms/d/e/1FAIpQLSczXHLDTVcLJN_2zis8xUScd6fQOkIjBS1M40S2SVyNDC-YsQ/viewform?usp=sf_link">
