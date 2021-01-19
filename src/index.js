@@ -15,6 +15,7 @@ import "./index.css";
 import SponsorPage from "Pages/Sponsor/SponsorPage";
 import RegisterPage from "Pages/Register/RegisterPage";
 import OrganizerPage from "Pages/Organizer/OrganizerPage";
+import KiewitPage from "Pages/Kiewit/KiewitPage";
 
 const RouteHandler = () => (
     <Router>
@@ -33,6 +34,9 @@ const RouteHandler = () => (
             </Route>
             <Route path="/organize/">
                 <OrganizerPage />
+            </Route>
+            <Route path="/kiewit/">
+                <KiewitPage />
             </Route>
             <Redirect to="/home" />
         </Switch>
