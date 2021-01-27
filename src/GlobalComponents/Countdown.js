@@ -10,8 +10,6 @@ const Countdown = ({ date, afterText }) => {
         }
     }, 1000);
 
-    console.log(date);
-
     const [isReached, setIsReached] = useState(false);
     const [countdown, setCountdown] = useState(date.getTime() - Date.now());
 
