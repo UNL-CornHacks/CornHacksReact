@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e08786beeaa8e62bf09224c547a9f15b",
+    "revision": "6c31b91f6a180f371a627438defc75dc",
     "url": "/index.html"
   },
   {
-    "revision": "43e7dc3c71f9f87a5f9e",
-    "url": "/static/css/main.35903d15.chunk.css"
+    "revision": "3ca9ac9d0a9b7e1159d9",
+    "url": "/static/css/main.9edf463b.chunk.css"
   },
   {
-    "revision": "0db491200f2284872c5e",
-    "url": "/static/js/2.a6c68e73.chunk.js"
+    "revision": "55340c987389cadc97c3",
+    "url": "/static/js/2.31c2f379.chunk.js"
   },
   {
     "revision": "665330a844a6bf6287fa1bc3ae667f61",
-    "url": "/static/js/2.a6c68e73.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.31c2f379.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "43e7dc3c71f9f87a5f9e",
-    "url": "/static/js/main.5034a18d.chunk.js"
+    "revision": "3ca9ac9d0a9b7e1159d9",
+    "url": "/static/js/main.a395a871.chunk.js"
   },
   {
     "revision": "41403aa033ee0dbeeb6d",
@@ -44,6 +44,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Gradiente.6eac09b4.png"
   },
   {
+    "revision": "733def55937dc4ddf20362b2e55770d9",
+    "url": "/static/media/HomePage.733def55.jpeg"
+  },
+  {
     "revision": "45211daf27451f103e904a7749f34c4d",
     "url": "/static/media/Logistics.45211daf.jpeg"
   },
@@ -60,16 +64,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Marketing.e53a7755.png"
   },
   {
-    "revision": "07a0cddbbd19ad68fa15672a18d1c16a",
-    "url": "/static/media/cornhacks-white.07a0cddb.svg"
+    "revision": "b7dcea0cad57fd0f0fa019b90500e529",
+    "url": "/static/media/cornhacks-white.b7dcea0c.svg"
   },
   {
-    "revision": "2ca6be0ea3b18932c392482bfd4deb04",
-    "url": "/static/media/cornhacks.2ca6be0e.svg"
+    "revision": "fa708dfdf736abaa460200bc8c633e85",
+    "url": "/static/media/cornhacks.fa708dfd.svg"
   },
   {
-    "revision": "3b47b0b74bae6382b6786971335afb14",
-    "url": "/static/media/down-arrow.3b47b0b7.svg"
+    "revision": "9c9a8d7e25e605035f73164392542af2",
+    "url": "/static/media/down-arrow.9c9a8d7e.svg"
   },
   {
     "revision": "1dac4de903ef9692ec96a50e94f26ffc",
