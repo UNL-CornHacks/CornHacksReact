@@ -36,7 +36,7 @@ const HomePage = () => {
                 </div>
             </TextSection>
             <ImageSection
-                image={"Corndell.png"}
+                image={"HomePage.jpeg"}
                 backgroundColor={Colors.DARK_BLUE}
                 maxWidth="500px"
             >
