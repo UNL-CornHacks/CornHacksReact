@@ -17,7 +17,7 @@ const OrganizerPage = () => (
             <Type size="h1" bold>
                 Become an Organizer
             </Type>
-            <Button to="https://forms.gle/D9MvUFqs2Sk2C3917">
+            <Button to="https://docs.google.com/forms/d/e/1FAIpQLSfP0OUPL5ljXzkcdAcN208VpdB6GduAu2jTH8sDhYXt6EIGrQ/viewform?usp=sf_link">
                 Apply Today!
             </Button>
         </GradientHero>
@@ -34,7 +34,7 @@ const OrganizerPage = () => (
                 Reach out to our current organizers to learn more and{" "}
                 <a
                     style={{ color: Colors.WHITE }}
-                    href="https://forms.gle/D9MvUFqs2Sk2C3917"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfP0OUPL5ljXzkcdAcN208VpdB6GduAu2jTH8sDhYXt6EIGrQ/viewform?usp=sf_link"
                 >
                     apply today
                 </a>
@@ -52,18 +52,18 @@ const OrganizerPage = () => (
         </TextSection>
         <ImageSection image={"Finance.png"} backgroundColor={Colors.LIGHT_GREY}>
             <Type size="h3" bold color={Colors.DARK_BLUE}>
-                Finance
+                Sponsorship
             </Type>
             <Type size="h5" color={Colors.DARK_BLUE}>
-                The number-crunchers. The finance team works with CornHacks
+                The number-crunchers. The sponsorship team works with CornHacks
                 sponsors, balances the event budget, and generally makes sure
                 CornHacks can keep running with adequate funding. We would not
                 be able to put on an event of such a large scale without our
-                finance team! The primary role of most finance team members is
+                sponsorship team! The primary role of most sponsorship team members is
                 correspondence with sponsors: reaching out to potential
                 sponsors, organizing sponsorship tiers, and making sure sponsors
                 are properly cared for throughout the event. This team has
-                members interested in budgeting and finance, but also loves to
+                members interested in budgeting and sponsorship, but also loves to
                 see people-people who can work with sponsors before and during
                 the event.
             </Type>
