@@ -30,8 +30,8 @@ const HomePage = () => {
                 <Button inverted internal to="/schedule/">
                     View 2021 Schedule
                 </Button>
-                <Button inverted to="https://docs.google.com/forms/d/e/1FAIpQLSczXHLDTVcLJN_2zis8xUScd6fQOkIjBS1M40S2SVyNDC-YsQ/viewform?usp=sf_link">
-                    Sign up for CornHacks 2021
+                <Button inverted to="https://docs.google.com/forms/d/e/1FAIpQLScza8XF__KiiQ5kn-6_nleP8QA1h9XcfX4lja1THx50X7Ow0g/viewform?usp=sf_link">
+                    Sign up for CornHacks 2022
                 </Button>
                 </div>
             </TextSection>

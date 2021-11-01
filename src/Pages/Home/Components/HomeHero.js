@@ -31,7 +31,7 @@ const HomeHero = ({ showOverlay }) => {
                 <Button internal to="/organize/">
                     Help Organize
                 </Button>
-                <Button to="https://docs.google.com/forms/d/e/1FAIpQLSczXHLDTVcLJN_2zis8xUScd6fQOkIjBS1M40S2SVyNDC-YsQ/viewform?usp=sf_link">
+                <Button to="https://docs.google.com/forms/d/e/1FAIpQLScza8XF__KiiQ5kn-6_nleP8QA1h9XcfX4lja1THx50X7Ow0g/viewform?usp=sf_link">
                     Register
                 </Button>
             </div>
