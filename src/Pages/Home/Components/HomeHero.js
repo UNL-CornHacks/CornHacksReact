@@ -34,6 +34,9 @@ const HomeHero = ({ showOverlay }) => {
                 <Button to="https://docs.google.com/forms/d/e/1FAIpQLScza8XF__KiiQ5kn-6_nleP8QA1h9XcfX4lja1THx50X7Ow0g/viewform?usp=sf_link">
                     Register
                 </Button>
+                <Button to="https://drive.google.com/file/d/1oeRN-Rim_e4SsKEeEv_7yCnaC52OODFI/view?usp=sharing">
+                    Photo Release Waiver
+                </Button>
             </div>
         </GradientHero>
     );
