@@ -24,7 +24,7 @@ const HomePage = () => {
             <HomeHero showOverlay={() => setOverlayState(true)} />
             <TextSection backgroundColor={Colors.DARK_BLUE}>
                 <Type size="h2" bold align="center">
-                    Schedule is now available!
+                    2022 Schedule coming soon!
                 </Type>
                 <div className="ch-button-container-center">
                 <Button inverted internal to="/schedule/">
