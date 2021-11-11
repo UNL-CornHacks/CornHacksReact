@@ -121,7 +121,7 @@ const OrganizerPage = () => (
                 </a>
                 !
             </Type>
-            <Type size="h5">
+            {/* <Type size="h5">
                 If you have any questions, feel free to contact our Membership
                 Director, Parker Segal:{" "}
                 <a
@@ -131,7 +131,7 @@ const OrganizerPage = () => (
                     parker.segal@cornhacks.com
                 </a>
                 .
-            </Type>
+            </Type> */}
         </TextSection>
     </>
 );

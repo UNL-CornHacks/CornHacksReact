@@ -28,7 +28,7 @@ const SponsorPage = () => {
                     Establish connections with the best talent in Nebraska.
                 </Type>
                 <div className="ch-button-container-left">
-                    <Button to="mailto:info@cornhacks.com">
+                    <Button to="mailto:crhoads5@huskers.unl.edu">
                         Reach Out Now
                     </Button>
                 </div>
