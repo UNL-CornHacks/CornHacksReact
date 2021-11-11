@@ -16,7 +16,7 @@ const HomeHero = ({ showOverlay }) => {
             boxShadow
         >
             <Type className="ch-home-hero-text" size="h1" bold align="center">
-                CORNHACKS 2021
+                CORNHACKS 2022
             </Type>
             <Type size="h4" align="center">
                 The University of Nebraska's Student-Led Hackathon
@@ -28,14 +28,14 @@ const HomeHero = ({ showOverlay }) => {
                 <Button anchor to="#learn-more">
                     Learn More
                 </Button>
-                <Button internal to="/organize/">
-                    Help Organize
-                </Button>
                 <Button to="https://docs.google.com/forms/d/e/1FAIpQLScza8XF__KiiQ5kn-6_nleP8QA1h9XcfX4lja1THx50X7Ow0g/viewform?usp=sf_link">
                     Register
                 </Button>
                 <Button to="https://drive.google.com/file/d/1oeRN-Rim_e4SsKEeEv_7yCnaC52OODFI/view?usp=sharing">
                     Photo Release
+                </Button>
+                <Button internal to="/organize/">
+                    Help Organize
                 </Button>
             </div>
         </GradientHero>

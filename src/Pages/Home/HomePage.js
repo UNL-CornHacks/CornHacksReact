@@ -71,10 +71,9 @@ const HomePage = () => {
                         experience a hackathon for yourself!
                     </Question>
                     <Question question="Where and when will CornHacks take place?">
-                        We are taking CornHacks 2021 virtual! CornHacks will
-                        start on Saturday, January 30, 2021, and will continue
-                        through Sunday, January 31, 2021 — with an optional info
-                        session on the evening of Friday, January 29.
+                        CornHacks 2022 will start on Saturday, January 22, 2022, and will continue
+                        through Sunday, January 23, 2022 — with an optional info
+                        session on the evening of Friday, January 21.
                         <br />
                         <br />
                         The event will be hosted over Discord; it will feature
