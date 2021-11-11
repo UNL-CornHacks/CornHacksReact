@@ -30,7 +30,7 @@ const GradientHero = ({
                     alt="Cornhacks logo"
                 />
                 <Type bold size="h4" align="left" className="ch-header-text">
-                    CORNHACKS 2021
+                    CORNHACKS 2022
                 </Type>
             </Link>
         </div>
