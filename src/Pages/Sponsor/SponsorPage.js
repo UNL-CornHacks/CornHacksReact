@@ -8,6 +8,7 @@ import GradientHero from "GlobalComponents/GradientHero";
 import SponsorTable from "Pages/Sponsor/Components/SponsorTable";
 import ContinueArrow from "GlobalComponents/ContinueArrow";
 import Button from "GlobalComponents/Button";
+import ImageSection from "GlobalComponents/ImageSection";
 
 import "./Styles/SponsorPage.css";
 import SponsorFAQ from "Pages/Sponsor/Components/SponsorFAQ";
@@ -53,7 +54,7 @@ const SponsorPage = () => {
             </TextSection>
             <SponsorTable />
             <SponsorFAQ />
-            <TextSection backgroundColor={Colors.WHITE}>
+            {/* <TextSection backgroundColor={Colors.WHITE}>
                 <SponsorSection
                     title="Platinum Sponsors"
                     titleColor={Colors.DARK_BLUE}
@@ -86,7 +87,12 @@ const SponsorPage = () => {
                     sectionHeight="100px"
                     grid={6}
                 />
-            </TextSection>
+            </TextSection> */}
+            <ImageSection
+            image={"SponsorTiers.png"}
+            backgroundColor={Colors.LIGHT_GREY}
+            >
+            </ImageSection>
         </div>
     );
 };

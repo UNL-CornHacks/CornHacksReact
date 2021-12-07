@@ -2,7 +2,7 @@ import React from "react";
 import Colors from "Constants/Colors";
 import { Document, Page, pdfjs } from 'react-pdf'
 import TextSection from "GlobalComponents/TextSection";
-import sched from 'Images/schedule.pdf';
+import sched from 'Images/schedule.jpg';
 import GradientHero from "GlobalComponents/GradientHero";
 import Type from "GlobalComponents/Type";
 

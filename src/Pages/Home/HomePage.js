@@ -76,10 +76,10 @@ const HomePage = () => {
                         session on the evening of Friday, January 21.
                         <br />
                         <br />
-                        The event will be hosted over Discord; it will feature
-                        virtual events, workshops, and keynotes. And rest
+                        The event will be hosted in person at the Johnny Carson Center for Emerging Media Arts; it will feature
+                        events, workshops, and keynotes. And rest
                         assured: you will definitely still receive an abundance
-                        of swag. CornHacks registration will open in late
+                        of swag and a chance at prizes. CornHacks registration will open in late
                         October. Feel free to check back here for any updates!
                     </Question>
                     <Question question="What is the cost to attend CornHacks?">
