@@ -3,18 +3,16 @@ import Colors from "Constants/Colors";
 import Type from "GlobalComponents/Type";
 import TextSection from "GlobalComponents/TextSection";
 import AirtableCompanies from "Calls/AirtableCompanies";
-// import SponsorSection from "Pages/Sponsor/Components/SponsorSection";
+import SponsorSection from "Pages/Sponsor/Components/SponsorSection";
 import GradientHero from "GlobalComponents/GradientHero";
 import SponsorTable from "Pages/Sponsor/Components/SponsorTable";
 import ContinueArrow from "GlobalComponents/ContinueArrow";
 import Button from "GlobalComponents/Button";
-import ImageSection from "GlobalComponents/ImageSection";
 
 import "./Styles/SponsorPage.css";
 import SponsorFAQ from "Pages/Sponsor/Components/SponsorFAQ";
 
 const SponsorPage = () => {
-     // eslint-disable-next-line
     const [sponsors, getSponsors] = useState({});
     return (
         <div>
@@ -53,9 +51,9 @@ const SponsorPage = () => {
                     </Type>
                 </a>
             </TextSection>
-            {/* <SponsorTable />
-            <SponsorFAQ /> */}
-            {/* <TextSection backgroundColor={Colors.WHITE}>
+            <SponsorTable />
+            <SponsorFAQ />
+            <TextSection backgroundColor={Colors.WHITE}>
                 <SponsorSection
                     title="Platinum Sponsors"
                     titleColor={Colors.DARK_BLUE}
@@ -88,12 +86,7 @@ const SponsorPage = () => {
                     sectionHeight="100px"
                     grid={6}
                 />
-            </TextSection> */}
-            <ImageSection
-                image={"SponsorTiers.PNG"}
-                backgroundColor={Colors.DARK_BLUE}
-            >
-            </ImageSection>
+            </TextSection>
         </div>
     );
 };
