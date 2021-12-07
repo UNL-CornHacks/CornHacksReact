@@ -3,7 +3,7 @@ import Colors from "Constants/Colors";
 import Type from "GlobalComponents/Type";
 import TextSection from "GlobalComponents/TextSection";
 import AirtableCompanies from "Calls/AirtableCompanies";
-import SponsorSection from "Pages/Sponsor/Components/SponsorSection";
+// import SponsorSection from "Pages/Sponsor/Components/SponsorSection";
 import GradientHero from "GlobalComponents/GradientHero";
 import SponsorTable from "Pages/Sponsor/Components/SponsorTable";
 import ContinueArrow from "GlobalComponents/ContinueArrow";
@@ -14,6 +14,7 @@ import "./Styles/SponsorPage.css";
 import SponsorFAQ from "Pages/Sponsor/Components/SponsorFAQ";
 
 const SponsorPage = () => {
+     // eslint-disable-next-line
     const [sponsors, getSponsors] = useState({});
     return (
         <div>
