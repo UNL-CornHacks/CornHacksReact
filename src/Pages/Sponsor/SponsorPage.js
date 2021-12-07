@@ -90,9 +90,13 @@ const SponsorPage = () => {
                 />
             </TextSection> */}
             <ImageSection
-            image={"SponsorTiers.png"}
-            backgroundColor={Colors.LIGHT_GREY}
+                image={"SponsorTiers.PNG"}
+                backgroundColor={Colors.DARK_BLUE}
+                maxWidth="500px"
             >
+                <Type size="h5" color={Colors.WHITE}>
+                    Test
+                </Type>
             </ImageSection>
         </div>
     );
