@@ -29,6 +29,24 @@ const SchedulePage = () => (
                 </div>
             </div>
         </TextSection>
+        <TextSection backgroundColor={Colors.DARK_BLUE}>
+            <div style={{justifyContent: "center", display: "flex"}}>
+                <div style={{display: "flex"}}>
+                    <Document file={sched}>
+                        <Page pageNumber={2} />
+                    </Document>
+                </div>
+            </div>
+        </TextSection>
+        <TextSection backgroundColor={Colors.DARK_BLUE}>
+            <div style={{justifyContent: "center", display: "flex"}}>
+                <div style={{display: "flex"}}>
+                    <Document file={sched}>
+                        <Page pageNumber={3} />
+                    </Document>
+                </div>
+            </div>
+        </TextSection>
     </>
 );
 
