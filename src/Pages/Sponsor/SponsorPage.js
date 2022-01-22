@@ -78,6 +78,7 @@ const SponsorPage = () => {
                     sectionHeight="100px"
                     grid={5}
                 />
+                <img id="nelnet" src="Images\sponsors\sponsor_logos\Nelnet\Nelnet_Logo_White_Web.PNG" />
                 <SponsorSection
                     title="Bronze Sponsors"
                     titleColor={Colors.DARK_BLUE}
