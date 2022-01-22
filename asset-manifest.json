@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.9edf463b.chunk.css",
-    "main.js": "/static/js/main.4e8b1f82.chunk.js",
-    "main.js.map": "/static/js/main.4e8b1f82.chunk.js.map",
+    "main.js": "/static/js/main.dccc79bb.chunk.js",
+    "main.js.map": "/static/js/main.dccc79bb.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.42bc5dea.js",
     "runtime-main.js.map": "/static/js/runtime-main.42bc5dea.js.map",
-    "static/js/2.599aab79.chunk.js": "/static/js/2.599aab79.chunk.js",
-    "static/js/2.599aab79.chunk.js.map": "/static/js/2.599aab79.chunk.js.map",
+    "static/js/2.a60c9b43.chunk.js": "/static/js/2.a60c9b43.chunk.js",
+    "static/js/2.a60c9b43.chunk.js.map": "/static/js/2.a60c9b43.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.cf4952ab3f2bff31a8706c8b11078d6c.js": "/precache-manifest.cf4952ab3f2bff31a8706c8b11078d6c.js",
+    "precache-manifest.32a46ad8ecce258850b83a4f13bdb23f.js": "/precache-manifest.32a46ad8ecce258850b83a4f13bdb23f.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.9edf463b.chunk.css.map": "/static/css/main.9edf463b.chunk.css.map",
-    "static/js/2.599aab79.chunk.js.LICENSE.txt": "/static/js/2.599aab79.chunk.js.LICENSE.txt",
+    "static/js/2.a60c9b43.chunk.js.LICENSE.txt": "/static/js/2.a60c9b43.chunk.js.LICENSE.txt",
     "static/media/2022schedule.pdf": "/static/media/2022schedule.90c716b2.pdf",
     "static/media/Chairs.png": "/static/media/Chairs.2c9c26b7.png",
     "static/media/Copy of Buildertrend_Vertical_1366.png": "/static/media/Copy of Buildertrend_Vertical_1366.d3daa449.png",
@@ -24,6 +24,7 @@
     "static/media/Logistics.png": "/static/media/Logistics.ef4b5a96.png",
     "static/media/Marketing.jpeg": "/static/media/Marketing.26428e9b.jpeg",
     "static/media/Marketing.png": "/static/media/Marketing.e53a7755.png",
+    "static/media/Nelnet_Logo_White_Web.PNG": "/static/media/Nelnet_Logo_White_Web.719220ae.PNG",
     "static/media/SponsorTiers.PNG": "/static/media/SponsorTiers.38302afd.PNG",
     "static/media/cornhacks-white.svg": "/static/media/cornhacks-white.b7dcea0c.svg",
     "static/media/cornhacks.svg": "/static/media/cornhacks.fa708dfd.svg",
@@ -37,8 +38,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.42bc5dea.js",
-    "static/js/2.599aab79.chunk.js",
+    "static/js/2.a60c9b43.chunk.js",
     "static/css/main.9edf463b.chunk.css",
-    "static/js/main.4e8b1f82.chunk.js"
+    "static/js/main.dccc79bb.chunk.js"
   ]
 }
