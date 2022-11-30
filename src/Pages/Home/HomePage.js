@@ -12,7 +12,6 @@ import Question from "GlobalComponents/Question";
 import Overlay from "GlobalComponents/Overlay";
 import Form from "GlobalComponents/Form";
 import FormInput from "GlobalComponents/FormInput";
-import Airtable from "airtable";
 import Button from "GlobalComponents/Button";
 
 const HomePage = () => {
@@ -20,7 +19,7 @@ const HomePage = () => {
   const [overlayState, setOverlayState] = useState(false);
   return (
     <div>
-      <AirtableCompanies setSponsorData={getSponsors} />
+      {/* <AirtableCompanies setSponsorData={getSponsors} /> */}
       <HomeHero showOverlay={() => setOverlayState(true)} />
       <TextSection backgroundColor={Colors.DARK_BLUE}>
         <Type size="h2" bold align="center">
@@ -151,7 +150,7 @@ const HomePage = () => {
         />
       </TextSection>
       <TextSection backgroundColor="#ffffff">
-        <SponsorSection
+        {/* <SponsorSection
           title="Platinum Sponsors"
           titleColor={Colors.DARK_BLUE}
           sponsorData={sponsors.platinum ? sponsors.platinum : []}
@@ -182,9 +181,9 @@ const HomePage = () => {
           color="brown"
           sectionHeight="100px"
           grid={6}
-        />
+        /> */}
       </TextSection>
-      <Overlay showOverlay={overlayState} setOverlayState={setOverlayState}>
+      {/* <Overlay showOverlay={overlayState} setOverlayState={setOverlayState}>
         <Type size="h2" bold align="center">
           Notify me when registration opens!
         </Type>
@@ -223,7 +222,7 @@ const HomePage = () => {
             formId={"University"}
           />
         </Form>
-      </Overlay>
+      </Overlay> */}
     </div>
   );
 };
