@@ -16,7 +16,7 @@ const HomeHero = ({ showOverlay }) => {
       boxShadow
     >
       <Type className="ch-home-hero-text" size="h1" bold align="center">
-        CORNHACKS 2023
+        CORNHACKS 2024
       </Type>
       <Type size="h4" align="center">
         The University of Nebraska's Student-Led Hackathon

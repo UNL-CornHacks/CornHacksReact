@@ -14,7 +14,7 @@ const UnderConstructionPage = () => (
       <Type size="h1" bold align="center" className="cornhacks-logo-text">
         <span style={{ color: Colors.YELLOW }}>CORN</span>
         <span style={{ color: Colors.GOLD }}>HACKS</span>{" "}
-        <span style={{ color: Colors.GREEN }}>2023</span>
+        <span style={{ color: Colors.GREEN }}>2024</span>
       </Type>
       <p style={paragraph}>
         This site is currently under construction.

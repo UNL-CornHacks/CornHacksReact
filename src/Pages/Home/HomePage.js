@@ -23,14 +23,14 @@ const HomePage = () => {
       <HomeHero showOverlay={() => setOverlayState(true)} />
       <TextSection backgroundColor={Colors.DARK_BLUE}>
         <Type size="h2" bold align="center">
-          2023 Schedule will be released soon!
+          2024 Schedule will be released soon!
         </Type>
         <div className="ch-button-container-center">
           <Button inverted internal to="/schedule/">
-            View 2022 Schedule
+            View 2024 Schedule
           </Button>
           <Button inverted to="https://forms.gle/1J8GvQbZdpa4Cjb88">
-            Sign up for CornHacks 2023
+            Sign up for CornHacks 2024
           </Button>
         </div>
       </TextSection>
