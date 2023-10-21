@@ -6,9 +6,9 @@ import HomePage from "Pages/Home/HomePage";
 
 import {
   HashRouter as Router,
-  Switch,
+  Routes,
   Route,
-  Redirect,
+  Navigate,
 } from "react-router-dom";
 
 import "./index.css";
@@ -20,30 +20,20 @@ import SchedulePage from "Pages/Schedule/SchedulePage";
 
 const RouteHandler = () => (
   <Router>
-    <Switch>
-      <Route path="/under-construction">
-        <UnderConstructionPage />
-      </Route>
-      <Route path="/home/">
-        <HomePage />
-      </Route>
+    <Routes>
+      <Route path="/under-construction" element={<UnderConstructionPage />} />
+      <Route path="/home/" element={<HomePage />} />
       {/* <Route path="/sponsor/">
         <SponsorPage />
       </Route> */}
       {/* <Route path="/register/">
                 <RegisterPage />
             </Route> */}
-      <Route path="/organize/">
-        <OrganizerPage />
-      </Route>
-      <Route path="/kiewit/">
-        <KiewitPage />
-      </Route>
-      <Route path="/schedule/">
-        <SchedulePage />
-      </Route>
-      <Redirect to="/home" />
-    </Switch>
+      <Route path="/organize/" element={<OrganizerPage />} />
+      <Route path="/kiewit/" element={<KiewitPage />} />
+      <Route path="/schedule/" element={<SchedulePage />} />
+      <Route path="/" element={<Navigate to="/home" />} />
+    </Routes>
   </Router>
 );
 
