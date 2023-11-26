@@ -1,20 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.8fc0896e.css",
-    "main.js": "/static/js/main.3541f38e.js",
+    "main.js": "/static/js/main.5098a565.js",
     "static/media/Marketing.png": "/static/media/Marketing.bef8495ff9c632935859.png",
     "static/media/Gradiente.png": "/static/media/Gradiente.9831381d35e6c435d1a0.png",
     "static/media/Finance.png": "/static/media/Finance.cdfacd177879086ff9e4.png",
     "static/media/Logistics.png": "/static/media/Logistics.b029bdd3fa67ed4a9e5e.png",
     "static/media/Chairs.png": "/static/media/Chairs.c05200136d9793b4f4e4.png",
     "static/media/Corndell.png": "/static/media/Corndell.92345ad9fd01b5565d16.png",
-    "static/media/schedule.pdf": "/static/media/schedule.c2a0b210723568f547ca.pdf",
-    "static/media/2022schedule.pdf": "/static/media/2022schedule.95744877bedbfb00f5e3.pdf",
     "static/media/HomePage.jpeg": "/static/media/HomePage.b33b4939ef5daf339ed2.jpeg",
     "static/media/Marketing.jpeg": "/static/media/Marketing.012ab5c3e46de9a0ff9d.jpeg",
     "static/media/Finance.jpeg": "/static/media/Finance.23e8359ca4d3fcc2805c.jpeg",
     "static/media/Logistics.jpeg": "/static/media/Logistics.ebfa6bb7d1049751aec9.jpeg",
-    "static/media/schedule.jpg": "/static/media/schedule.4d9b2b3d6c05b3c9165b.jpg",
     "static/media/SponsorTiers.PNG": "/static/media/SponsorTiers.dca87cba9885278cd7d0.PNG",
     "static/media/unofficial-speedway-motors-png.png": "/static/media/unofficial-speedway-motors-png.521bff45760dce09c27a.png",
     "static/media/dont-panic-white.png": "/static/media/dont-panic-white.5060a3525b6aedc18d54.png",
@@ -26,10 +23,10 @@
     "index.html": "/index.html",
     "static/media/down-arrow.svg": "/static/media/down-arrow.87d8088f5f66a41aa96d24865feeb6af.svg",
     "main.8fc0896e.css.map": "/static/css/main.8fc0896e.css.map",
-    "main.3541f38e.js.map": "/static/js/main.3541f38e.js.map"
+    "main.5098a565.js.map": "/static/js/main.5098a565.js.map"
   },
   "entrypoints": [
     "static/css/main.8fc0896e.css",
-    "static/js/main.3541f38e.js"
+    "static/js/main.5098a565.js"
   ]
 }
