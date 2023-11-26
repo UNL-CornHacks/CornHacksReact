@@ -183,6 +183,7 @@ const HomePage = () => {
           grid={6}
         />
       </TextSection>
+      {/*
       <Overlay showOverlay={overlayState} setOverlayState={setOverlayState}>
         <Type size="h2" bold align="center">
           Notify me when registration opens!
@@ -223,6 +224,7 @@ const HomePage = () => {
           />
         </Form>
       </Overlay>
+        */}
     </div>
   );
 };
