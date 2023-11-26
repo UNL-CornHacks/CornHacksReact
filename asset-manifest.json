@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8fc0896e.css",
-    "main.js": "/static/js/main.5098a565.js",
+    "main.js": "/static/js/main.52580dbf.js",
     "static/media/Marketing.png": "/static/media/Marketing.bef8495ff9c632935859.png",
     "static/media/Gradiente.png": "/static/media/Gradiente.9831381d35e6c435d1a0.png",
     "static/media/Finance.png": "/static/media/Finance.cdfacd177879086ff9e4.png",
@@ -20,13 +20,14 @@
     "static/media/speedway.jpg": "/static/media/speedway.cdaa23ca1569e14c67f0.jpg",
     "static/media/cornhacks-white.svg": "/static/media/cornhacks-white.85efbae3c39c751e94d2b71e46359175.svg",
     "static/media/cornhacks.svg": "/static/media/cornhacks.7bf18fae76cbba06c76489700b60b9fa.svg",
+    "static/media/Nelnet_Logo_White_Web.PNG": "/static/media/Nelnet_Logo_White_Web.821ded1a7594af9af9a2.PNG",
     "index.html": "/index.html",
     "static/media/down-arrow.svg": "/static/media/down-arrow.87d8088f5f66a41aa96d24865feeb6af.svg",
     "main.8fc0896e.css.map": "/static/css/main.8fc0896e.css.map",
-    "main.5098a565.js.map": "/static/js/main.5098a565.js.map"
+    "main.52580dbf.js.map": "/static/js/main.52580dbf.js.map"
   },
   "entrypoints": [
     "static/css/main.8fc0896e.css",
-    "static/js/main.5098a565.js"
+    "static/js/main.52580dbf.js"
   ]
 }
