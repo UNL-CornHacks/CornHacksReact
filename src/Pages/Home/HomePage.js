@@ -150,7 +150,7 @@ const HomePage = () => {
         />
       </TextSection>
       <TextSection backgroundColor="#ffffff">
-        {/* <SponsorSection
+         <SponsorSection
           title="Platinum Sponsors"
           titleColor={Colors.DARK_BLUE}
           sponsorData={sponsors.platinum ? sponsors.platinum : []}
@@ -181,7 +181,7 @@ const HomePage = () => {
           color="brown"
           sectionHeight="100px"
           grid={6}
-        /> */}
+        />
       </TextSection>
       {/* <Overlay showOverlay={overlayState} setOverlayState={setOverlayState}>
         <Type size="h2" bold align="center">

@@ -28,7 +28,7 @@ const HomeHero = ({ showOverlay }) => {
         <Button anchor to="#learn-more">
           Learn More
         </Button>
-        <Button to="https://forms.gle/y2Eje1nDGis8KaFS8">Register</Button>
+        <Button to="https://forms.gle/7eHo3s9RURLpvNtM9">Register</Button>
         <Button to="https://drive.google.com/file/d/1oeRN-Rim_e4SsKEeEv_7yCnaC52OODFI/view?usp=sharing">
           Photo Release
         </Button>
