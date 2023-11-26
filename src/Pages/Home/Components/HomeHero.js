@@ -22,9 +22,9 @@ const HomeHero = ({ showOverlay }) => {
         The University of Nebraska's Student-Led Hackathon
       </Type>
       <div className="ch-button-container-center">
-        {/* <Button internal to="/sponsor/">
+        <Button internal to="/sponsor/">
           Sponsor
-        </Button> */}
+        </Button>
         <Button anchor to="#learn-more">
           Learn More
         </Button>

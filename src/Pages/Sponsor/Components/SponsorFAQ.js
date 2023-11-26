@@ -12,7 +12,7 @@ const SponsorFAQ = () => (
         <Question question={"What is Cornhacks?"}>
             CornHacks is a 24-hour long programming competition focused on the
             technology industry. The event will be held from 10:00 a.m. on
-            01/16/21 until 2:00 p.m. on 01/17/21. 150+ undergraduate students
+            02/17/24 until 2:00 p.m. on 02/18/24. 150+ undergraduate students
             will come to explore, learn new things, and build cool projects for
             part of a weekend. The event is free and inclusive to students of
             all backgrounds and abilities. We will be working with Major League

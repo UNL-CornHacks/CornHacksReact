@@ -25,7 +25,7 @@ const UnderConstructionPage = () => (
           href="mailto:cornhacks.2023@gmail.com"
           style={{ color: Colors.YELLOW }}
         >
-          cornhacks.2023@gmail.com
+          cornhacks@unl.edu
         </a>
       </p>
     </div>

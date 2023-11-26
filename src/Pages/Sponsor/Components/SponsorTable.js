@@ -27,10 +27,10 @@ const SponsorTable = () => {
                 <tbody>
                     <tr>
                         <TableCell header>Cost</TableCell>
-                        <TableCell yes>$5000</TableCell>
-                        <TableCell yes>$3500</TableCell>
+                        <TableCell yes>$3000</TableCell>
                         <TableCell yes>$2000</TableCell>
                         <TableCell yes>$1000</TableCell>
+                        <TableCell yes>$500</TableCell>
                     </tr>
                     <tr>
                         <TableCell header>Logo Size</TableCell>
@@ -54,39 +54,30 @@ const SponsorTable = () => {
                         <TableCell yes>Yes</TableCell>
                     </tr>
                     <tr>
-                        <TableCell header>Tech Talk</TableCell>
-                        <TableCell yes>60 mins</TableCell>
-                        <TableCell yes>45 mins</TableCell>
-                        <TableCell yes>30 mins</TableCell>
-                        <TableCell yes>15 mins</TableCell>
-                    </tr>
-                    <tr>
                         <TableCell header>Logo on Shirt?</TableCell>
                         <TableCell yes>Yes</TableCell>
                         <TableCell yes>Yes</TableCell>
                         <TableCell yes>Yes</TableCell>
                         <TableCell yes>Yes</TableCell>
                     </tr>
-                    {/* <tr>
-                        <TableCell header>
-                            Dedicated Recruitment Page on our Site?
-                        </TableCell>
-                        <TableCell yes>Yes</TableCell>
-                        <TableCell yes>Yes</TableCell>
-                        <TableCell no>No</TableCell>
-                        <TableCell no>No</TableCell>
-                    </tr> */}
                     <tr>
-                        <TableCell header>Swag in a Bag?</TableCell>
+                        <TableCell header>Swag in Bag?</TableCell>
                         <TableCell yes>Yes</TableCell>
                         <TableCell yes>Yes</TableCell>
                         <TableCell yes>Yes</TableCell>
                         <TableCell no>No</TableCell>
                     </tr>
                     <tr>
-                        <TableCell header>Discord Channel?</TableCell>
+                        <TableCell header>Booth during the Event?</TableCell>
                         <TableCell yes>Yes</TableCell>
                         <TableCell yes>Yes</TableCell>
+                        <TableCell yes>Yes</TableCell>
+                        <TableCell no>No</TableCell>
+                    </tr>
+                    <tr>
+                        <TableCell header>Tech Talk?</TableCell>
+                        <TableCell yes>60 minutes</TableCell>
+                        <TableCell yes>30 minutes</TableCell>
                         <TableCell no>No</TableCell>
                         <TableCell no>No</TableCell>
                     </tr>
@@ -97,13 +88,13 @@ const SponsorTable = () => {
                         <TableCell no>No</TableCell>
                         <TableCell no>No</TableCell>
                     </tr>
-                    {/* <tr>
-                        <TableCell header>Prizing Track?</TableCell>
+                    <tr>
+                        <TableCell header>Discord Channel?</TableCell>
+                        <TableCell yes>Yes</TableCell>
                         <TableCell yes>Yes</TableCell>
                         <TableCell no>No</TableCell>
                         <TableCell no>No</TableCell>
-                        <TableCell no>No</TableCell>
-                    </tr> */}
+                    </tr>
                     <tr>
                         <TableCell header>Keynote?</TableCell>
                         <TableCell yes>10 minutes</TableCell>

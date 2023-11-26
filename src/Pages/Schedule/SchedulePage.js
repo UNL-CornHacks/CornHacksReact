@@ -2,12 +2,13 @@ import React from "react";
 import Colors from "Constants/Colors";
 import { Document, Page, pdfjs } from 'react-pdf'
 import TextSection from "GlobalComponents/TextSection";
-import sched from 'Images/2022schedule.pdf';
+//import sched from 'Images/2022schedule.pdf';
 import GradientHero from "GlobalComponents/GradientHero";
 import Type from "GlobalComponents/Type";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
+{/*
 const SchedulePage = () => (
     <>
         <GradientHero
@@ -51,3 +52,5 @@ const SchedulePage = () => (
 );
 
 export default SchedulePage;
+
+*/}

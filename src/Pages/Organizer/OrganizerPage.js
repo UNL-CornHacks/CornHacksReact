@@ -17,7 +17,7 @@ const OrganizerPage = () => (
       <Type size="h1" bold>
         Become an Organizer
       </Type>
-      <Button to="https://forms.gle/UmSpYuB2SpmdxdE77">Apply Today!</Button>
+      <Button to="https://forms.gle/vy4At4ywUcWSGsnd9">Apply Today!</Button>
     </GradientHero>
     <TextSection backgroundColor={Colors.DARK_BLUE}>
       <Type size="h5">
@@ -31,7 +31,7 @@ const OrganizerPage = () => (
         Reach out to our current organizers to learn more and{" "}
         <a
           style={{ color: Colors.WHITE }}
-          href="https://forms.gle/UmSpYuB2SpmdxdE77"
+          href="https://forms.gle/vy4At4ywUcWSGsnd9"
         >
           apply today
         </a>
@@ -103,23 +103,12 @@ const OrganizerPage = () => (
         team.{" "}
         <a
           style={{ color: Colors.WHITE }}
-          href="https://forms.gle/UmSpYuB2SpmdxdE77"
+          href="https://forms.gle/vy4At4ywUcWSGsnd9"
         >
           Apply today if you are interested
         </a>
         !
       </Type>
-      {/* <Type size="h5">
-                If you have any questions, feel free to contact our Membership
-                Director, Parker Segal:{" "}
-                <a
-                    style={{ color: Colors.WHITE }}
-                    href="mailto:parker.segal@cornhacks.com"
-                >
-                    parker.segal@cornhacks.com
-                </a>
-                .
-            </Type> */}
     </TextSection>
   </>
 );

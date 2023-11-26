@@ -9,9 +9,6 @@ import AirtableCompanies from "Calls/AirtableCompanies";
 import SponsorSection from "Pages/Sponsor/Components/SponsorSection";
 import Countdown from "GlobalComponents/Countdown";
 import Question from "GlobalComponents/Question";
-import Overlay from "GlobalComponents/Overlay";
-import Form from "GlobalComponents/Form";
-import FormInput from "GlobalComponents/FormInput";
 import Button from "GlobalComponents/Button";
 
 const HomePage = () => {
@@ -19,7 +16,7 @@ const HomePage = () => {
   const [overlayState, setOverlayState] = useState(false);
   return (
     <div>
-      {/* <AirtableCompanies setSponsorData={getSponsors} /> */}
+       <AirtableCompanies setSponsorData={getSponsors} />
       <HomeHero showOverlay={() => setOverlayState(true)} />
       <TextSection backgroundColor={Colors.DARK_BLUE}>
         <Type size="h2" bold align="center">
@@ -29,7 +26,7 @@ const HomePage = () => {
           <Button inverted internal to="/schedule/">
             View 2024 Schedule
           </Button>
-          <Button inverted to="https://forms.gle/1J8GvQbZdpa4Cjb88">
+          <Button inverted to="https://forms.gle/7eHo3s9RURLpvNtM9">
             Sign up for CornHacks 2024
           </Button>
         </div>
@@ -134,7 +131,7 @@ const HomePage = () => {
             and{" "}
             <a
               style={{ color: Colors.WHITE }}
-              href="https://forms.gle/1J8GvQbZdpa4Cjb88"
+              href="https://forms.gle/7eHo3s9RURLpvNtM9"
             >
               this CornHacks participant survey
             </a>{" "}
@@ -149,6 +146,7 @@ const HomePage = () => {
           afterText="until Cornhacks"
         />
       </TextSection>
+      {/*
       <TextSection backgroundColor="#ffffff">
          <SponsorSection
           title="Platinum Sponsors"
@@ -181,50 +179,8 @@ const HomePage = () => {
           color="brown"
           sectionHeight="100px"
           grid={6}
-        />
-      </TextSection>
-      {/*
-      <Overlay showOverlay={overlayState} setOverlayState={setOverlayState}>
-        <Type size="h2" bold align="center">
-          Notify me when registration opens!
-        </Type>
-        <Form
-          pushForm={(data) => {
-            const base = new Airtable({
-              apiKey: process.env.REACT_APP_AIRTABLE_API_KEY,
-            }).base(process.env.REACT_APP_AIRTABLE_NOTIFY_BASE);
-            base("EarlyNotifications").create(data, (err, record) => {
-              console.log(err, record);
-            });
-            setOverlayState(false);
-          }}
-        >
-          <FormInput
-            labelColor={Colors.WHITE}
-            placeholder={"First Name"}
-            formId={"First Name"}
-            required
-          />
-          <FormInput
-            labelColor={Colors.WHITE}
-            placeholder={"Last Name"}
-            formId={"Last Name"}
-            required
-          />
-          <FormInput
-            labelColor={Colors.WHITE}
-            placeholder={"Email"}
-            formId={"Email"}
-            required
-          />
-          <FormInput
-            labelColor={Colors.WHITE}
-            placeholder={"University"}
-            formId={"University"}
-          />
-        </Form>
-      </Overlay>
-        */}
+            />
+            </TextSection> */}
     </div>
   );
 };
