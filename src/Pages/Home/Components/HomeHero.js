@@ -25,15 +25,15 @@ const HomeHero = ({ showOverlay }) => {
         <Button internal to="/sponsor/">
           Sponsor
         </Button>
-        <Button anchor to="#learn-more">
-          Learn More
+        <Button internal to="/organize/">
+          Help Organize
         </Button>
         <Button to="https://forms.gle/7eHo3s9RURLpvNtM9">Register</Button>
         <Button to="https://drive.google.com/file/d/1oeRN-Rim_e4SsKEeEv_7yCnaC52OODFI/view?usp=sharing">
           Photo Release
         </Button>
-        <Button internal to="/organize/">
-          Help Organize
+        <Button anchor to="#learn-more">
+          Learn More
         </Button>
       </div>
     </GradientHero>
