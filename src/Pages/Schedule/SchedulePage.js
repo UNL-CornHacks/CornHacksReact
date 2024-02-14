@@ -1,56 +1,35 @@
 import React from "react";
 import Colors from "Constants/Colors";
 import { Document, Page, pdfjs } from 'react-pdf'
-import TextSection from "GlobalComponents/TextSection";
-//import sched from 'Images/2022schedule.pdf';
+import CornHacksSchedule from "Images/CornHacksSchedule.png"
+import ImageSection from "GlobalComponents/ImageSection";
 import GradientHero from "GlobalComponents/GradientHero";
 import Type from "GlobalComponents/Type";
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-
-{/*
 const SchedulePage = () => (
     <>
         <GradientHero
             colors={[Colors.YELLOW, Colors.GREEN, Colors.BLUE]}
-            height="50vh"
+            height="25vh"
             header
             boxShadow
         >
             <Type size="h1" bold align="center">
-                Schedule
+                CornHacks 2024 Schedule
             </Type>
         </GradientHero>
-        <TextSection backgroundColor={Colors.DARK_BLUE}>
-            <div style={{justifyContent: "center", display: "flex"}}>
-                <div style={{display: "flex"}}>
-                    <Document file={sched}>
-                        <Page pageNumber={1} />
-                    </Document>
-                </div>
-            </div>
-        </TextSection>
-        <TextSection backgroundColor={Colors.DARK_BLUE}>
-            <div style={{justifyContent: "center", display: "flex"}}>
-                <div style={{display: "flex"}}>
-                    <Document file={sched}>
-                        <Page pageNumber={2} />
-                    </Document>
-                </div>
-            </div>
-        </TextSection>
-        <TextSection backgroundColor={Colors.DARK_BLUE}>
-            <div style={{justifyContent: "center", display: "flex"}}>
-                <div style={{display: "flex"}}>
-                    <Document file={sched}>
-                        <Page pageNumber={3} />
-                    </Document>
-                </div>
-            </div>
-        </TextSection>
+        <div style={{
+            display: "flex",
+            backgroundColor: "#050b16",
+            height: "100vh",
+            width: "100vw",
+            alignItems: "center"
+        }}>
+            <img src={CornHacksSchedule} style={{ width: "100vw"}} />
+        </div>
     </>
 );
 
 export default SchedulePage;
 
-*/}
+//}
