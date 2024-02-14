@@ -22,10 +22,10 @@ const SchedulePage = () => (
             display: "flex",
             backgroundColor: "#050b16",
             height: "100vh",
-            width: "100vw",
-            alignItems: "center"
+            width: "100%",
+            justifyContent: "center"
         }}>
-            <img src={CornHacksSchedule} style={{ width: "100vw"}} />
+            <img src={CornHacksSchedule} style={{ maxWidth: "100%", maxHeight: "100%"}} />
         </div>
     </>
 );
