@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8fc0896e.css",
-    "main.js": "/static/js/main.68d4f2f5.js",
+    "main.js": "/static/js/main.197f2196.js",
     "static/media/Marketing.png": "/static/media/Marketing.bef8495ff9c632935859.png",
     "static/media/Gradiente.png": "/static/media/Gradiente.9831381d35e6c435d1a0.png",
     "static/media/Finance.png": "/static/media/Finance.cdfacd177879086ff9e4.png",
@@ -18,10 +18,10 @@
     "index.html": "/index.html",
     "static/media/down-arrow.svg": "/static/media/down-arrow.fd412ad0e46da850a756a77510e40dad.svg",
     "main.8fc0896e.css.map": "/static/css/main.8fc0896e.css.map",
-    "main.68d4f2f5.js.map": "/static/js/main.68d4f2f5.js.map"
+    "main.197f2196.js.map": "/static/js/main.197f2196.js.map"
   },
   "entrypoints": [
     "static/css/main.8fc0896e.css",
-    "static/js/main.68d4f2f5.js"
+    "static/js/main.197f2196.js"
   ]
 }
