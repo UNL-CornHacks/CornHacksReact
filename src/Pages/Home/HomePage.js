@@ -124,7 +124,7 @@ const HomePage = () => {
             begins: please fill out{" "}
             <a
               style={{ color: Colors.WHITE }}
-              href="https://drive.google.com/file/d/1oeRN-Rim_e4SsKEeEv_7yCnaC52OODFI/view?usp=sharing"
+              href="https://drive.google.com/file/d/1rzj9iy6urchwN2ixStTShniDrDNGx83p"
             >
               this photo release waiver
             </a>{" "}
