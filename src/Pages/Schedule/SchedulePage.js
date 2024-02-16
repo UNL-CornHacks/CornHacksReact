@@ -10,7 +10,7 @@ const SchedulePage = () => (
     <>
         <GradientHero
             colors={[Colors.YELLOW, Colors.GREEN, Colors.BLUE]}
-            height="25vh"
+            height="50vh"
             header
             boxShadow
         >
