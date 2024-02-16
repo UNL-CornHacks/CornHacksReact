@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8fc0896e.css",
-    "main.js": "/static/js/main.ada7a75f.js",
+    "main.js": "/static/js/main.7a461314.js",
     "static/media/Marketing.png": "/static/media/Marketing.bef8495ff9c632935859.png",
     "static/media/Gradiente.png": "/static/media/Gradiente.9831381d35e6c435d1a0.png",
     "static/media/Finance.png": "/static/media/Finance.cdfacd177879086ff9e4.png",
@@ -19,10 +19,10 @@
     "static/media/down-arrow.svg": "/static/media/down-arrow.fd412ad0e46da850a756a77510e40dad.svg",
     "static/media/CornHacksSchedule.png:Zone.Identifier": "/static/media/CornHacksSchedule.png:Zone.288ca0f00c600fcad5a9.Identifier",
     "main.8fc0896e.css.map": "/static/css/main.8fc0896e.css.map",
-    "main.ada7a75f.js.map": "/static/js/main.ada7a75f.js.map"
+    "main.7a461314.js.map": "/static/js/main.7a461314.js.map"
   },
   "entrypoints": [
     "static/css/main.8fc0896e.css",
-    "static/js/main.ada7a75f.js"
+    "static/js/main.7a461314.js"
   ]
 }
