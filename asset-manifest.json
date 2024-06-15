@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8fc0896e.css",
-    "main.js": "/static/js/main.7d19bae4.js",
+    "main.js": "/static/js/main.47797531.js",
     "static/media/Marketing.png": "/static/media/Marketing.bef8495ff9c632935859.png",
     "static/media/Gradiente.png": "/static/media/Gradiente.9831381d35e6c435d1a0.png",
     "static/media/Finance.png": "/static/media/Finance.cdfacd177879086ff9e4.png",
@@ -17,12 +17,11 @@
     "static/media/cornhacks.svg": "/static/media/cornhacks.7653d5c288fd08fb2c06acf07c364911.svg",
     "index.html": "/index.html",
     "static/media/down-arrow.svg": "/static/media/down-arrow.fd412ad0e46da850a756a77510e40dad.svg",
-    "static/media/CornHacksSchedule.png:Zone.Identifier": "/static/media/CornHacksSchedule.png:Zone.288ca0f00c600fcad5a9.Identifier",
     "main.8fc0896e.css.map": "/static/css/main.8fc0896e.css.map",
-    "main.7d19bae4.js.map": "/static/js/main.7d19bae4.js.map"
+    "main.47797531.js.map": "/static/js/main.47797531.js.map"
   },
   "entrypoints": [
     "static/css/main.8fc0896e.css",
-    "static/js/main.7d19bae4.js"
+    "static/js/main.47797531.js"
   ]
 }
