@@ -10,6 +10,8 @@ import SponsorSection from "Pages/Sponsor/Components/SponsorSection";
 import Countdown from "GlobalComponents/Countdown";
 import Question from "GlobalComponents/Question";
 import Button from "GlobalComponents/Button";
+import VideoPlayer from "VideoPlayer";
+import App from "App"
 
 const HomePage = () => {
   const [sponsors, getSponsors] = useState({});
@@ -18,7 +20,8 @@ const HomePage = () => {
     <div>
        <AirtableCompanies setSponsorData={getSponsors} />
       <HomeHero showOverlay={() => setOverlayState(true)} />
-      <TextSection backgroundColor={Colors.DARK_BLUE}>
+      <App></App>
+      {/* <TextSection backgroundColor={Colors.DARK_BLUE}>
         <Type size="h2" bold align="center">
           2024 Schedule available now!
         </Type>
@@ -37,11 +40,11 @@ const HomePage = () => {
         maxWidth="500px"
       >
         <Type size="h5" color={Colors.WHITE}>
-          CornHacks aims to bring some of the most talented developers from
+          CornHacks aims 2222 to bring some of the most talented developers from
           around the Midwest to join in a weekend full of hacking. Hosted at the
           University of Nebraska-Lincoln, over 150 participants will code all
           day and night to be assessed by industry professionals and compete for
-          several prizes.
+          several prizes!
         </Type>
       </ImageSection>
       <div id="learn-more">
@@ -52,6 +55,11 @@ const HomePage = () => {
           <Type size="h2" bold>
             FAQ
           </Type>
+          <section className="vid">
+            <div className="holder">
+              <VideoPlayer />
+            </div>
+          </section>
           <Question question="What is a Hackathon?">
             A hackathon is an invention marathon. Students come together to
             build innovative software and hardware over an extended period. It's{" "}
@@ -146,7 +154,6 @@ const HomePage = () => {
           afterText="until Cornhacks"
         />
       </TextSection>
-      {/*
       <TextSection backgroundColor="#ffffff">
          <SponsorSection
           title="Platinum Sponsors"
