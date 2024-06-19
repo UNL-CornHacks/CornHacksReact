@@ -66,7 +66,7 @@ const VideoPlayer = ({ videoRef }) => {
           left: '0',
         }}
       >
-        <source src={`${process.env.PUBLIC_URL}/output.mp4`} type="video/mp4" />
+        
         Your browser does not support the video tag.
       </video>
   );

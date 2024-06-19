@@ -1,6 +1,6 @@
 .gradient-hero {
     width: 100%;
-    height: 110px;
+    height: 115px;
     display: flex;
     -webkit-animation: gradientBG 10s ease infinite;
     animation: gradientBG 10s ease infinite;
@@ -92,7 +92,44 @@
   display: flex;      /* Use flexbox to align children horizontally */
   align-items: center; /* Vertically center the items */
   position: relative;
-  top: 120px;
+  top: 130px;
   left: 30px;
   z-index: 2;
+}
+
+.navbar {
+    position: relative;
+    top: 30px;
+    left: 30px;
+    font-size: 30px;
+}
+
+.RegisterLink {
+    color: white;
+    background-color: red;
+    border-color: transparent;
+    font-size: 30px;
+    padding: 10px;
+    /* width: 30px; */
+    height: 80px;
+    margin-top: 16px;
+    margin-left: 750px;
+    border-radius: 12px;
+}
+
+.RegisterLink:hover {
+    color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 0, 0, 0.25);
+}
+
+.AboutLink {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.AboutLink:hover {
+    color: rgba(255, 255, 255, 0.25);
 }

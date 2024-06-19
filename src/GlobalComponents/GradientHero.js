@@ -37,15 +37,8 @@ const GradientHero = ({
           <h1 className="CornText">Corn<span className="HacksText">Hacks</span></h1>
         </Type>
       </Link>
-      <Navbar expand="lg" className="navbar">
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" className="websiteLinks">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
+      <button className='RegisterLink'>Register</button>
+      <button className='AboutLink'>About Us</button>
     </div>
     <div className="unl-logo-div">
       <h4>the student-led hackathon at</h4>

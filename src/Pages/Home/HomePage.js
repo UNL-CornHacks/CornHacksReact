@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import HomeHero from "Pages/Home/Components/HomeHero";
+import HomeCarousel from "./HomeCarousel";
 import Colors from "Constants/Colors";
 import ImportantDates from "Constants/ImportantDates";
 import Type from "GlobalComponents/Type";
@@ -12,6 +13,16 @@ import Question from "GlobalComponents/Question";
 import Button from "GlobalComponents/Button";
 import VideoPlayer from "VideoPlayer";
 import App from "App"
+import logo19 from "../../Images/cropped_raw.png"
+import logo20 from "../../Graphics/cornhacks.svg"
+import logo21 from "../../Graphics/logo21.svg"
+import logo22 from "../../Images/logo22.png"
+import logo23 from "../../Images/2023_final_logo_only.png"
+import logo24 from "../../Graphics/corn3d.svg"
+import SponsorCarousel from "../Sponsor/SponsorCarousel"
+import Numbers from "./Numbers"
+
+import "./Styles/HomePage.css"
 
 const HomePage = () => {
   const [sponsors, getSponsors] = useState({});
@@ -20,7 +31,152 @@ const HomePage = () => {
     <div>
        <AirtableCompanies setSponsorData={getSponsors} />
       <HomeHero showOverlay={() => setOverlayState(true)} />
-      <App></App>
+      <section className="AboutUsPage">
+        <div className="AboutUsTitle">
+          <div className="Title" style={{ display: 'flex'}}>
+            <img src={logo19} alt="CornHacks 2019 Logo" style={{ marginRight: '10px', width: '50px', height: '50px' }} />
+            <img src={logo20} alt="CornHacks 2020 Logo" style={{ marginRight: '10px', width: '50px', height: '50px' }} />
+            <img src={logo21} alt="CornHacks 2021 Logo" style={{ marginRight: '10px', width: '50px', height: '50px' }} />
+            <h1>About Us</h1>
+            <img src={logo22} alt="CornHacks 2022 Logo" style={{ marginRight: '10px', width: '50px', height: '50px' }} />
+            <img src={logo23} alt="CornHacks 2023 Logo" style={{ marginRight: '10px', width: '40px', height: '50px' }} />
+            <img src={logo24} alt="CornHacks 2024 Logo" style={{ marginRight: '10px', width: '50px', height: '50px' }} />
+          </div>
+          <h3>So, what is a <span style={{ color: '#f4d816', textShadow: '1px 1px 1px rgba(0, 0, 0, 0.75)'}}>Corn</span>
+            <span style={{ color: '#4bb965', fontWeight: 'bold', textShadow: '1px 1px 1px rgba(0, 0, 0, 0.75)'}}>
+              Hacks
+            </span>
+            ?
+          </h3>
+        </div>
+        <div className='informationBox'>
+          <div className='information'>
+            <p>
+            <span style={{ color: '#f4d816', textShadow: '1px 1px 1px rgba(0, 0, 0, 0.75)'}}>
+              Corn
+            </span>
+            <span style={{ color: '#4bb965', fontWeight: 'bold', textShadow: '1px 1px 1px rgba(0, 0, 0, 0.75)'}}>
+              Hacks
+            </span> is a coding/design competition where individuals or teams of up to four people compete over a <span style={{ color: '#a216b6'}}>
+              24-Hour
+            </span> period to see who can create the best project. Like most hackathons, <span style={{ color: '#f4d816', textShadow: '1px 1px 1px rgba(0, 0, 0, 0.75)'}}>
+              Corn
+            </span>
+            <span style={{ color: '#4bb965', fontWeight: 'bold', textShadow: '1px 1px 1px rgba(0, 0, 0, 0.75)'}}>
+              Hacks
+            </span> is focused on giving
+              participants a chance to show off their skills while meeting people with similar interests and networking
+              with local businesses. The best part? <span style={{ color: '#f4d816', textShadow: '1px 1px 1px rgba(0, 0, 0, 0.75)'}}>
+              Corn
+            </span>
+            <span style={{ color: '#4bb965', fontWeight: 'bold', textShadow: '1px 1px 1px rgba(0, 0, 0, 0.75)'}}>
+              Hacks
+            </span>  is completely <span style={{ color: 'red', fontWeight: 'bold' }}>
+              FREE
+            </span> and meals are provided. <span style={{ color: '#f4d816', textShadow: '1px 1px 1px rgba(0, 0, 0, 0.75)'}}>
+              Corn
+            </span>
+            <span style={{ color: '#4bb965', fontWeight: 'bold', textShadow: '1px 1px 1px rgba(0, 0, 0, 0.75)'}}>
+              Hacks
+            </span> is funded
+              by the University of Nebraska-Lincoln and industry sponsors. <span style={{ fontWeight: 'bold' }}>Check out our 2024 sponsors <span style={{ color: 'blue' }}>here</span></span>
+            </p>
+          </div>
+        </div>
+        <HomeCarousel></HomeCarousel>
+        <p>CornHacks 2024 by the Numbers:</p>
+        <section className="numbers-container">
+      <div className="bigbox participants">
+        <p>Participants:</p>
+        <Numbers end={106} duration={5} />
+      </div>
+      <div className="bigbox LOC">
+        <p>Lines of Code Written:</p>
+        <Numbers end={100000} duration={5} specialEnd="a lot" />
+      </div>
+      <div className="bigbox money">
+        <p>Total Prizes:</p>
+        <Numbers end={3500} duration={6} prefix="$" />
+      </div>
+    </section>
+    <p>Participants by Major (Includes Double-Majors):</p>
+    <section className="numbers-container">
+      <div className="littlebox CompSci">
+        <h4 className="labelText">Computer</h4>
+        <Numbers end={67} duration={8} />
+        <h4 className="labelText">Science</h4>
+      </div>
+      <div className="littlebox SoftwareEng">
+        <h4 className="labelText">Software</h4>
+        <Numbers end={17} duration={8} />
+        <h4 className="labelText">Engineering</h4>
+      </div>
+      <div className="littlebox Math">
+        <h4 className="labelText">Math</h4>
+        <Numbers end={10} duration={8} />
+        <h4 style={{ color: "#f23b3d"}}> Eng</h4>
+      </div>
+      <div className="littlebox CompEng">
+        <h4 className="labelText">Computer</h4>
+        <Numbers end={6} duration={8} />
+        <h4 className="labelText">Engineering</h4>
+      </div>
+      <div className="littlebox ElectricalEng">
+        <h4 className="labelText">Electrical</h4>
+        <Numbers end={5} duration={8} />
+        <h4 className="labelText">Engineering</h4>
+      </div>
+      <div className="littlebox DataSci">
+        <h4 className="labelText">Data</h4>
+        <Numbers end={3} duration={8} />
+        <h4 className="labelText">Science</h4>
+      </div>
+      <div className="littlebox IT">
+        <h4 className="labelText">Information</h4>
+        <Numbers end={3} duration={8} />
+        <h4 className="labelText">Technology</h4>
+      </div>
+    </section>
+    <section className="numbers-container">
+      <div className="littlebox MechEng">
+        <h4 className="labelText">Mechanical</h4>
+        <Numbers end={3} duration={8} />
+        <h4 className="labelText">Engineering</h4>
+      </div>
+      <div className="littlebox Cybersecurity">
+        <h4 className="labelText">Cybersecurity</h4>
+        <Numbers end={2} duration={8} />
+        <h4 style={{ color: "#6c3ac5"}}> Eng</h4>
+      </div>
+      <div className="littlebox Sociology">
+        <h4 className="labelText">Sociology</h4>
+        <Numbers end={1} duration={8} />
+        <h4 style={{ color: "#57a863"}}> Eng</h4>
+      </div>
+      <div className="littlebox Psychology">
+        <h4 className="labelText">Psychology</h4>
+        <Numbers end={1} duration={8} />
+        <h4 style={{ color: "#eb98e9"}}> Eng</h4>
+      </div>
+      <div className="littlebox HealthSci">
+        <h4 className="labelText">Health</h4>
+        <Numbers end={1} duration={8} />
+        <h4 className="labelText">Science</h4>
+      </div>
+      <div className="littlebox ChemEng">
+        <h4 className="labelText">Chemical</h4>
+        <Numbers end={1} duration={8} />
+        <h4 className="labelText">Engineering</h4>
+      </div>
+      <div className="littlebox Economics">
+        <h4 className="labelText">Economics</h4>
+        <Numbers end={1} duration={8} />
+        <h4 style={{ color: "#5175eb"}}> Eng</h4>
+      </div>
+    </section>
+        <SponsorCarousel></SponsorCarousel>
+      </section>
+      {/* <App></App> */}
       {/* <TextSection backgroundColor={Colors.DARK_BLUE}>
         <Type size="h2" bold align="center">
           2024 Schedule available now!

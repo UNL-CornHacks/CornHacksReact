@@ -180,7 +180,7 @@ video {
 .video {
   width: 100%;
   height: auto;
-  transition: opacity 2s ease-out;
+  transition: opacity 4s ease-out;
 }
 
 .fade-out {
