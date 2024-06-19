@@ -12,7 +12,7 @@ import Countdown from "GlobalComponents/Countdown";
 import Question from "GlobalComponents/Question";
 import Button from "GlobalComponents/Button";
 import VideoPlayer from "VideoPlayer";
-import App from "App"
+import App from "PastProjects"
 import logo19 from "../../Images/cropped_raw.png"
 import logo20 from "../../Graphics/cornhacks.svg"
 import logo21 from "../../Graphics/logo21.svg"

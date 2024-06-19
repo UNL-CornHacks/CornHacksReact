@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import UnderConstructionPage from "Pages/UnderConstruction/UnderConstructionPage";
 import HomePage from "Pages/Home/HomePage";
-import App from "App"
+import App from "PastProjects"
 
 import {
   HashRouter as Router,
@@ -17,6 +17,8 @@ import "./index.css";
 import SponsorPage from "Pages/Sponsor/SponsorPage";
 import OrganizerPage from "Pages/Organizer/OrganizerPage";
 import SchedulePage from "Pages/Schedule/SchedulePage";
+import Register from "Pages/Register/Register";
+import PastProjects from "PastProjects";
 
 const RouteHandler = () => (
   <Router>
@@ -27,6 +29,8 @@ const RouteHandler = () => (
       <Route path="/organize/" element={<OrganizerPage />} />
       <Route path="/schedule/" element={<SchedulePage />} />
       <Route path="/" element={<Navigate to="/home" />} />
+      <Route path="/register/" element={<Register/>} />
+      <Route path="/pastProjects/" element={<PastProjects/>} />
     </Routes>
   </Router>
 );

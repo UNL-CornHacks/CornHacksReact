@@ -299,7 +299,9 @@
 // export default App;
 
 import React, { useRef, useState } from 'react';
-import './App.css';
+import HomeHero from 'Pages/Home/Components/HomeHero';
+
+import './PastProjects.css';
 
 function App() {
   const videoRef = useRef(null);
@@ -324,8 +326,11 @@ function App() {
     }
   };
 
+  const [overlayState, setOverlayState] = useState(false);
+
   return (
     <div className="App">
+      <HomeHero showOverlay={() => setOverlayState(true)} />
       <header className="App-header">
         <section className='vid'>
           <section className='content'>

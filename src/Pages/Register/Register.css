@@ -1,0 +1,28 @@
+.background-container {
+  background-image: url('/public/memorial-stadium-sm.jpg'); /* Path relative to the public folder */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 89vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 1.5rem;
+}

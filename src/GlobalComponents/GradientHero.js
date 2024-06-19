@@ -37,8 +37,21 @@ const GradientHero = ({
           <h1 className="CornText">Corn<span className="HacksText">Hacks</span></h1>
         </Type>
       </Link>
-      <button className='RegisterLink'>Register</button>
-      <button className='AboutLink'>About Us</button>
+      <Link to="/Register">
+        <button className='RegisterLink'>Register</button>
+      </Link>
+      <Link to="/home">
+        <button className='AboutLink'>About Us</button>
+      </Link>
+      <Link to="/sponsor/">
+        <button className='AboutLink'>Sponsor</button>
+      </Link>
+      <Link to="/organize/">
+        <button className='AboutLink'>Help Organize</button>
+      </Link>
+      <Link to="/pastProjects">
+        <button className='AboutLink'>Past Projects</button>
+      </Link>
     </div>
     <div className="unl-logo-div">
       <h4>the student-led hackathon at</h4>

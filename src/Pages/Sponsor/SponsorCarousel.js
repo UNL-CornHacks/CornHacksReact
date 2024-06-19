@@ -1,43 +1,21 @@
-
-import Carousel from 'react-bootstrap/Carousel';
-import image1 from "../../Images/Chairs.png";
+import React from "react";
+import olsson from "../../Images/olsson.png"
+import conagra from "../../Images/conagra.png"
+import DPL from "../../Images/DPL_logo_2018_rgb.png"
+import belcan from "../../Images/belcan.jpeg"
+import licor from "../../Images/licor.jpg"
 
 import "./Styles/SponsorCarousel.css";
 
+
 function HomeCarousel() {
   return (
-    <div className='carouselContainer'>
-        <Carousel style={{ maxWidth: '800px', maxHeight: '400px', margin: '0 auto' }}>
-        <Carousel.Item>
-        <div className='carouselImage'>
-            <img src={image1} />
-        </div>
-            <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-        <div className='carouselImage'>
-            <img src={image1} />
-        </div>
-            <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-        <div className='carouselImage'>
-            <img src={image1} />
-        </div>
-            <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-            </Carousel.Caption>
-        </Carousel.Item>
-        </Carousel>
+    <div className='sponsors'>
+       <img src={olsson} />
+       <img src={conagra} />
+       <img src={DPL} />
+       <img src={belcan} />
+       <img src={licor} />
     </div>
   );
 }

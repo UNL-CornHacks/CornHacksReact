@@ -8,51 +8,20 @@ import GradientHero from "GlobalComponents/GradientHero";
 import SponsorTable from "Pages/Sponsor/Components/SponsorTable";
 import ContinueArrow from "GlobalComponents/ContinueArrow";
 import Button from "GlobalComponents/Button";
+import HomeHero from "Pages/Home/Components/HomeHero";
 
 import "./Styles/SponsorPage.css";
 import SponsorFAQ from "Pages/Sponsor/Components/SponsorFAQ";
 
 const SponsorPage = () => {
   const [sponsors, getSponsors] = useState({});
+  const [overlayState, setOverlayState] = useState(false);
+
   return (
       <div>
+          <HomeHero showOverlay={() => setOverlayState(true)} />
           <AirtableCompanies setSponsorData={getSponsors} />
-          <GradientHero
-              colors={[Colors.BLUE, Colors.GREEN, Colors.YELLOW]}
-              header
-          >
-              <Type size="h1" bold>
-                  Welcome to your future.
-              </Type>
-              <Type size="h4">
-                  Establish connections with the best talent in Nebraska.
-              </Type>
-              <div className="ch-button-container-left">
-                  <Button to="mailto:cornhacks@unl.edu">
-                      Reach Out Now
-                  </Button>
-              </div>
-              <ContinueArrow
-                  className="right-arrow-positioning"
-                  backgroundColor={Colors.DARK_BLUE}
-                  scrollTo={window.innerHeight}
-              />
-          </GradientHero>
-          <TextSection backgroundColor={Colors.DARK_BLUE}>
-              <Type size="h3" align="center" bold>
-                  February 17th and 18th, 2024 @
-              </Type>
-              <a
-                  style={{ color: Colors.WHITE }}
-                  href="https://goo.gl/maps/o72MMWk4cHtgoFHF6"
-              >
-                  <Type size="h3" align="center" bold>
-                      The Johnny Carson Center for Emerging Media Arts
-                  </Type>
-              </a>
-          </TextSection>
           <SponsorTable />
-          <SponsorFAQ />
           {/*
           <TextSection backgroundColor={Colors.WHITE}>
               <SponsorSection

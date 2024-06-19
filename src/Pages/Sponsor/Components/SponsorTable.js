@@ -11,9 +11,6 @@ import "../Styles/SponsorTable.css";
 const SponsorTable = () => {
     return (
         <TextSection backgroundColor={"#eee"}>
-            <Type size="h2" color={Colors.DARK_BLUE} bold>
-                Sponsorship Tiers
-            </Type>
             <table className="ch-sponsor-tier-table">
                 <thead>
                     <tr>
