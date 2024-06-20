@@ -19,7 +19,7 @@ import logo21 from "../../Graphics/logo21.svg"
 import logo22 from "../../Images/logo22.png"
 import logo23 from "../../Images/2023_final_logo_only.png"
 import logo24 from "../../Graphics/corn3d.svg"
-import SponsorCarousel from "../Sponsor/SponsorCarousel"
+import Sponsors24 from "../Sponsor/Sponsors24"
 import Numbers from "./Numbers"
 
 import "./Styles/HomePage.css"
@@ -84,7 +84,7 @@ const HomePage = () => {
           </div>
         </div>
         <HomeCarousel></HomeCarousel>
-        <p>CornHacks 2024 by the Numbers:</p>
+        <p className="labels">CornHacks 2024 by the Numbers:</p>
         <section className="numbers-container">
       <div className="bigbox participants">
         <p>Participants:</p>
@@ -99,7 +99,7 @@ const HomePage = () => {
         <Numbers end={3500} duration={6} prefix="$" />
       </div>
     </section>
-    <p>Participants by Major (Includes Double-Majors):</p>
+    <p className="labels">Participants by Major (Includes Double-Majors):</p>
     <section className="numbers-container">
       <div className="littlebox CompSci">
         <h4 className="labelText">Computer</h4>
@@ -174,7 +174,7 @@ const HomePage = () => {
         <h4 style={{ color: "#5175eb"}}> Eng</h4>
       </div>
     </section>
-        <SponsorCarousel></SponsorCarousel>
+        <Sponsors24></Sponsors24>
       </section>
       {/* <App></App> */}
       {/* <TextSection backgroundColor={Colors.DARK_BLUE}>

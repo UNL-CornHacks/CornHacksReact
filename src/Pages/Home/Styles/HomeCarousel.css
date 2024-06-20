@@ -5,6 +5,8 @@
     height: 400px; /* Set the height as needed to maintain proportions */
     margin: 50px auto; /* Adjust top margin to move the carousel down */
     max-width: 800px; /* Optionally set a max-width for the container */
+    padding: 5px;
+    margin-bottom: 100px;
   }
   
   .carouselContainer .carousel {

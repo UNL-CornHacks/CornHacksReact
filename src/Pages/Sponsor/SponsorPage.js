@@ -20,7 +20,7 @@ const SponsorPage = () => {
   return (
       <div>
           <HomeHero showOverlay={() => setOverlayState(true)} />
-          <AirtableCompanies setSponsorData={getSponsors} />
+          {/* <AirtableCompanies setSponsorData={getSponsors} /> */}
           <SponsorTable />
           {/*
           <TextSection backgroundColor={Colors.WHITE}>

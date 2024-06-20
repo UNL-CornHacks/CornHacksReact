@@ -1,0 +1,27 @@
+/* App.css */
+.sponsor-container {
+  display: flex;
+  flex-direction: column; /* Align children (sponsor groups) vertically */
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* Space between the sponsor groups */
+  height: 100vh; /* Full height of the viewport */
+}
+
+.GoldSponsor,
+.BronzeSponsor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px; /* Space between images */
+}
+
+.imageGold {
+  max-width: 700px; /* Adjust the size as needed */
+  height: auto;
+}
+
+.imageBronze {
+  max-width: 300px; /* Adjust the size as needed */
+  height: auto;
+}

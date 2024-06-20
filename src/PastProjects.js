@@ -300,6 +300,12 @@
 
 import React, { useRef, useState } from 'react';
 import HomeHero from 'Pages/Home/Components/HomeHero';
+import logo19 from "Images/cropped_raw.png"
+import logo20 from "Graphics/cornhacks.svg"
+import logo21 from "Graphics/logo21.svg"
+import logo22 from "Images/logo22.png"
+import logo23 from "Images/2023_final_logo_only.png"
+import logo24 from "Graphics/corn3d.svg"
 
 import './PastProjects.css';
 
@@ -332,15 +338,39 @@ function App() {
     <div className="App">
       <HomeHero showOverlay={() => setOverlayState(true)} />
       <header className="App-header">
+        <p className={`PastProjectsTitle ${isFading ? 'turn' : ''}`}>Past Projects</p>
         <section className='vid'>
           <section className='content'>
             {showPlayButton ? (
-            <button onClick={playVideoAtDoubleSpeedAndFadeOut} className='firstTextLink'>2025: BananaHacks</button>
+            <button onClick={playVideoAtDoubleSpeedAndFadeOut} className='firstTextLink'><img src={logo24} className='logo'/>2024: Beat the Odds</button>
       ) : (
-            <button onClick={resetAndPauseVideo} className='secondTextLink'>2024: Beat the Odds</button>
+            <button onClick={resetAndPauseVideo} className='backLink'>&lt;- BACK</button>
       )}
-            <p className='thirdTextLink'>2023: jkjkHacks</p>
-            <p className='fourthTextLink'>2022: BdfsdfnaHacks</p>
+            {showPlayButton ? (
+            <button className='secondTextLink'><img src={logo23} className='logo'/>2023: Something</button>
+      ) : (
+            <button onClick={resetAndPauseVideo} className='backLink'>&lt;- BACK</button>
+      )}
+            {showPlayButton ? (
+            <button className='thirdTextLink'><img src={logo22} className='logo'/>2022: Retro</button>
+      ) : (
+            <button onClick={resetAndPauseVideo} className='backLink'>&lt;- BACK</button>
+      )}
+            {showPlayButton ? (
+            <button className='fourthTextLink'><img src={logo21} className='logo'/>2021: Looking Forward</button>
+      ) : (
+            <button onClick={resetAndPauseVideo} className='backLink'>&lt;- BACK</button>
+      )}
+            {showPlayButton ? (
+            <button className='fifthTextLink'><img src={logo20} className='logo'/>2020: Going Green</button>
+      ) : (
+            <button onClick={resetAndPauseVideo} className='backLink'>&lt;- BACK</button>
+      )}
+            {showPlayButton ? (
+            <button className='sixthTextLink'><img src={logo19} className='logo'/>2019: Cornhacks 1</button>
+      ) : (
+            <button onClick={resetAndPauseVideo} className='backLink'>&lt;- BACK</button>
+      )}
             <div className='holder'>
               <video ref={videoRef} className={`video ${isFading ? 'fade-out' : ''}`}>
                 <source src={`${process.env.PUBLIC_URL}/output.mp4`} type="video/mp4" />

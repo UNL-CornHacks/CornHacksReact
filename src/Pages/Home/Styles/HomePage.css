@@ -72,11 +72,17 @@
     font-size: 20px;
 }
 
+.labels {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
 .numbers-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25vh; /* Adjust as needed */
+  height: 20vh; /* Adjust as needed */
 }
 
 .bigbox {

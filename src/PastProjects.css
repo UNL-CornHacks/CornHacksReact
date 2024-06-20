@@ -103,7 +103,7 @@ video {
 
 .App-header {
   background-color: #f0f0f0;
-  min-height: 100vh;
+  /* min-height: 10vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -113,73 +113,181 @@ video {
   /* top: 100px; */
 }
 
-.vid {
-  height: 3000px; /* Example height to enable scrolling */
+.PastProjectsTitle {
+  position: absolute;
+  top: 350px;
+  left: 350px;
+  font-size: 100px;
+  text-align: center;
+  color: black;
+  align-items: center;
+  /* transform: rotate(-90deg);
+  display: inline-block; */
+  z-index: 3;
 }
 
 .holder {
-  position: sticky;
-  top: 165px;
-  overflow: scroll; /* Clipping overflow content */
-  /* width: 100%;
-  height: 50%;  */
+  margin-top: 120px;
+}
+
+/* .vid {
+  height: 3000px;
+} */
+
+.turn {
+  position: absolute;
+  top: 500px;
+  left: -200px;
+  font-size: 100px;
+  text-align: center;
+  color: black;
+  align-items: center;
+  transform: rotate(-90deg);
+  display: inline-block;
+  z-index: 3;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
 }
 
 video {
-  width: 100%;
+  width: 85%;
   height: 100%;
   object-fit: none;
   z-index: 1;
+  margin-top: -150px;
+  margin-left: 500px;
 }
 
-.content {
-  height: 3000px; /* Example height to enable scrolling */
+/* .content {
+  height: 3000px; 
   color: black;
-  /* padding: 20px; */
+} */
+.backLink {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  object-fit: cover;
+  z-index: 2;
+  background-color: #a9d5f0;
+  border: rgb(224, 224, 224);
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.backLink:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: rgba(169, 213, 240, 0.25);
+  color: rgba(0, 0, 0, 0.25);
 }
 
 .firstTextLink {
   position: absolute;
-  top: 20px;
-  left: 960px;
+  top: 150px;
+  left: 1230px;
   object-fit: cover;
   z-index: 2;
   background-color: transparent;
   border: transparent;
+  border-radius: 12px;
+  width: 380px;
 }
 
 .firstTextLink:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  background-color: white;
+  background-color: #f9f345;
 }
 
 .secondTextLink {
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 12px;
   position: absolute;
-  top: 120px;
-  left: 960px;
+  top: 235px;
+  left: 1230px;
   object-fit: cover;
   z-index: 2;
+  width: 380px;
+}
+
+.secondTextLink:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #efce55;
 }
 
 .thirdTextLink {
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 12px;
   position: absolute;
-  top: 220px;
-  left: 960px;
+  top: 320px;
+  left: 1230px;
   object-fit: cover;
   z-index: 2;
+  width: 380px;
+}
+
+.thirdTextLink:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #d0c179;
 }
 
 .fourthTextLink {
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 12px;
   position: absolute;
-  top: 320px;
-  left: 960px;
+  top: 405px;
+  left: 1220px;
   object-fit: cover;
   z-index: 2;
+  width: 420px;
+}
+
+.fourthTextLink:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #80c669;
+}
+
+.fifthTextLink {
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 12px;
+  position: absolute;
+  top: 490px;
+  left: 1230px;
+  object-fit: cover;
+  z-index: 2;
+  width: 380px;
+}
+
+.fifthTextLink:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #4ebf99;
+}
+
+.sixthTextLink {
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 12px;
+  position: absolute;
+  top: 575px;
+  left: 1230px;
+  object-fit: cover;
+  z-index: 2;
+  width: 380px;
+}
+
+.sixthTextLink:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #1ca9b5;
 }
 
 .video {
-  width: 100%;
-  height: auto;
+  /* width: 100%;
+  height: auto; */
   transition: opacity 4s ease-out;
 }
 
