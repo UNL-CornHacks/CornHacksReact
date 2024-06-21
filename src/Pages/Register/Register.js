@@ -10,8 +10,7 @@ const Register = () => {
         <HomeHero showOverlay={() => setOverlayState(true)} />
         <div className="background-container">
         <div className="overlay">
-            <h1>Text Overlay</h1>
-            <p>This is some text overlayed on top of an image background.</p>
+             <p>CornHacks 2025 registration isn't open yet! Check back in later!</p>
         </div>
         </div>
     </div>

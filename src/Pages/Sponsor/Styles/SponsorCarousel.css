@@ -1,17 +1,17 @@
-.carouselContainer {
-    display: flex;
+.carouselContainerSponsor {
     justify-content: center;
     align-items: center;
     height: 600px; /* Set the height as needed to maintain proportions */
     margin: 50px auto; /* Adjust top margin to move the carousel down */
     max-width: 1000px; /* Optionally set a max-width for the container */
     padding: 5px;
-    /* margin-bottom: 200px; */
-  }
+    margin-bottom: 100px;
+   }
   
   .carouselContainer .carousel {
     max-width: 100%; /* Ensure the carousel fits its container */
     max-height: 100%; /* Ensure the carousel fits its container */
+    margin-top: 200px;
   }
   
   .carouselImage {
@@ -27,3 +27,10 @@
     object-fit: cover; /* Maintain aspect ratio and cover the entire container */
     border-radius: 12px;
   }
+
+.titleText {
+    font-size: 80px;
+    color: black;
+    text-align: center;
+    margin: 40px;
+}

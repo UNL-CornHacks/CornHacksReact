@@ -11,6 +11,9 @@ import { Link } from "react-router-dom";
 function Sponsor24() {
   return (
     <div className="sponsor-container">
+      <div className="color-box gold">
+        <h2>2024 Gold Sponsors</h2>
+      </div>
       <div className="GoldSponsor">
         <Link to={'https://www.olsson.com/'}>
           <img src={olsson} className="imageGold" alt="Olsson" />
@@ -18,6 +21,9 @@ function Sponsor24() {
         <Link to={'https://www.conagrabrands.com/'}>
         <img src={conagra} className="imageGold" alt="Conagra" />
         </Link>
+      </div>
+      <div className="color-box bronze">
+        <h4>2024 Bronze Sponsors</h4>
       </div>
       <div className="BronzeSponsor">
         <Link to={'https://dontpaniclabs.com/'}>

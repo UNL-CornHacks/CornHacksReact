@@ -5,10 +5,18 @@ import TextSection from "GlobalComponents/TextSection";
 import ImageSection from "GlobalComponents/ImageSection";
 import Type from "GlobalComponents/Type";
 import Button from "GlobalComponents/Button";
+import HomeHero from "Pages/Home/Components/HomeHero";
+
+import "./Styles/OrganizerPage.css"
 
 const OrganizerPage = () => (
   <>
-    <GradientHero
+    <HomeHero />
+    <p className="titleText">Become an Organizer!</p>
+    <div className="GoogleForm">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfKXfQ-5Ppt3dTxJjdI4FfmHuOhnEx1qB4oLgkKqYK_mLal0Q/viewform?embedded=true" width="640" height="1494" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+    {/* <GradientHero
       colors={[Colors.YELLOW, Colors.GREEN, Colors.BLUE]}
       height="70vh"
       header
@@ -109,7 +117,7 @@ const OrganizerPage = () => (
         </a>
         !
       </Type>
-    </TextSection>
+    </TextSection> */}
   </>
 );
 

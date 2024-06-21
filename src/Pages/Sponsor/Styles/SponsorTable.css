@@ -15,3 +15,58 @@
 .ch-platinum-text {
     color: #fff;
 }
+
+.sponsorInfo {
+    text-align: center;
+    align-items: center;
+}
+
+.sponsorInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ch-sponsor-tier-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .ch-sponsor-tier-table th, .ch-sponsor-tier-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  /* First column headers */
+  .ch-sponsor-tier-table th.first-column {
+    background-color: black;
+    color: white; /* Ensures text is readable */
+  }
+  
+  /* First row headers with unique colors */
+  .ch-sponsor-tier-table th.platinum {
+    background-color: rgb(171, 209, 204);
+    color: black;
+  }
+  
+  .ch-sponsor-tier-table th.gold {
+    background-color: gold;
+    color: black;
+  }
+  
+  .ch-sponsor-tier-table th.silver {
+    background-color: silver;
+    color: black;
+  }
+  
+  .ch-sponsor-tier-table th.bronze {
+    background-color: peru;
+    color: black;
+  }
+ 
+.infoText {
+    font-size: 17px;
+    width: 1200px;
+}

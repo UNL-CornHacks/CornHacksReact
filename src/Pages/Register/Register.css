@@ -11,7 +11,7 @@
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent black overlay */
   color: white;
   text-align: center;
   padding: 20px;

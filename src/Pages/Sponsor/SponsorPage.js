@@ -9,6 +9,8 @@ import SponsorTable from "Pages/Sponsor/Components/SponsorTable";
 import ContinueArrow from "GlobalComponents/ContinueArrow";
 import Button from "GlobalComponents/Button";
 import HomeHero from "Pages/Home/Components/HomeHero";
+import Sponsor24 from "./Sponsors24";
+import SponsorCarousel from "./SponsorCarousel";
 
 import "./Styles/SponsorPage.css";
 import SponsorFAQ from "Pages/Sponsor/Components/SponsorFAQ";
@@ -21,9 +23,12 @@ const SponsorPage = () => {
       <div>
           <HomeHero showOverlay={() => setOverlayState(true)} />
           {/* <AirtableCompanies setSponsorData={getSponsors} /> */}
+          <div className="SponsorCarousel">
+            <SponsorCarousel />
+          </div>
+          <Sponsor24 />
           <SponsorTable />
-          {/*
-          <TextSection backgroundColor={Colors.WHITE}>
+          {/* <TextSection backgroundColor={Colors.WHITE}>
               <SponsorSection
                   title="Platinum Sponsors"
                   titleColor={Colors.DARK_BLUE}
@@ -48,7 +53,7 @@ const SponsorPage = () => {
                   sectionHeight="100px"
                   grid={5}
               />
-              <img id="nelnet" src={require("../../Images/sponsors/sponsor_logos/Nelnet/Nelnet_Logo_White_Web.PNG")} />
+              <p>this section</p>
               <SponsorSection
                   title="Bronze Sponsors"
                   titleColor={Colors.DARK_BLUE}
@@ -57,8 +62,8 @@ const SponsorPage = () => {
                   sectionHeight="100px"
                   grid={6}
               />
-          </TextSection>
-          */}
+          </TextSection> */}
+         
       </div>
   );
 };

@@ -21,6 +21,8 @@ import logo23 from "../../Images/2023_final_logo_only.png"
 import logo24 from "../../Graphics/corn3d.svg"
 import Sponsors24 from "../Sponsor/Sponsors24"
 import Numbers from "./Numbers"
+import { Link } from "react-router-dom";
+
 
 import "./Styles/HomePage.css"
 
@@ -73,13 +75,13 @@ const HomePage = () => {
               Hacks
             </span>  is completely <span style={{ color: 'red', fontWeight: 'bold' }}>
               FREE
-            </span> and meals are provided. <span style={{ color: '#f4d816', textShadow: '1px 1px 1px rgba(0, 0, 0, 0.75)'}}>
+            </span> and meals are provided. Plus, there are over $3,500 in prizes! <span style={{ color: '#f4d816', textShadow: '1px 1px 1px rgba(0, 0, 0, 0.75)'}}>
               Corn
             </span>
             <span style={{ color: '#4bb965', fontWeight: 'bold', textShadow: '1px 1px 1px rgba(0, 0, 0, 0.75)'}}>
               Hacks
             </span> is funded
-              by the University of Nebraska-Lincoln and industry sponsors. <span style={{ fontWeight: 'bold' }}>Check out our 2024 sponsors <span style={{ color: 'blue' }}>here</span></span>
+              by the University of Nebraska-Lincoln and industry sponsors. <span style={{ fontWeight: 'bold' }}>Check out our 2024 sponsors <Link to="/sponsor/"><span style={{ color: 'blue' }}>here</span></Link></span>
             </p>
           </div>
         </div>

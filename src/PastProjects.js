@@ -298,14 +298,109 @@
 
 // export default App;
 
+// import React, { useRef, useState } from 'react';
+// import { Link, Element, animateScroll as scroll } from 'react-scroll';
+// import HomeHero from 'Pages/Home/Components/HomeHero';
+// import logo19 from "Images/cropped_raw.png"
+// import logo20 from "Graphics/cornhacks.svg"
+// import logo21 from "Graphics/logo21.svg"
+// import logo22 from "Images/logo22.png"
+// import logo23 from "Images/2023_final_logo_only.png"
+// import logo24 from "Graphics/corn3d.svg"
+
+// import './PastProjects.css';
+
+// function App() {
+//   const videoRef = useRef(null);
+//   const [isFading, setIsFading] = useState(false);
+//   const [showPlayButton, setShowPlayButton] = useState(true);
+
+//   const playVideoAtDoubleSpeedAndFadeOut = () => {
+//     if (videoRef.current) {
+//       videoRef.current.playbackRate = 3.0;
+//       videoRef.current.play();
+//       setIsFading(true); // Trigger the fade-out effect
+//       setShowPlayButton(false); // Hide the play button and show the reset button
+//     }
+//   };
+
+//   const resetAndPauseVideo = () => {
+//     if (videoRef.current) {
+//       videoRef.current.pause();
+//       videoRef.current.currentTime = 0; // Reset to the beginning
+//       setIsFading(false); // Remove the fade-out effect
+//       setShowPlayButton(true); // Show the play button and hide the reset button
+//     }
+//   };
+
+//   const [overlayState, setOverlayState] = useState(false);
+
+//   return (
+//     <div className="App">
+//       <HomeHero showOverlay={() => setOverlayState(true)} />
+//       <header className="App-header">
+//         <p className={`PastProjectsTitle ${isFading ? 'turn' : ''}`}>Past Projects</p>
+//         <section className='vid'>
+//           <section className='content'>
+//             {showPlayButton ? (
+//             <Link to="section1" smooth={true} duration={2000}>
+//               <button onClick={playVideoAtDoubleSpeedAndFadeOut} className='firstTextLink'><img src={logo24} className='logo'/>2024: Beat the Odds</button>
+//             </Link>
+//       ) : (
+//             <button onClick={resetAndPauseVideo} className='backLink'>&lt;- BACK</button>
+//       )}
+//             {showPlayButton ? (
+//             <button className='secondTextLink'><img src={logo23} className='logo'/>2023: Cybersecurity</button>
+//       ) : (
+//             <button onClick={resetAndPauseVideo} className='backLink'>&lt;- BACK</button>
+//       )}
+//             {showPlayButton ? (
+//             <button className='thirdTextLink'><img src={logo22} className='logo'/>2022: Retro</button>
+//       ) : (
+//             <button onClick={resetAndPauseVideo} className='backLink'>&lt;- BACK</button>
+//       )}
+//             {showPlayButton ? (
+//             <button className='fourthTextLink'><img src={logo21} className='logo'/>2021: Looking Forward</button>
+//       ) : (
+//             <button onClick={resetAndPauseVideo} className='backLink'>&lt;- BACK</button>
+//       )}
+//             {showPlayButton ? (
+//             <button className='fifthTextLink'><img src={logo20} className='logo'/>2020: Going Green</button>
+//       ) : (
+//             <button onClick={resetAndPauseVideo} className='backLink'>&lt;- BACK</button>
+//       )}
+//             {showPlayButton ? (
+//             <button className='sixthTextLink'><img src={logo19} className='logo'/>2019: Cornhacks 1</button>
+//       ) : (
+//             <button onClick={resetAndPauseVideo} className='backLink'>&lt;- BACK</button>
+//       )}
+//             <div className='holder'>
+//               <video ref={videoRef} className={`video ${isFading ? 'fade-out' : ''}`}>
+//                 <source src={`${process.env.PUBLIC_URL}/output.mp4`} type="video/mp4" />
+//               </video>
+//               <div className={`text ${isFading ? 'fade-in' : 'fade-out'}`}>This text appears when the video plays at double speed.</div>
+//             </div>
+//           </section>
+//         </section>
+//       </header>
+//       <Element name="section1" style={{ height: '100vh', background: 'lightblue' }}>
+//         <h2>Section 1</h2>
+//       </Element>
+//     </div>
+//   );
+// }
+
+// export default App;
+
 import React, { useRef, useState } from 'react';
+import { Link, Element } from 'react-scroll';
 import HomeHero from 'Pages/Home/Components/HomeHero';
-import logo19 from "Images/cropped_raw.png"
-import logo20 from "Graphics/cornhacks.svg"
-import logo21 from "Graphics/logo21.svg"
-import logo22 from "Images/logo22.png"
-import logo23 from "Images/2023_final_logo_only.png"
-import logo24 from "Graphics/corn3d.svg"
+import logo19 from "Images/cropped_raw.png";
+import logo20 from "Graphics/cornhacks.svg";
+import logo21 from "Graphics/logo21.svg";
+import logo22 from "Images/logo22.png";
+import logo23 from "Images/2023_final_logo_only.png";
+import logo24 from "Graphics/corn3d.svg";
 
 import './PastProjects.css';
 
@@ -313,22 +408,39 @@ function App() {
   const videoRef = useRef(null);
   const [isFading, setIsFading] = useState(false);
   const [showPlayButton, setShowPlayButton] = useState(true);
+  const [isReappearing, setIsReappearing] = useState(false);
 
   const playVideoAtDoubleSpeedAndFadeOut = () => {
     if (videoRef.current) {
       videoRef.current.playbackRate = 3.0;
       videoRef.current.play();
-      setIsFading(true); // Trigger the fade-out effect
-      setShowPlayButton(false); // Hide the play button and show the reset button
+      setIsFading(true);
+      setShowPlayButton(false);
+
+      // After 4 seconds, fade out the video
+      setTimeout(() => {
+        setIsFading(false);
+        setIsReappearing(true);
+
+        // After 1 second, reappear and pause the video
+        setTimeout(() => {
+          if (videoRef.current) {
+            videoRef.current.pause();
+            videoRef.current.currentTime = 0;
+            setIsReappearing(false);
+            setShowPlayButton(true);
+          }
+        }, 1000);
+      }, 4000);
     }
   };
 
   const resetAndPauseVideo = () => {
     if (videoRef.current) {
       videoRef.current.pause();
-      videoRef.current.currentTime = 0; // Reset to the beginning
-      setIsFading(false); // Remove the fade-out effect
-      setShowPlayButton(true); // Show the play button and hide the reset button
+      videoRef.current.currentTime = 0;
+      setIsFading(false);
+      setShowPlayButton(true);
     }
   };
 
@@ -342,44 +454,86 @@ function App() {
         <section className='vid'>
           <section className='content'>
             {showPlayButton ? (
-            <button onClick={playVideoAtDoubleSpeedAndFadeOut} className='firstTextLink'><img src={logo24} className='logo'/>2024: Beat the Odds</button>
-      ) : (
-            <button onClick={resetAndPauseVideo} className='backLink'>&lt;- BACK</button>
-      )}
+              <Link to="2024" smooth={true} duration={2000}>
+                <button onClick={playVideoAtDoubleSpeedAndFadeOut} className='firstTextLink'>
+                  <img src={logo24} className='logo' />2024: Beat the Odds
+                </button>
+              </Link>
+            ) : (
+              <button onClick={resetAndPauseVideo} className='backLink'>&lt;- BACK</button>
+            )}
             {showPlayButton ? (
-            <button className='secondTextLink'><img src={logo23} className='logo'/>2023: Something</button>
-      ) : (
-            <button onClick={resetAndPauseVideo} className='backLink'>&lt;- BACK</button>
-      )}
+              <Link to="2023" smooth={true} duration={2000}>
+                <button className='secondTextLink'>
+                  <img src={logo23} className='logo' />2023: Cybersecurity
+                </button>
+              </Link>
+            ) : (
+              <button onClick={resetAndPauseVideo} className='backLink'>&lt;- BACK</button>
+            )}
             {showPlayButton ? (
-            <button className='thirdTextLink'><img src={logo22} className='logo'/>2022: Retro</button>
-      ) : (
-            <button onClick={resetAndPauseVideo} className='backLink'>&lt;- BACK</button>
-      )}
+              <Link to="2022" smooth={true} duration={2000}>
+                <button className='thirdTextLink'>
+                  <img src={logo22} className='logo' />2022: Retro
+                </button>
+              </Link>
+            ) : (
+              <button onClick={resetAndPauseVideo} className='backLink'>&lt;- BACK</button>
+            )}
             {showPlayButton ? (
-            <button className='fourthTextLink'><img src={logo21} className='logo'/>2021: Looking Forward</button>
-      ) : (
-            <button onClick={resetAndPauseVideo} className='backLink'>&lt;- BACK</button>
-      )}
+              <Link to="2021" smooth={true} duration={2000}>
+                <button className='fourthTextLink'>
+                  <img src={logo21} className='logo' />2021: Looking Forward
+                </button>
+              </Link>
+            ) : (
+              <button onClick={resetAndPauseVideo} className='backLink'>&lt;- BACK</button>
+            )}
             {showPlayButton ? (
-            <button className='fifthTextLink'><img src={logo20} className='logo'/>2020: Going Green</button>
-      ) : (
-            <button onClick={resetAndPauseVideo} className='backLink'>&lt;- BACK</button>
-      )}
+              <Link to="2020" smooth={true} duration={2000}>
+                <button className='fifthTextLink'>
+                  <img src={logo20} className='logo' />2020: Going Green
+                </button>
+              </Link>
+            ) : (
+              <button onClick={resetAndPauseVideo} className='backLink'>&lt;- BACK</button>
+            )}
             {showPlayButton ? (
-            <button className='sixthTextLink'><img src={logo19} className='logo'/>2019: Cornhacks 1</button>
-      ) : (
-            <button onClick={resetAndPauseVideo} className='backLink'>&lt;- BACK</button>
-      )}
+              <Link to="2019" smooth={true} duration={2000}>
+                <button className='sixthTextLink'>
+                  <img src={logo19} className='logo' />2019: Cornhacks 1
+                </button>
+              </Link>
+            ) : (
+              <button onClick={resetAndPauseVideo} className='backLink'>&lt;- BACK</button>
+            )}
             <div className='holder'>
-              <video ref={videoRef} className={`video ${isFading ? 'fade-out' : ''}`}>
+              <video ref={videoRef} className={`video ${isFading ? 'fade-out' : isReappearing ? 'fade-in' : ''}`}>
                 <source src={`${process.env.PUBLIC_URL}/output.mp4`} type="video/mp4" />
               </video>
-              <div className={`text ${isFading ? 'fade-in' : 'fade-out'}`}>This text appears when the video plays at double speed.</div>
+              <div className={`text ${isFading ? 'fade-in' : 'fade-out'}`}>You just got CORNED</div>
             </div>
           </section>
-        </section>
+        // </section>
       </header>
+      <Element name="2024" style={{ height: '100vh', background: 'lightblue' }}>
+        <h2>2024</h2>
+      </Element>
+      <Element name="2023" style={{ height: '100vh', background: 'lightblue' }}>
+        <h2>2023</h2>
+      </Element>
+      <Element name="2022" style={{ height: '100vh', background: 'lightblue' }}>
+        <h2>2022</h2>
+      </Element>
+      <Element name="2021" style={{ height: '100vh', background: 'lightblue' }}>
+        <h2>2021</h2>
+      </Element>
+      <Element name="2020" style={{ height: '100vh', background: 'lightblue' }}>
+        <h2>2020</h2>
+      </Element>
+      <Element name="2019" style={{ height: '100vh', background: 'lightblue' }}>
+        <h2>2019</h2>
+      </Element>
     </div>
   );
 }

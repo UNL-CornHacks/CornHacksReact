@@ -1,19 +1,39 @@
 import Carousel from 'react-bootstrap/Carousel';
-import image1 from "../../Images/Chairs.png";
+import firstPlace from "../../Images/1st_Place_Winners.jpg";
+import secondPlace from "../../Images/2nd_Place_Winners.jpg";
+import thirdPlace from "../../Images/3rd_Place_Winners.jpg";
+import image1 from "../../Images/01cornhacks24.png";
+import image2 from "../../Images/02cornhacks24.png";
+import image3 from "../../Images/03cornhacks24.png";
 
 import "./Styles/HomeCarousel.css";
 
 function HomeCarousel() {
   return (
     <div className='carouselContainer'>
-        <Carousel style={{ maxWidth: '800px', maxHeight: '400px', margin: '0 auto' }}>
+        <Carousel style={{ maxWidth: '800px', maxHeight: '800px', margin: '0 auto' }}>
         <Carousel.Item>
         <div className='carouselImage'>
-            <img src={image1} />
+            <img src={firstPlace} />
         </div>
             <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>1st place project</h3>
+            </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+        <div className='carouselImage'>
+            <img src={secondPlace} />
+        </div>
+            <Carousel.Caption>
+            <h3>2nd place project</h3>
+            </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+        <div className='carouselImage'>
+            <img src={thirdPlace} />
+        </div>
+            <Carousel.Caption>
+            <h3>3rd place project</h3>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -21,19 +41,23 @@ function HomeCarousel() {
             <img src={image1} />
         </div>
             <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>working pt. 1</h3>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
         <div className='carouselImage'>
-            <img src={image1} />
+            <img src={image2} />
         </div>
             <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
+            <h3>working pt. 2</h3>
+            </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+        <div className='carouselImage'>
+            <img src={image3} />
+        </div>
+            <Carousel.Caption>
+            <h3>opening keynote</h3>
             </Carousel.Caption>
         </Carousel.Item>
         </Carousel>

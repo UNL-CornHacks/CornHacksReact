@@ -1,0 +1,12 @@
+.GoogleForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust height as needed */
+  margin-top: 225px;
+  margin-bottom: 250px;
+}
+
+.GoogleForm iframe {
+  border: none; 
+}
