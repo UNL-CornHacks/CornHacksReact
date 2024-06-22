@@ -19,7 +19,7 @@ import logo21 from "../../Graphics/logo21.svg"
 import logo22 from "../../Images/logo22.png"
 import logo23 from "../../Images/2023_final_logo_only.png"
 import logo24 from "../../Graphics/corn3d.svg"
-import Sponsors24 from "../Sponsor/Sponsors24"
+import Sponsors24 from "../Sponsor/SponsorBar/Sponsors24"
 import Numbers from "./Numbers"
 import { Link } from "react-router-dom";
 

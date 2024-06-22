@@ -1,11 +1,11 @@
 import React from "react";
-import olsson from "../../Images/olsson.png"
-import conagra from "../../Images/conagra.png"
-import DPL from "../../Images/DPL_logo_2018_rgb.png"
-import belcan from "../../Images/belcan.jpeg"
-import licor from "../../Images/licor.jpg"
+import olsson from "../../../Graphics/olsson.svg"
+import conagra from "../../../Images/conagra.png"
+import DPL from "../../../Images/DPL_logo_2018_rgb.png"
+import belcan from "../../../Images/belcan.jpeg"
+import licor from "../../../Images/licor.jpg"
 
-import "./Styles/Sponsor24.css";
+import "../Styles/SponsorsBar.css";
 import { Link } from "react-router-dom";
 
 function Sponsor24() {

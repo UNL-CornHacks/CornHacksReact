@@ -9,7 +9,7 @@ import SponsorTable from "Pages/Sponsor/Components/SponsorTable";
 import ContinueArrow from "GlobalComponents/ContinueArrow";
 import Button from "GlobalComponents/Button";
 import HomeHero from "Pages/Home/Components/HomeHero";
-import Sponsor24 from "./Sponsors24";
+import Sponsor24 from "./SponsorBar/Sponsors24";
 import SponsorCarousel from "./SponsorCarousel";
 
 import "./Styles/SponsorPage.css";

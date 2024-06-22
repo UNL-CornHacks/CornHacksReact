@@ -313,3 +313,111 @@ video {
 .fade-out {
   opacity: 0;
 }
+
+.elementTitle {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+/* .elementStyle {
+ height: 100vh; 
+} */
+
+.first {
+  background-color: rgba(249, 243, 69, 0.5);
+}
+
+.second {
+  background-color: rgba(239, 206, 85, 0.5);
+}
+
+.third {
+  background-color: rgba(208, 193, 121, 0.5);
+}
+
+.fourth {
+  background-color: rgba(128, 198, 105, 0.5);
+}
+
+.fifth {
+  background-color: rgba(78, 191, 153, 0.5);
+}
+
+.sixth {
+  background-color: rgba(28, 169, 181, 0.5);
+}
+
+/* .elementContent {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+}
+
+.column {
+  flex: 1;
+  padding: 50px;
+}
+
+.separateColumn {
+  align-items: left;
+  text-align: left;
+  flex: 2;
+} */
+
+.element {
+  min-height: 200vh;
+  background: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.elementContent {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.headers .column {
+  flex: 1;
+  text-align: center;
+}
+
+.content .column {
+  flex: 1;
+  padding: 20px;
+}
+
+.details {
+  text-align: center;
+}
+
+.separateColumns {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px; /* Add some space between the columns */
+}
+
+.leftColumn,
+.middleColumn,
+.rightColumn,
+.farRightColumn {
+  flex: 1;
+}
+
+.header {
+  border-radius: 10px; /* Add border-radius to headers */
+  background-color: #fff; /* Example background color */
+  padding: 10px;
+  margin: 5px;
+}
+
+.image {
+  border-radius: 50%; /* Circular border-radius for images */
+}

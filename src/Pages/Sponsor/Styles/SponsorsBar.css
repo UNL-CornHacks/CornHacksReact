@@ -8,7 +8,9 @@
   height: 80vh; /* Full height of the viewport */
 }
 
+.PlatinumSponsor,
 .GoldSponsor,
+.SilverSponsor,
 .BronzeSponsor {
   display: flex;
   justify-content: center;
@@ -16,9 +18,19 @@
   gap: 150px; /* Space between images */
 }
 
+.imagePlatinum {
+  max-width: 650px; /* Adjust the size as needed */
+  height: auto;
+}
+
 .imageGold {
   max-width: 500px; /* Adjust the size as needed */
   height: auto;
+}
+
+.imageSilver {
+    max-width: 350px;
+    height: auto;
 }
 
 .imageBronze {
@@ -34,9 +46,19 @@
   align-items: center;
 }
 
+.platinum {
+  background-color: paleturquoise;
+  border-color: paleturquoise;
+}
+
 .gold {
   background-color: gold;
   border-color: gold;
+}
+
+.silver {
+    background-color: silver;
+    border-color: silver;
 }
 
 .bronze {
