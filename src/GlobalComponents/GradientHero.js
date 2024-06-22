@@ -6,6 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import unlLogo from "Images/UNL.png"
+import InstagramLogo from "../GlobalComponents/InstagramLogo"
 
 import "./Styles/GradientHero.css";
 
@@ -54,7 +55,6 @@ const GradientHero = ({
       </Link>
     </div>
     <div className="unl-logo-div">
-      <h4>the student-led hackathon at</h4>
       <a
         href="https://www.unl.edu/"
         target="_blank"
@@ -62,6 +62,9 @@ const GradientHero = ({
       >
         <img className="unl-logo" src={unlLogo} alt="UNL logo"/>
       </a>
+    </div>
+    <div className="insta-logo-div">
+      <InstagramLogo />
     </div>
   </div>
 );

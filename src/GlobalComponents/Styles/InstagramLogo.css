@@ -1,0 +1,45 @@
+.image-opener-container {
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 98%;
+}
+
+.toggle-button {
+  position: absolute;
+  border-radius: 90px;
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+  z-index: 4;
+}
+
+.example-image {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: -255px;
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 5px;
+  z-index: 3;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.example-link {
+  position: absolute;
+  display: block;
+  margin-top: 15px;
+  margin-left: -165px;
+  font-size: 18px;
+  color: #007BFF;
+  text-decoration: none;
+  z-index: 4;
+}
+
+.example-link:hover {
+  text-decoration: underline;
+}

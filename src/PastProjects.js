@@ -146,6 +146,7 @@ function App() {
               href="https://github.com/BALD-rs/lucky-liars"
               target="_blank"
               rel="noopener noreferrer"
+              className='projectLink'
             >
               <h2>1. Lucky Liars</h2>
             </a>
@@ -157,6 +158,7 @@ function App() {
               href="https://github.com/Zohair-Khan/CornHacks2024"
               target="_blank"
               rel="noopener noreferrer"
+              className='projectLink'
             >
               <h2>2. Even Steven Beats the Odds</h2>
             </a>
@@ -168,6 +170,7 @@ function App() {
               href="https://github.com/landrygeiger/cornhacks2024"
               target="_blank"
               rel="noopener noreferrer"
+              className='projectLink'
             >
               <h2>3. Black Jack Optimal</h2>
             </a>
@@ -185,6 +188,7 @@ function App() {
               href="https://github.com/WildkrattFan/CornHacks-2024"
               target="_blank"
               rel="noopener noreferrer"
+              className='projectLink'
             >
               <h2>Fortunes Gambit: Realm of Chance</h2>
             </a>
@@ -197,6 +201,7 @@ function App() {
               href="https://github.com/jackrankin/brAIn_rot"
               target="_blank"
               rel="noopener noreferrer"
+              className='projectLink'
             >
               <h2>brAIn rot</h2>
             </a>
@@ -209,6 +214,7 @@ function App() {
               href="https://github.com/j-seibel/better-front"
               target="_blank"
               rel="noopener noreferrer"
+              className='projectLink'
             >
               <h2>Bet Better</h2>
             </a>
@@ -231,6 +237,7 @@ function App() {
               href="https://github.com/NathanKolbas/GonePhishing"
               target="_blank"
               rel="noopener noreferrer"
+              className='projectLink'
             >
               <h2>1. Gone Phishing 2</h2>
             </a>
@@ -241,6 +248,7 @@ function App() {
               href="https://github.com/j-seibel/GonePhishing"
               target="_blank"
               rel="noopener noreferrer"
+              className='projectLink'
             >
               <h2>2. Gone Phishing 4</h2>
             </a>
@@ -251,6 +259,7 @@ function App() {
               href="https://frie.dev/vw/"
               target="_blank"
               rel="noopener noreferrer"
+              className='projectLink'
             >
               <h2>3. VW</h2>
             </a>
@@ -267,6 +276,7 @@ function App() {
               href="https://github.com/ZWally/cornhacks2023"
               target="_blank"
               rel="noopener noreferrer"
+              className='projectLink'
             >
               <h2>Access Genie</h2>
             </a>
@@ -288,6 +298,7 @@ function App() {
               href="https://github.com/BracciaCJ/2022-CornHacks"
               target="_blank"
               rel="noopener noreferrer"
+              className='projectLink'
             >
               <h2>1. Ha11y</h2>
             </a>
@@ -298,6 +309,7 @@ function App() {
               href="https://github.com/picrossin/Weevil-Warrior-GB"
               target="_blank"
               rel="noopener noreferrer"
+              className='projectLink'
             >
               <h2>2. Weevil Warrior</h2>
             </a>
@@ -311,6 +323,7 @@ function App() {
               href="https://github.com/Dillon-Howell/cornhacks-2022"
               target="_blank"
               rel="noopener noreferrer"
+              className='projectLink'
             >
               <h2>4. BigBrother</h2>
             </a>
@@ -331,6 +344,7 @@ function App() {
               href="https://github.com/RyanOrth/Signos"
               target="_blank"
               rel="noopener noreferrer"
+              className='projectLink'
             >
               <h2>Signos</h2>
             </a>
@@ -352,6 +366,7 @@ function App() {
               href="https://github.com/Bracciata/Cornhacks2021"
               target="_blank"
               rel="noopener noreferrer"
+              className='projectLink'
             >
               <h2>1. Teddy</h2>
             </a>
@@ -362,6 +377,7 @@ function App() {
               href="https://github.com/LukeAVanDrie/Cue"
               target="_blank"
               rel="noopener noreferrer"
+              className='projectLink'
             >
               <h2>2. TA-DA</h2>
             </a>
@@ -372,6 +388,7 @@ function App() {
               href="https://github.com/sstream17/cornhacks-2021"
               target="_blank"
               rel="noopener noreferrer"
+              className='projectLink'
             >
               <h2>3. coder_royale</h2>
             </a>
@@ -388,6 +405,7 @@ function App() {
               href="https://github.com/danielnoon/wehedge/"
               target="_blank"
               rel="noopener noreferrer"
+              className='projectLink'
             >
               <h2>WeHedge</h2>
             </a>

@@ -23,6 +23,8 @@ import Sponsors24 from "../Sponsor/SponsorBar/Sponsors24"
 import Numbers from "./Numbers"
 import { Link } from "react-router-dom";
 
+import InstagramLogo from "GlobalComponents/InstagramLogo"
+
 
 import "./Styles/HomePage.css"
 

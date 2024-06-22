@@ -421,3 +421,12 @@ video {
 .image {
   border-radius: 50%; /* Circular border-radius for images */
 }
+
+.projectLink {
+  text-decoration: none;
+  color: blue;
+}
+
+.projectLink:hover {
+  text-decoration: underline;
+}
