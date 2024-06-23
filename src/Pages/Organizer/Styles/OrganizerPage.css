@@ -10,3 +10,7 @@
 .GoogleForm iframe {
   border: none; 
 }
+
+.currentOrganizerSection {
+    background-color: rgba(119, 235, 255, 0.5);
+}

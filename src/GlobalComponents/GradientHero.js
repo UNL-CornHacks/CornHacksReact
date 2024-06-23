@@ -7,6 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import unlLogo from "Images/UNL.png"
 import InstagramLogo from "../GlobalComponents/InstagramLogo"
+import EmailLogo from "../GlobalComponents/EmailLogo"
 
 import "./Styles/GradientHero.css";
 
@@ -42,16 +43,16 @@ const GradientHero = ({
         <button style={{ width: '150px', height: '100px' }} className='RegisterLink'>Register</button>
       </Link>
       <Link to="/home">
-        <button style={{ width: '180px', height: '100px' }} className='AboutLink'>About Us</button>
+        <button style={{ width: '140px', height: '100px' }} className='AboutLink'>About Us</button>
       </Link>
       <Link to="/sponsor/">
-        <button style={{ width: '150px', height: '100px' }} className='AboutLink'>Sponsor</button>
+        <button style={{ width: '140px', height: '100px' }} className='AboutLink'>Sponsor</button>
       </Link>
       <Link to="/organize/">
-        <button style={{ width: '250px', height: '100px' }} className='AboutLink'>Help Organize</button>
+        <button style={{ width: '160px', height: '100px' }} className='AboutLink'>Help Organize</button>
       </Link>
       <Link to="/pastProjects">
-        <button style={{ width: '230px', height: '100px' }} className='AboutLink'>Past Projects</button>
+        <button style={{ width: '160px', height: '100px' }} className='AboutLink'>Past Projects</button>
       </Link>
     </div>
     <div className="unl-logo-div">
@@ -64,7 +65,10 @@ const GradientHero = ({
       </a>
     </div>
     <div className="insta-logo-div">
-      <InstagramLogo />
+      <div className="moveLogo">
+        <EmailLogo />
+      </div>
+        <InstagramLogo />
     </div>
   </div>
 );

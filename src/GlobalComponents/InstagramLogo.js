@@ -18,7 +18,7 @@ const ImageOpener = () => {
       </button>
       {isImageOpen && (
         <div className="image-link-container">
-          <img src={qrcode} alt="Instagram QR Code" className="example-image"  style={{ width: '300px'}}/>
+          <img src={qrcode} alt="Instagram QR Code" className="example-image"/>
           <a href="https://www.instagram.com/unl_cornhacks/" target="_blank" rel="noopener noreferrer" className="example-link">
             Instagram Link
           </a>

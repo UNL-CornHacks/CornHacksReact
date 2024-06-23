@@ -1,0 +1,64 @@
+.image-opener-container-email {
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 97%;
+}
+
+.toggle-button-email {
+  position: absolute;
+  border-radius: 90px;
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+  z-index: 4;
+}
+
+.example-image-email {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: -255px;
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 5px;
+  z-index: 3;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.emailButtonHolder {
+    position: absolute;
+    display: flex;
+    padding: 10px;
+    background-color: white; 
+    border-radius: '12px';
+    z-index: 3;
+    margin-left: -480px;
+}
+
+.gmailButton {
+    padding: 0px 40px; 
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 12px;
+    background-color: #f0f0f0;
+}
+
+.gmailButton:hover {
+    background-color: rgba(139, 139, 139, 0.5);
+}
+
+.outlookButton {
+    padding: 0px 20px;
+    font-size: 16px; 
+    margin: 10px; 
+    border-radius: 12px; 
+    background-color: #f0f0f0;
+}
+
+.outlookButton:hover {
+    background-color: rgba(139, 139, 139, 0.5);
+}

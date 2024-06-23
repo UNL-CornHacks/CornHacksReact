@@ -6,6 +6,8 @@ import ImageSection from "GlobalComponents/ImageSection";
 import Type from "GlobalComponents/Type";
 import Button from "GlobalComponents/Button";
 import HomeHero from "Pages/Home/Components/HomeHero";
+import levi from "../../Graphics/levi.svg";
+import shahad from "../../Graphics/shahad.svg";
 
 import "./Styles/OrganizerPage.css"
 
@@ -16,6 +18,28 @@ const OrganizerPage = () => (
     <div className="GoogleForm">
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfKXfQ-5Ppt3dTxJjdI4FfmHuOhnEx1qB4oLgkKqYK_mLal0Q/viewform?embedded=true" width="640" height="1494" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
+      <div className="elementContent details">
+      <section className='currentOrganizerSection'>
+        <h1>Current Organizers</h1>
+        <div className="separateColumns">
+          <div className="leftColumn president">
+              <h2>President</h2>
+              {/* <img src='' alt="Erbey Uribe" style={{ width: '300px' }}/> */}
+              <h4>Erbey Uribe</h4>
+          </div>
+          <div className="middleColumn treasurer">
+              <h2>Treasurer</h2>
+              <img src={levi} alt="Levi Busching" style={{ width: '300px' }}/>
+              <h4>Levi Busching</h4>
+          </div>
+          <div className='rightColumn primaryProgrammer'>
+              <h2>Primary Programmer</h2>
+              <img src={shahad} alt="Shahad Al Elew" style={{ width: '300px' }}/>
+              <h4>Shahad Al Elew</h4>
+          </div>
+        </div>
+      </section>
+      </div>
     {/* <GradientHero
       colors={[Colors.YELLOW, Colors.GREEN, Colors.BLUE]}
       height="70vh"

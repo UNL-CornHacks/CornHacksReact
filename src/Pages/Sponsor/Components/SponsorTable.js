@@ -15,7 +15,7 @@ const SponsorTable = () => {
                 <h1>Want to Become a Sponsor?</h1>
                 <p className="infoText">Becoming a sponsor is a great way to support local students while recruiting for internship and employment opportunities!
                 As a sponsor, you get to work intimately with hackathon participants and can unlock the perks from the table below. Plus, who doesn't love
-                seeing their logo on a t-shirt?? <br/> For more information on sponsoring CornHacks, contact us here.</p>
+                seeing their logo on a t-shirt?? <br/> For more information on sponsoring CornHacks, contact us at <span style={{ fontSize: '20px', fontWeight: 'bold'}}>cornhacks@unl.edu</span></p>
                 <table className="ch-sponsor-tier-table">
                     <thead>
                         <tr>

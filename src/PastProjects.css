@@ -430,3 +430,21 @@ video {
 .projectLink:hover {
   text-decoration: underline;
 }
+
+.president {
+  background-color: plum;
+  width: 500px;
+  border-radius: 12px;
+}
+
+.treasurer {
+  background-color: lightgreen;
+  width: 500px;
+  border-radius: 12px;
+}
+
+.primaryProgrammer {
+  background-color: khaki;
+  width: 500px;
+  border-radius: 12px;
+}

@@ -113,7 +113,7 @@
     /* width: 30px; */
     height: 80px;
     margin-top: 7px;
-    margin-left: 370px;
+    margin-left: 510px;
     border-radius: 12px;
 }
 
@@ -126,12 +126,18 @@
     color: rgb(255, 255, 255);
     background-color: transparent;
     border-color: transparent;
-    font-size: 30px;
-    padding: 20px;
+    font-size: 20px;
+    padding: 10px;
     border-radius: 12px;
     margin-top: 7px;
 }
 
 .AboutLink:hover {
     color: rgba(255, 255, 255, 0.25);
+}
+
+.moveLogo {
+    position: absolute;
+    margin-top: -32px;
+    margin-left: 94%;
 }

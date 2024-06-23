@@ -3,7 +3,7 @@
   margin-top: 30px;
   display: flex;
   flex-direction: row;
-  margin-left: 98%;
+  margin-left: 97%;
 }
 
 .toggle-button {
@@ -17,8 +17,8 @@
 
 .example-image {
   position: absolute;
-  margin-top: 10px;
-  margin-left: -255px;
+  margin-top: 45px;
+  margin-left: -235px;
   max-width: 100%;
   height: auto;
   border: 2px solid #ddd;
@@ -27,13 +27,14 @@
   z-index: 3;
   background-color: transparent;
   border-color: transparent;
+  width: 300px;
 }
 
 .example-link {
   position: absolute;
   display: block;
-  margin-top: 15px;
-  margin-left: -165px;
+  margin-top: 55px;
+  margin-left: -145px;
   font-size: 18px;
   color: #007BFF;
   text-decoration: none;
