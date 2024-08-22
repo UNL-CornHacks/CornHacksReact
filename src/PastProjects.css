@@ -1,138 +1,33 @@
-/* App.css
-
-/* .App {
-  text-align: center;
-}
-
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
-
-/* h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-} */
-
-
-/*.vid {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black; 
-}
-
-.holder {
-  height: 10000px; 
-}
-
-.App {
-  text-align: center;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}*/
-
-/* main {
-  padding: 20px;
-} */
-
-/* App.css */
-
-/* .App {
-  text-align: center;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.vid {
-  height: 3000px; 
-}
-
-.holder {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  height: 100vh; 
-}
-
-video {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.content {
-  height: 3000px; 
-  background: linear-gradient(to bottom, #f8f9fa, #e9ecef); 
-  color: black;
-  padding: 20px;
-} */
-
-/* App.css */
-
 .App {
   text-align: center;
 }
 
 .App-header {
   background-color: #f0f0f0;
-  /* min-height: 10vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #f0f0f0;
-  /* top: 100px; */
 }
 
 .PastProjectsTitle {
   position: absolute;
   top: 350px;
-  left: 350px;
+  left: 200px;
   font-size: 100px;
   text-align: center;
   color: black;
   align-items: center;
-  /* transform: rotate(-90deg);
-  display: inline-block; */
   z-index: 3;
 }
 
 .holder {
-  margin-top: 120px;
+  position: relative;
+  margin-top: 0px;
+  margin-left: -20%;
 }
-
-/* .vid {
-  height: 3000px;
-} */
 
 .turn {
   position: absolute;
@@ -161,10 +56,6 @@ video {
   margin-left: 500px;
 }
 
-/* .content {
-  height: 3000px; 
-  color: black;
-} */
 .backLink {
   position: absolute;
   top: 150px;
@@ -186,7 +77,7 @@ video {
 .firstTextLink {
   position: absolute;
   top: 150px;
-  left: 1230px;
+  left: 1010px;
   object-fit: cover;
   z-index: 2;
   background-color: transparent;
@@ -206,7 +97,7 @@ video {
   border-radius: 12px;
   position: absolute;
   top: 235px;
-  left: 1230px;
+  left: 1010px;
   object-fit: cover;
   z-index: 2;
   width: 380px;
@@ -223,7 +114,7 @@ video {
   border-radius: 12px;
   position: absolute;
   top: 320px;
-  left: 1230px;
+  left: 1010px;
   object-fit: cover;
   z-index: 2;
   width: 380px;
@@ -240,7 +131,7 @@ video {
   border-radius: 12px;
   position: absolute;
   top: 405px;
-  left: 1220px;
+  left: 1000px;
   object-fit: cover;
   z-index: 2;
   width: 420px;
@@ -257,7 +148,7 @@ video {
   border-radius: 12px;
   position: absolute;
   top: 490px;
-  left: 1230px;
+  left: 1010px;
   object-fit: cover;
   z-index: 2;
   width: 380px;
@@ -274,7 +165,7 @@ video {
   border-radius: 12px;
   position: absolute;
   top: 575px;
-  left: 1230px;
+  left: 1010px;
   object-fit: cover;
   z-index: 2;
   width: 380px;
@@ -286,8 +177,7 @@ video {
 }
 
 .video {
-  /* width: 100%;
-  height: auto; */
+  height: auto; 
   transition: opacity 4s ease-out;
 }
 
@@ -297,11 +187,11 @@ video {
 
 .text {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 75%;
+  left: 65%;
   transform: translate(-50%, -50%);
-  font-size: 18px;
-  color: #333;
+  font-size: 50px;
+  color: blue;
   opacity: 1;
   transition: opacity 2s ease-out;
 }
@@ -319,10 +209,6 @@ video {
   align-items: center;
   text-align: center;
 }
-
-/* .elementStyle {
- height: 100vh; 
-} */
 
 .first {
   background-color: rgba(249, 243, 69, 0.5);
@@ -347,26 +233,6 @@ video {
 .sixth {
   background-color: rgba(28, 169, 181, 0.5);
 }
-
-/* .elementContent {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 90%;
-}
-
-.column {
-  flex: 1;
-  padding: 50px;
-}
-
-.separateColumn {
-  align-items: left;
-  text-align: left;
-  flex: 2;
-} */
 
 .element {
   min-height: 200vh;
@@ -401,7 +267,7 @@ video {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 20px; /* Add some space between the columns */
+  gap: 20px; 
 }
 
 .leftColumn,
@@ -411,15 +277,8 @@ video {
   flex: 1;
 }
 
-.header {
-  border-radius: 10px; /* Add border-radius to headers */
-  background-color: #fff; /* Example background color */
-  padding: 10px;
-  margin: 5px;
-}
-
 .image {
-  border-radius: 50%; /* Circular border-radius for images */
+  border-radius: 50%; 
 }
 
 .projectLink {
