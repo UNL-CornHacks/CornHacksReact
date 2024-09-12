@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.634ec0ec.css",
-    "main.js": "/static/js/main.2d775540.js",
+    "main.js": "/static/js/main.7f096afd.js",
     "static/media/Marketing.png": "/static/media/Marketing.bef8495ff9c632935859.png",
     "static/media/Gradiente.png": "/static/media/Gradiente.9831381d35e6c435d1a0.png",
     "static/media/Finance.png": "/static/media/Finance.cdfacd177879086ff9e4.png",
@@ -28,6 +28,7 @@
     "static/media/Simulation_Track_Winners.jpg": "/static/media/Simulation_Track_Winners.bf96433f2479799c027b.jpg",
     "static/media/sponsors01.png": "/static/media/sponsors01.7c6300dd2a27dfe82cee.png",
     "static/media/sponsors02.png": "/static/media/sponsors02.cfc652c1c8f1fd9d3aae.png",
+    "static/media/erbey.svg": "/static/media/erbey.4d1cef034e9b08e00c85344ff2004943.svg",
     "static/media/Logistics.jpeg": "/static/media/Logistics.ebfa6bb7d1049751aec9.jpeg",
     "static/media/CornHacksSchedule.png": "/static/media/CornHacksSchedule.601231ba885ec511c968.png",
     "static/media/unl_cornhacks_qr.png": "/static/media/unl_cornhacks_qr.bea27861894d1fe3e0a8.png",
@@ -63,10 +64,10 @@
     "index.html": "/index.html",
     "static/media/down-arrow.svg": "/static/media/down-arrow.fd412ad0e46da850a756a77510e40dad.svg",
     "main.634ec0ec.css.map": "/static/css/main.634ec0ec.css.map",
-    "main.2d775540.js.map": "/static/js/main.2d775540.js.map"
+    "main.7f096afd.js.map": "/static/js/main.7f096afd.js.map"
   },
   "entrypoints": [
     "static/css/main.634ec0ec.css",
-    "static/js/main.2d775540.js"
+    "static/js/main.7f096afd.js"
   ]
 }
