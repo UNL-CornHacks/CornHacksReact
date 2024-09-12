@@ -8,6 +8,7 @@ import Button from "GlobalComponents/Button";
 import HomeHero from "Pages/Home/Components/HomeHero";
 import levi from "../../Graphics/levi.svg";
 import shahad from "../../Graphics/shahad.svg";
+import erbey from "../../Graphics/erbey.svg";
 
 import "./Styles/OrganizerPage.css"
 
@@ -24,7 +25,7 @@ const OrganizerPage = () => (
         <div className="separateColumns">
           <div className="leftColumn president">
               <h2>President</h2>
-              {/* <img src='' alt="Erbey Uribe" style={{ width: '300px' }}/> */}
+              <img src={erbey} alt="Erbey Uribe" style={{ width: '300px' }}/>
               <h4>Erbey Uribe</h4>
           </div>
           <div className="middleColumn treasurer">
