@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.634ec0ec.css",
-    "main.js": "/static/js/main.2671cf32.js",
+    "main.js": "/static/js/main.11ca84dd.js",
     "static/media/Marketing.png": "/static/media/Marketing.bef8495ff9c632935859.png",
     "static/media/Gradiente.png": "/static/media/Gradiente.9831381d35e6c435d1a0.png",
     "static/media/Finance.png": "/static/media/Finance.cdfacd177879086ff9e4.png",
@@ -57,17 +57,17 @@
     "static/media/ameritrade.png": "/static/media/ameritrade.f47560a1e5edcd20c561.png",
     "static/media/turner.png": "/static/media/turner.bbeec5aa352ecc3d608a.png",
     "static/media/dmsi.png": "/static/media/dmsi.3f5308c5dd41d60e7534.png",
-    "static/media/cornhacks.svg": "/static/media/cornhacks.7653d5c288fd08fb2c06acf07c364911.svg",
+    "static/media/cornhacks.svg": "/static/media/cornhacks.7bf18fae76cbba06c76489700b60b9fa.svg",
     "static/media/talent.jpg": "/static/media/talent.6028a80dd6251ce8a979.jpg",
     "static/media/nelnet.png": "/static/media/nelnet.8adae1d95a622c2066d3.png",
     "static/media/outlook.svg": "/static/media/outlook.9948b3cecb53ce464f798bd526e5d769.svg",
     "index.html": "/index.html",
-    "static/media/down-arrow.svg": "/static/media/down-arrow.fd412ad0e46da850a756a77510e40dad.svg",
+    "static/media/down-arrow.svg": "/static/media/down-arrow.87d8088f5f66a41aa96d24865feeb6af.svg",
     "main.634ec0ec.css.map": "/static/css/main.634ec0ec.css.map",
-    "main.2671cf32.js.map": "/static/js/main.2671cf32.js.map"
+    "main.11ca84dd.js.map": "/static/js/main.11ca84dd.js.map"
   },
   "entrypoints": [
     "static/css/main.634ec0ec.css",
-    "static/js/main.2671cf32.js"
+    "static/js/main.11ca84dd.js"
   ]
 }
