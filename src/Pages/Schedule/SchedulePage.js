@@ -15,7 +15,7 @@ const SchedulePage = () => (
             boxShadow
         >
             <Type size="h1" bold align="center">
-                CornHacks 2024 Schedule
+                CornHacks 2025 Schedule
             </Type>
         </GradientHero>
         <div style={{

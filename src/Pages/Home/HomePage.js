@@ -20,14 +20,14 @@ const HomePage = () => {
       <HomeHero showOverlay={() => setOverlayState(true)} />
       <TextSection backgroundColor={Colors.DARK_BLUE}>
         <Type size="h2" bold align="center">
-          2024 Schedule available now!
+          Stay tuned for the CornHacks 2025 schedule!
         </Type>
         <div className="ch-button-container-center">
           <Button inverted internal to="/schedule/">
-            View 2024 Schedule
+            View 2025 Schedule
           </Button>
-          <Button inverted to="https://forms.gle/7eHo3s9RURLpvNtM9">
-            Sign up for CornHacks 2024
+          <Button inverted to="https://forms.gle/Leqw3vCsHkgW35Gr8">
+            Sign up for CornHacks 2025
           </Button>
         </div>
       </TextSection>
@@ -39,7 +39,7 @@ const HomePage = () => {
         <Type size="h5" color={Colors.WHITE}>
           CornHacks aims to bring some of the most talented developers from
           around the Midwest to join in a weekend full of hacking. Hosted at the
-          University of Nebraska-Lincoln, over 150 participants will code all
+          University of Nebraska-Lincoln, over 100 participants will code all
           day and night to be assessed by industry professionals and compete for
           several prizes.
         </Type>
@@ -66,9 +66,9 @@ const HomePage = () => {
             for yourself!
           </Question>
           <Question question="Where and when will CornHacks take place?">
-            CornHacks 2024 will start on Saturday, February 17, 2024, and will
-            continue through Sunday, February 18, 2024 — with an optional info
-            session at 3:00PM on Friday, February 16.
+            CornHacks 2025 will start on Saturday, February 15, 2024, and will
+            continue through Sunday, February 16, 2024 — with an optional info
+            session at 3:00PM on Friday, February 14.
             <br />
             <br />
             The event will be hosted in person at the Johnny Carson Center for

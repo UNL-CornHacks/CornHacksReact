@@ -14,7 +14,7 @@ const UnderConstructionPage = () => (
       <Type size="h1" bold align="center" className="cornhacks-logo-text">
         <span style={{ color: Colors.YELLOW }}>CORN</span>
         <span style={{ color: Colors.GOLD }}>HACKS</span>{" "}
-        <span style={{ color: Colors.GREEN }}>2024</span>
+        <span style={{ color: Colors.GREEN }}>2025</span>
       </Type>
       <p style={paragraph}>
         This site is currently under construction.
@@ -22,7 +22,7 @@ const UnderConstructionPage = () => (
         If you have any questions, please email us at
         <br />
         <a
-          href="mailto:cornhacks.2023@gmail.com"
+          href="mailto:cornhacks@unl.edu"
           style={{ color: Colors.YELLOW }}
         >
           cornhacks@unl.edu

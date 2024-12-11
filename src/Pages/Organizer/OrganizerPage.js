@@ -103,7 +103,7 @@ const OrganizerPage = () => (
         team.{" "}
         <a
           style={{ color: Colors.WHITE }}
-          href="https://forms.gle/vy4At4ywUcWSGsnd9"
+          href="https://forms.gle/j6BZgpukNqfENzkP8"
         >
           Apply today if you are interested
         </a>
