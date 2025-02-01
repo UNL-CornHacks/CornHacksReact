@@ -66,8 +66,8 @@ const HomePage = () => {
             for yourself!
           </Question>
           <Question question="Where and when will CornHacks take place?">
-            CornHacks 2025 will start on Saturday, February 15, 2024, and will
-            continue through Sunday, February 16, 2024 — with an optional info
+            CornHacks 2025 will start on Saturday, February 15, 2025, and will
+            continue through Sunday, February 16, 2025 — with an optional info
             session at 3:00PM on Friday, February 14.
             <br />
             <br />
