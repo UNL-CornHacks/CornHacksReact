@@ -66,9 +66,9 @@ const HomePage = () => {
             for yourself!
           </Question>
           <Question question="Where and when will CornHacks take place?">
-            CornHacks 2025 will start on Saturday, February 15, 2024, and will
-            continue through Sunday, February 16, 2024 — with an optional info
-            session at 3:00PM on Friday, February 14.
+            CornHacks 2025 will start on Saturday, March 1, and will
+            continue through Sunday, March 2 — with an optional info
+            session at 6:00PM on Friday, February 28.
             <br />
             <br />
             The event will be hosted in person at the Johnny Carson Center for
