@@ -71,15 +71,12 @@ const HomePage = () => {
             session at 6:00PM on Friday, February 28.
             <br />
             <br />
-            The event will be hosted in person at the Johnny Carson Center for
-            Emerging Media Arts; it will feature events, workshops, and
+            The event will be hosted in person at Kiewit Hall; it will feature events, workshops, and
             keynotes. And rest assured: you will definitely still receive an
-            abundance of swag and a chance at prizes. CornHacks registration
-            will open in late November. Feel free to check back here for any
-            updates!
+            abundance of swag and a chance at prizes. 
           </Question>
           <Question question="What is the cost to attend CornHacks?">
-            Nothing. $0.00. Free. There is no cost to attend CornHacks. We only
+            FREE. There is no cost to attend CornHacks. We only
             ask you bring your creativity and skill.
           </Question>
           <Question question="Do I need any prior experience to register for CornHacks? What if this is my first hackathon?">

@@ -47,7 +47,7 @@ const SponsorPage = () => {
                   href="https://goo.gl/maps/o72MMWk4cHtgoFHF6"
               >
                   <Type size="h3" align="center" bold>
-                      The Johnny Carson Center for Emerging Media Arts
+                      Kiewit Hall
                   </Type>
               </a>
           </TextSection>
