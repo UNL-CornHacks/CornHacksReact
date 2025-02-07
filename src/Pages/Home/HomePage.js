@@ -36,7 +36,7 @@ const HomePage = () => {
         backgroundColor={Colors.DARK_BLUE}
         maxWidth="500px"
       >
-        <Type size="h5" color={Colors.WHITE}>
+        <Type size="h5" color={Colors.BLACK}>
           CornHacks aims to bring some of the most talented developers from
           around the Midwest to join in a weekend full of hacking. Hosted at the
           University of Nebraska-Lincoln, over 100 participants will code all
@@ -46,7 +46,7 @@ const HomePage = () => {
       </ImageSection>
       <div id="learn-more">
         <ImageSection
-          image={"Gradiente.png"}
+          image={"little_corns.png"}
           backgroundColor={Colors.DARK_BLUE}
         >
           <Type size="h2" bold>
@@ -56,7 +56,7 @@ const HomePage = () => {
             A hackathon is an invention marathon. Students come together to
             build innovative software and hardware over an extended period. It's{" "}
             <a
-              style={{ color: Colors.WHITE }}
+              style={{ color: Colors.BLACK }}
               href="https://medium.com/@tfogo/hackathons-are-for-beginners-77a9c9c0e000#.cj21niskl"
             >
               very beginner friendly
@@ -108,7 +108,7 @@ const HomePage = () => {
           <Question question="Are there rules for this event?">
             There are, in fact! Attendees will have to adhere to the{" "}
             <a
-              style={{ color: Colors.WHITE }}
+              style={{ color: Colors.BLACK }}
               href="https://studentconduct.unl.edu/student-code-conduct"
             >
               UNL Student Code of Conduct
@@ -120,14 +120,14 @@ const HomePage = () => {
             There are a couple of things we would ask you do before the event
             begins: please fill out{" "}
             <a
-              style={{ color: Colors.WHITE }}
+              style={{ color: Colors.BLACK }}
               href="https://drive.google.com/file/d/1rzj9iy6urchwN2ixStTShniDrDNGx83p"
             >
               this photo release waiver
             </a>{" "}
             and{" "}
             <a
-              style={{ color: Colors.WHITE }}
+              style={{ color: Colors.BLACK }}
               href="https://forms.gle/7eHo3s9RURLpvNtM9"
             >
               this CornHacks participant survey

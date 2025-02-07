@@ -11,19 +11,16 @@ const SponsorFAQ = () => (
         </Type>
         <Question question={"What is Cornhacks?"}>
             CornHacks is a 24-hour long programming competition focused on the
-            technology industry. The event will be held from 10:00 a.m. on
-            02/17/24 until 2:00 p.m. on 02/18/24. 150+ undergraduate students
+            technology industry. The event will be held from 8:00 a.m. on
+            03/01/25 until 3:00 p.m. on 03/02/25. 100+ undergraduate students
             will come to explore, learn new things, and build cool projects for
             part of a weekend. The event is free and inclusive to students of
-            all backgrounds and abilities. We will be working with Major League
-            Hacking for this event.
+            all backgrounds and abilities. 
         </Question>
         <Question question={"Why does CornHacks need sponsors?"}>
             CornHacks is primarily funded by sponsors. Our sponsors help us
             provide meals for all of the students during the event, as well as
-            buying prizes for the best hacks. Sponsors also allow us to provide
-            monetary reimbursement for students traveling from other schools to
-            attend our hackathon. Sponsors can help students by giving tech
+            buying prizes for the best hacks. Sponsors can help students by giving tech
             talks during the event, participating as mentors for hackers, or
             networking with participants.
         </Question>

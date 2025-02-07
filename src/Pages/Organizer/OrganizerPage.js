@@ -17,7 +17,7 @@ const OrganizerPage = () => (
       <Type size="h1" bold>
         Become an Organizer
       </Type>
-      <Button to="https://forms.gle/vy4At4ywUcWSGsnd9">Apply Today!</Button>
+      <Button to="https://forms.gle/BU4xvNQfgP8adXkd9">Apply Today!</Button>
     </GradientHero>
     <TextSection backgroundColor={Colors.DARK_BLUE}>
       <Type size="h5">
@@ -31,7 +31,7 @@ const OrganizerPage = () => (
         Reach out to our current organizers to learn more and{" "}
         <a
           style={{ color: Colors.WHITE }}
-          href="https://forms.gle/vy4At4ywUcWSGsnd9"
+          href="https://forms.gle/BU4xvNQfgP8adXkd9"
         >
           apply today
         </a>

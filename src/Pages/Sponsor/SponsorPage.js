@@ -44,7 +44,7 @@ const SponsorPage = () => {
               </Type>
               <a
                   style={{ color: Colors.WHITE }}
-                  href="https://goo.gl/maps/o72MMWk4cHtgoFHF6"
+                  href="https://maps.app.goo.gl/wDnP2XBvL13VsuCU6"
               >
                   <Type size="h3" align="center" bold>
                       Kiewit Hall
