@@ -51,9 +51,9 @@ const SponsorPage = () => {
                   </Type>
               </a>
           </TextSection>
-          <SponsorTable />
-          <SponsorFAQ />
-          {/*
+          {/* <SponsorTable /> */}
+          {/* <SponsorFAQ /> */}
+ {/*
           <TextSection backgroundColor={Colors.WHITE}>
               <SponsorSection
                   title="Platinum Sponsors"
