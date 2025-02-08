@@ -7,7 +7,7 @@ const Overlay = ({
     children,
     setOverlayState,
     showOverlay,
-    backgroundColor = Colors.DARK_BLUE,
+    backgroundColor = Colors.CORN_GREEN,
 }) =>
     showOverlay ? (
         <div className="ch-overlay">

@@ -19,8 +19,8 @@ const OrganizerPage = () => (
       </Type>
       <Button to="https://forms.gle/BU4xvNQfgP8adXkd9">Apply Today!</Button>
     </GradientHero>
-    <TextSection backgroundColor={Colors.DARK_BLUE}>
-      <Type size="h5">
+    <TextSection backgroundColor={Colors.CORN_GREEN}>
+      <Type size="h5" bold>
         CornHacks is a huge event with a lot of moving parts: sponsors, prizes,
         food, games, judging, and so much more. If you have an interest in
         hackathons or event planning, think about becoming an organizer for the
@@ -43,15 +43,15 @@ const OrganizerPage = () => (
       </Type>
     </TextSection>
     <TextSection backgroundColor={Colors.LIGHT_GREY}>
-      <Type size="h2" bold color={Colors.DARK_BLUE}>
+      <Type size="h2" bold color={Colors.CORN_GREEN}>
         Our Teams:
       </Type>
     </TextSection>
     <ImageSection image={"Finance.png"} backgroundColor={Colors.LIGHT_GREY}>
-      <Type size="h3" bold color={Colors.DARK_BLUE}>
+      <Type size="h3" bold color={Colors.CORN_GREEN}>
         Sponsorship
       </Type>
-      <Type size="h5" color={Colors.DARK_BLUE}>
+      <Type size="h5" color={Colors.CORN_GREEN}>
         The number-crunchers. The sponsorship team works with CornHacks
         sponsors, balances the event budget, and generally makes sure CornHacks
         can keep running with adequate funding. We would not be able to put on
@@ -65,10 +65,10 @@ const OrganizerPage = () => (
       </Type>
     </ImageSection>
     <ImageSection image={"Logistics.png"} backgroundColor={Colors.LIGHT_GREY}>
-      <Type size="h3" bold color={Colors.DARK_BLUE}>
+      <Type size="h3" bold color={Colors.CORN_GREEN}>
         Logistics
       </Type>
-      <Type size="h5" color={Colors.DARK_BLUE}>
+      <Type size="h5" color={Colors.CORN_GREEN}>
         The logistics team is the core of the CornHacks team, working to ensure
         that every CornHacks event is properly planned and executed. They
         organize the food, activities, workshops, judging, and so much more for
@@ -81,10 +81,10 @@ const OrganizerPage = () => (
       </Type>
     </ImageSection>
     <ImageSection image={"Marketing.png"} backgroundColor={Colors.LIGHT_GREY}>
-      <Type size="h3" color={Colors.DARK_BLUE} bold>
+      <Type size="h3" color={Colors.CORN_GREEN} bold>
         Marketing
       </Type>
-      <Type size="h5" color={Colors.DARK_BLUE}>
+      <Type size="h5" color={Colors.CORN_GREEN}>
         The marketing team is the public face and voice of the CornHacks team.
         They prepare posters, graphics, and digital marketing to show students
         what CornHacks is all about. They also make all of the awesome swag that
@@ -93,7 +93,7 @@ const OrganizerPage = () => (
         marketing prose will fit right in with our marketing team!
       </Type>
     </ImageSection>
-    <TextSection backgroundColor={Colors.DARK_BLUE}>
+    <TextSection backgroundColor={Colors.CORN_GREEN}>
       <Type size="h5">
         No matter which team you join, you will be a part of a driven group of
         students that want to organize an engaging and valuable hackathon for

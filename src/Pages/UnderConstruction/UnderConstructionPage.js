@@ -54,7 +54,7 @@ const logoStyling = {
 const pageStyling = {
   width: "100%",
   height: "100%",
-  background: `radial-gradient(${Colors.BLUE}, ${Colors.DARK_BLUE})`,
+  background: `radial-gradient(${Colors.BLUE}, ${Colors.CORN_GREEN})`,
   position: "fixed",
   display: "flex",
 };

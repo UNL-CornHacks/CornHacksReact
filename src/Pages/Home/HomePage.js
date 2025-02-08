@@ -18,8 +18,8 @@ const HomePage = () => {
     <div>
        <AirtableCompanies setSponsorData={getSponsors} />
       <HomeHero showOverlay={() => setOverlayState(true)} />
-      <TextSection backgroundColor={Colors.DARK_BLUE}>
-        <Type size="h2" bold align="center">
+      <TextSection backgroundColor={Colors.CORN_GREEN}>
+        <Type size="h2" bold align="center" color={Colors.BLACK}>
           Stay tuned for the CornHacks 2025 schedule!
         </Type>
         <div className="ch-button-container-center">
@@ -33,7 +33,7 @@ const HomePage = () => {
       </TextSection>
       <ImageSection
         image={"HomePage.jpeg"}
-        backgroundColor={Colors.DARK_BLUE}
+        backgroundColor={Colors.CORN_GREEN}
         maxWidth="500px"
       >
         <Type size="h5" color={Colors.BLACK}>
@@ -41,22 +41,23 @@ const HomePage = () => {
           around the Midwest to join in a weekend full of hacking. Hosted at the
           University of Nebraska-Lincoln, over 100 participants will code all
           day and night to be assessed by industry professionals and compete for
-          several prizes.
+          prizes.
         </Type>
       </ImageSection>
       <div id="learn-more">
         <ImageSection
           image={"little_corns.png"}
-          backgroundColor={Colors.DARK_BLUE}
+          backgroundColor={Colors.CORN_GREEN}
         >
-          <Type size="h2" bold>
+          <Type size="h2" color={Colors.BLACK} bold>
             FAQ
           </Type>
           <Question question="What is a Hackathon?">
+            <Type size="h5" bold color={Colors.BLACK}>
             A hackathon is an invention marathon. Students come together to
             build innovative software and hardware over an extended period. It's{" "}
             <a
-              style={{ color: Colors.BLACK }}
+              style={{ color: Colors.WHITE }}
               href="https://medium.com/@tfogo/hackathons-are-for-beginners-77a9c9c0e000#.cj21niskl"
             >
               very beginner friendly
@@ -64,80 +65,97 @@ const HomePage = () => {
             and is designed to be engaging to students at all levels of
             experience. We would love for you to come and experience a hackathon
             for yourself!
+            </Type>
           </Question>
           <Question question="Where and when will CornHacks take place?">
-            CornHacks 2025 will start on Saturday, March 1, and will
-            continue through Sunday, March 2 — with an optional info
-            session at 6:00PM on Friday, February 28.
-            <br />
-            <br />
-            The event will be hosted in person at Kiewit Hall; it will feature events, workshops, and
-            keynotes. And rest assured: you will definitely still receive an
-            abundance of swag and a chance at prizes. 
+            <Type size="h5" bold color={Colors.BLACK}>
+              CornHacks 2025 will start on Saturday, March 1, and will
+              continue through Sunday, March 2 — with an optional info
+              session at 6:00PM on Friday, February 28.
+              <br />
+              <br />
+              The event will be hosted in person at Kiewit Hall; it will feature events, workshops, and
+              keynotes. And rest assured: you will definitely still receive an
+              abundance of swag and a chance at prizes. 
+            </Type>
           </Question>
           <Question question="What is the cost to attend CornHacks?">
-            FREE. There is no cost to attend CornHacks. We only
-            ask you bring your creativity and skill.
+            <Type size="h5" bold color={Colors.BLACK}>
+              FREE. There is no cost to attend CornHacks. We only
+              ask you bring your creativity and skill. Additionally,
+              meals will be provided.
+            </Type>
           </Question>
           <Question question="Do I need any prior experience to register for CornHacks? What if this is my first hackathon?">
-            There is no prior experience required to participate in CornHacks.
-            Any and all student participants are welcome! We are happy to help
-            you form a team, get started with your project, and have an awesome
-            first hackathon!
+            <Type size="h5" bold color={Colors.BLACK}>
+              There is no prior experience required to participate in CornHacks.
+              Any and all student participants are welcome! We are happy to help
+              you form a team, get started with your project, and have an awesome
+              first hackathon!
+            </Type>
           </Question>
           <Question question="Do I need to be a college student to attend?">
-            Yes, attendees must be currently enrolled undergraduate students at
-            a college/university. Additionally, attendees must be at or over 18
-            years of age.
+            <Type size="h5" bold color={Colors.BLACK}>
+              Yes, attendees must be currently enrolled undergraduate/graduate students at
+              a college/university. Additionally, attendees must be at or over 18
+              years of age.
+            </Type>
           </Question>
           <Question question="Do I need to form a team before I register? What do I do if I do not have a team?">
-            Participants are not required to find a team prior to the event,
-            although you are certainly welcome to do so. At the beginning of the
-            event, we will host a session for all still looking to form a team
-            so you can find others with whom you can work. Teams may have a
-            maximum of four members.
+            <Type size="h5" bold color={Colors.BLACK}>
+              Participants are not required to find a team prior to the event,
+              although you are certainly welcome to do so. At the beginning of the
+              event, we will host a session for all still looking to form a team
+              so you can find others with whom you can work. Teams may have a
+              maximum of four members.
+            </Type>
           </Question>
           <Question question="Will there be any swag or prizes?">
-            SO much swag, SO many prizes. All CornHacks attendees will receive a
-            t-shirt, stickers, and tons of other goodies. Teams that win tiered
-            or track prizes will also receive additional prizes; while this
-            year’s prizes are still being determined, previous years have seen
-            prizes such as flatscreen TVs, Nintendo Switches, and high-quality
-            wireless headphones.
+            <Type size="h5" bold color={Colors.BLACK}>
+              SO much swag, SO many prizes. Teams that win tiered
+              or track prizes will also receive additional prizes; while this
+              year’s prizes are still being determined, previous years have seen
+              prizes such as flatscreen TVs, Nintendo Switches, high-quality
+              wireless headphones, and iPads.
+            </Type>
           </Question>
           <Question question="Are there rules for this event?">
-            There are, in fact! Attendees will have to adhere to the{" "}
-            <a
-              style={{ color: Colors.BLACK }}
-              href="https://studentconduct.unl.edu/student-code-conduct"
-            >
-              UNL Student Code of Conduct
-            </a>
-            . More specific rules may be prescribed by CornHacks organizers
-            before or during the event.
+            <Type size="h5" bold color={Colors.BLACK}>
+              There are, in fact! Attendees will have to adhere to the{" "}
+              <a
+                style={{ color: Colors.WHITE}}
+                href="https://studentconduct.unl.edu/student-code-conduct"
+              >
+                UNL Student Code of Conduct
+              </a>
+              . More specific rules may be prescribed by CornHacks organizers
+              before or during the event.
+            </Type>
           </Question>
           <Question question="Is there anything I need to do in advance?">
-            There are a couple of things we would ask you do before the event
-            begins: please fill out{" "}
-            <a
-              style={{ color: Colors.BLACK }}
-              href="https://drive.google.com/file/d/1rzj9iy6urchwN2ixStTShniDrDNGx83p"
-            >
-              this photo release waiver
-            </a>{" "}
-            and{" "}
-            <a
-              style={{ color: Colors.BLACK }}
-              href="https://forms.gle/7eHo3s9RURLpvNtM9"
-            >
-              this CornHacks participant survey
-            </a>{" "}
-            (you will be able to upload your photo release waiver when you fill
-            out the registration survey).
+            <Type size="h5" bold color={Colors.BLACK}>
+              There are a couple of things we would ask you do before the event
+              begins: please fill out this{" "}
+              <a
+                style={{ color: Colors.WHITE}}
+                href="https://drive.google.com/file/d/1rzj9iy6urchwN2ixStTShniDrDNGx83p"
+              >
+                photo release waiver
+              </a>{" "}
+              and the{" "}
+              <a
+                style={{ color: Colors.WHITE}}
+                href="https://forms.gle/Leqw3vCsHkgW35Gr8"
+              >
+                CornHacks registration
+              </a>{" "}
+              (you will be able to upload your photo release waiver when you fill
+              out the registration).
+            </Type>
           </Question>
         </ImageSection>
       </div>
-      <TextSection backgroundColor={Colors.DARK_BLUE}>
+      <TextSection backgroundColor={Colors.CORN_GREEN}>
         <Countdown
           date={ImportantDates.START_DATE}
           afterText="until Cornhacks"
@@ -147,7 +165,7 @@ const HomePage = () => {
       <TextSection backgroundColor="#ffffff">
          <SponsorSection
           title="Platinum Sponsors"
-          titleColor={Colors.DARK_BLUE}
+          titleColor={Colors.CORN_GREEN}
           sponsorData={sponsors.platinum ? sponsors.platinum : []}
           color="blue"
           sectionHeight="250px"
@@ -155,7 +173,7 @@ const HomePage = () => {
         />
         <SponsorSection
           title="Gold Sponsors"
-          titleColor={Colors.DARK_BLUE}
+          titleColor={Colors.CORN_GREEN}
           sponsorData={sponsors.gold ? sponsors.gold : []}
           color="yellow"
           sectionHeight="200px"
@@ -163,7 +181,7 @@ const HomePage = () => {
         />
         <SponsorSection
           title="Silver Sponsors"
-          titleColor={Colors.DARK_BLUE}
+          titleColor={Colors.CORN_GREEN}
           sponsorData={sponsors.silver ? sponsors.silver : []}
           color="grey"
           sectionHeight="100px"
@@ -171,7 +189,7 @@ const HomePage = () => {
         />
         <SponsorSection
           title="Bronze Sponsors"
-          titleColor={Colors.DARK_BLUE}
+          titleColor={Colors.CORN_GREEN}
           sponsorData={sponsors.bronze ? sponsors.bronze : []}
           color="brown"
           sectionHeight="100px"

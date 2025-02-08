@@ -34,13 +34,13 @@ const SponsorPage = () => {
               </div>
               <ContinueArrow
                   className="right-arrow-positioning"
-                  backgroundColor={Colors.DARK_BLUE}
+                  backgroundColor={Colors.CORN_GREEN}
                   scrollTo={window.innerHeight}
               />
           </GradientHero>
-          <TextSection backgroundColor={Colors.DARK_BLUE}>
+          <TextSection backgroundColor={Colors.CORN_GREEN}>
               <Type size="h3" align="center" bold>
-                  March 1 and 2, 2025 @
+                  March 1-2, 2025
               </Type>
               <a
                   style={{ color: Colors.WHITE }}
@@ -57,7 +57,7 @@ const SponsorPage = () => {
           <TextSection backgroundColor={Colors.WHITE}>
               <SponsorSection
                   title="Platinum Sponsors"
-                  titleColor={Colors.DARK_BLUE}
+                  titleColor={Colors.CORN_GREEN}
                   sponsorData={sponsors.platinum ? sponsors.platinum : []}
                   color="blue"
                   sectionHeight="250px"
@@ -65,7 +65,7 @@ const SponsorPage = () => {
               />
               <SponsorSection
                   title="Gold Sponsors"
-                  titleColor={Colors.DARK_BLUE}
+                  titleColor={Colors.CORN_GREEN}
                   sponsorData={sponsors.gold ? sponsors.gold : []}
                   color="yellow"
                   sectionHeight="200px"
@@ -73,7 +73,7 @@ const SponsorPage = () => {
               />
               <SponsorSection
                   title="Silver Sponsors"
-                  titleColor={Colors.DARK_BLUE}
+                  titleColor={Colors.CORN_GREEN}
                   sponsorData={sponsors.silver ? sponsors.silver : []}
                   color="grey"
                   sectionHeight="100px"
@@ -82,7 +82,7 @@ const SponsorPage = () => {
               <img id="nelnet" src={require("../../Images/sponsors/sponsor_logos/Nelnet/Nelnet_Logo_White_Web.PNG")} />
               <SponsorSection
                   title="Bronze Sponsors"
-                  titleColor={Colors.DARK_BLUE}
+                  titleColor={Colors.CORN_GREEN}
                   sponsorData={sponsors.bronze ? sponsors.bronze : []}
                   color="brown"
                   sectionHeight="100px"

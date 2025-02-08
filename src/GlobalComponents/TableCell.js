@@ -27,7 +27,7 @@ const TableCell = ({ className, header, children, yes, no }) => {
                 <Type
                     className={className ? `${className}-text` : false}
                     size="p"
-                    color={yes || no ? Colors.WHITE : Colors.DARK_BLUE}
+                    color={yes || no ? Colors.WHITE : Colors.CORN_GREEN}
                     align="center"
                     bold
                 >

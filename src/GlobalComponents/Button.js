@@ -32,7 +32,7 @@ const Button = ({ children, className, to, internal, anchor, toClick, inverted }
             size="h5"
             className={className ? `${className} ch-button${inverted ? '-inverted' : ''}` : `ch-button${inverted ? '-inverted' : ''}`}
             align="center"
-            color={inverted ? Colors.DARK_BLUE : Colors.WHITE}
+            color={inverted ? Colors.CORN_GREEN : Colors.WHITE}
         >
             {children}
         </Type>
