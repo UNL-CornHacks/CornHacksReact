@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.8fc0896e.css",
-    "main.js": "/static/js/main.610a6dc7.js",
+    "main.js": "/static/js/main.3dd3b46e.js",
     "static/media/Marketing.png": "/static/media/Marketing.bef8495ff9c632935859.png",
     "static/media/Gradiente.png": "/static/media/Gradiente.9831381d35e6c435d1a0.png",
     "static/media/Finance.png": "/static/media/Finance.cdfacd177879086ff9e4.png",
+    "static/media/cornhacksPacketFINAL.pdf": "/static/media/cornhacksPacketFINAL.d559d9d43536739876fd.pdf",
     "static/media/Logistics.png": "/static/media/Logistics.b029bdd3fa67ed4a9e5e.png",
     "static/media/Chairs.png": "/static/media/Chairs.c05200136d9793b4f4e4.png",
     "static/media/Corndell.png": "/static/media/Corndell.92345ad9fd01b5565d16.png",
@@ -14,15 +15,17 @@
     "static/media/Logistics.jpeg": "/static/media/Logistics.ebfa6bb7d1049751aec9.jpeg",
     "static/media/CornHacksSchedule.png": "/static/media/CornHacksSchedule.601231ba885ec511c968.png",
     "static/media/little_corns.png": "/static/media/little_corns.51fb57bb11de604d6459.png",
+    "static/media/sponsorship_2.png": "/static/media/sponsorship_2.3a788d4575c3b2f6896c.png",
+    "static/media/sponsorship_1.png": "/static/media/sponsorship_1.7dea652cd54723b40c25.png",
     "static/media/cornhacks-white.svg": "/static/media/cornhacks-white.72e2fd9ab301a31d92b3a4c808db5f03.svg",
     "static/media/cornhacks.svg": "/static/media/cornhacks.7653d5c288fd08fb2c06acf07c364911.svg",
     "index.html": "/index.html",
     "static/media/down-arrow.svg": "/static/media/down-arrow.fd412ad0e46da850a756a77510e40dad.svg",
     "main.8fc0896e.css.map": "/static/css/main.8fc0896e.css.map",
-    "main.610a6dc7.js.map": "/static/js/main.610a6dc7.js.map"
+    "main.3dd3b46e.js.map": "/static/js/main.3dd3b46e.js.map"
   },
   "entrypoints": [
     "static/css/main.8fc0896e.css",
-    "static/js/main.610a6dc7.js"
+    "static/js/main.3dd3b46e.js"
   ]
 }
