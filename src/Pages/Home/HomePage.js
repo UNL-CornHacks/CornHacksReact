@@ -26,7 +26,7 @@ const HomePage = () => {
           <Button inverted internal to="/schedule/">
             View 2025 Schedule
           </Button>
-          <Button inverted to="https://forms.gle/Leqw3vCsHkgW35Gr8">
+          <Button inverted to="https://forms.gle/FLms71A4WAEvo8ZQ6">
             Sign up for CornHacks 2025
           </Button>
         </div>
@@ -69,9 +69,9 @@ const HomePage = () => {
           </Question>
           <Question question="Where and when will CornHacks take place?">
             <Type size="h5" bold color={Colors.BLACK}>
-              CornHacks 2025 will start on Saturday, March 1, and will
-              continue through Sunday, March 2 — with an optional info
-              session at 6:00PM on Friday, February 28.
+              CornHacks 2025 will start on Saturday, November 8, and will
+              continue through Sunday, November 9 — with an optional info
+              session at 6:00PM on Friday, November 7.
               <br />
               <br />
               The event will be hosted in person at Kiewit Hall; it will feature events, workshops, and

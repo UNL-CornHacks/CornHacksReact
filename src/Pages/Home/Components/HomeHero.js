@@ -28,7 +28,7 @@ const HomeHero = ({ showOverlay }) => {
         <Button internal to="/organize/">
           Help Organize
         </Button>
-        <Button to="https://forms.gle/Leqw3vCsHkgW35Gr8">Register</Button>
+        <Button to="https://forms.gle/FLms71A4WAEvo8ZQ6">Register</Button>
         <Button to="https://drive.google.com/file/d/1rzj9iy6urchwN2ixStTShniDrDNGx83p">
           Photo Release
         </Button>

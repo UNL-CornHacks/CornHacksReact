@@ -1,5 +1,5 @@
 const ImportantDates = {
-  START_DATE: new Date(Date.UTC(2025, 2, 1, 14)), // March 1, 8am CST
+  START_DATE: new Date(Date.UTC(2025, 11, 8, 10)), // November 8, 2025, 10am CST
 };
 
 export default ImportantDates;
