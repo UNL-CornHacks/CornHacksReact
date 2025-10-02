@@ -23,7 +23,7 @@ const RouteHandler = () => (
       <Route path="/home/" element={<HomePage />} />
       <Route path="/sponsor/" element={<SponsorPage/>} />
       <Route path="/organize/" element={<OrganizerPage />} />
-      <Route path="/schedule/" element={<UnderConstructionPage />} />
+      <Route path="/schedule/" element={<SchedulePage />} />
       <Route path="/" element={<Navigate to="/home" />} />
     </Routes>
   </Router>
